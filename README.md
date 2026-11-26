@@ -29,7 +29,26 @@ The provenance validator itself uses only the Python standard library:
 ```bash
 python paper/reproducibility/provenance/validate_provenance.py --verify-external
 python paper/reproducibility/provenance/query_claim_evidence.py --claim C1
+python paper/reproducibility/provenance/validate_provenance.py --mode profile
+python paper/reproducibility/provenance/audit_comparison.py --check
+python -m unittest discover -s paper/reproducibility/provenance -p 'test_*.py'
 ```
+
+Claim identifiers C1–C4 and competency questions CQ1–CQ6 are separate.
+`--mode profile` checks the reusable metadata rules without reading result
+files or requiring the Allen–Cahn sample sizes and outcomes. The default
+study mode additionally checks the frozen case; `--verify-external` reads the
+91 referenced arrays included in this repository.
+
+The small audit comparison uses two valid controls, six injected record or
+integrity defects, and a separate false-narrative probe. Inventory checks
+detect 1/6 defects, adding link checks detects 2/6, and the application-profile
+checks detect 6/6; all accept both controls and miss the false prose claim.
+These are developer-designed verification cases on one record, not estimates
+of real-world detection accuracy or a benchmark of entire provenance standards.
+See `paper/reproducibility/provenance/AUDIT_COMPARISON.md` for the fixed
+specification and full results. Metadata conformance does not establish
+scientific truth.
 
 Regenerate the Allen--Cahn tables and figures:
 

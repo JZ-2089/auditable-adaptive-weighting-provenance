@@ -25,9 +25,8 @@ summaries retain those contrasts as contextual evidence.
 - `allen_cahn_audit_record.json`: JSON Schema-validated machine audit.
 - `audit_record.schema.json`: JSON Schema Draft 2020-12, version 2.0.0.
 - `claim_evidence_matrix.csv`: C1--C4 directions and supporting/limiting IDs.
-- `query_claim_evidence.py`: dependency-free CQ1--CQ4 traversal program.
-- `competency_query_results.json`: stored CQ1--CQ4 output, rebuilt and compared
-  by the validator.
+- `query_claim_evidence.py`: independent claim traversals plus explicitly labelled CQ1--CQ6 coverage.
+- `competency_query_results.json`: stored claim paths and answers to CQ1--CQ4; CQ5--CQ6 list delegated validation and declared gaps, not unperformed success.
 - `ro-crate-metadata.json`: canonical RO-Crate 1.3 descriptor. The
   byte-identical `ro-crate-metadata.jsonld` file is a compatibility alias; it
   is not the descriptor ID.
@@ -38,8 +37,10 @@ summaries retain those contrasts as contextual evidence.
 - `validation_report.json`: formal validation result written only after
   packaged and external-workspace verification both pass.
 - `build_provenance.py`: deterministic builder for the bundle.
-- `validate_provenance.py`: dependency-free schema, link, numerical, hash,
-  competency-query, RO-Crate and W3C PROV validator.
+- `profile_validation.py`: generic in-memory schema, links, domain, evidence-status and PROV consistency checks.
+- `validate_provenance.py`: generic-profile CLI plus the full frozen-study, numerical-source, integrity and packaging checks.
+- `test_profile_validation.py`: regression tests, including a synthetic two-run/one-claim negative-result control (not new experimental evidence).
+- `audit_comparison_spec.json` and `audit_comparison.py`: frozen nine-case comparison; results and the generated manuscript table are separate derived outputs.
 
 The machine graph contains a W3C PROV class/relation projection with `Entity`,
 `Activity` and source-identified software `Agent` records. Each exact
@@ -83,8 +84,25 @@ tables and figures are explicitly derived from their claims and metrics.
 
 ## Validation
 
-Portable validation checks packaged artifacts. Full repository validation also
-checks every released array and never changes the formal report:
+The generic layer accepts differing study counts, arm labels, claim identifiers
+and outcome directions within the supported profile vocabulary. It checks
+metadata only and does not read result bytes or recompute numerical values:
+
+```bash
+python validate_provenance.py --mode profile
+python validate_provenance.py --mode profile --record another_record.json
+python -m unittest -v test_profile_validation
+```
+
+This version still describes completed final-iterate sequential runs and
+periodic one-dimensional spatial domains. It is not a universal workflow
+schema. Missing required fields are errors; an explicitly empty limiting-
+evidence list is allowed. No metadata checker can establish that a complete-
+looking disclosure or scientific statement is truthful.
+
+The default study mode retains every frozen Allen--Cahn assertion, including
+the seed matrix and the C1--C4 outcome boundaries, and checks packaged file
+bytes. It never changes the formal report:
 
 ```bash
 python validate_provenance.py
@@ -100,9 +118,20 @@ python validate_provenance.py --verify-external --write-report
 
 `--write-report` requires `--verify-external`; this prevents a standalone run
 from replacing an external-verified report with a weaker result. The formal
-report stores separate `packaged` and `external_workspace` validation modes.
+report stores separate `packaged` and `external_workspace` integrity modes
+and `generic_profile` and `frozen_study_regression` layers. The frozen-study
+assertions do not define general profile validity.
 
-Run all four competency queries or one selected query with:
+Claims C1--C4 and competency questions CQ1--CQ6 have different meanings.
+A claim traversal is identified as `claim-evidence:C1`, for example, and can
+answer several questions. CQ1 returns protocol/configuration/seed/checkpoint,
+CQ2 prediction mechanism and domain, CQ3 reference and evaluation details,
+and CQ4 supporting/limiting evidence and status. CQ5 requires the separate
+integrity validator. CQ6 reports declared unavailable roles and delegates
+missing-field checks to the schema validator; legacy gaps remain documented
+in the supplementary audit.
+
+Run all claim traversals or one selected claim with:
 
 ```bash
 python query_claim_evidence.py
@@ -117,9 +146,9 @@ claim -> supporting/limiting metric or evaluation
       -> run -> exact configuration -> locked protocol
 ```
 
-The current validated counts are 57 configurations, 57 runs, 57 checkpoints,
+The scientific record retains 57 configurations, 57 runs, 57 checkpoints,
 four spatial domains, 315 predictions, 258 evaluations, ten controller traces,
-17 metrics, four claims, 373 artifacts and 731 generation records. The
-PROV-aligned projection contains 1,097 entities, 731 activities, six
-source-identified software agents and 8,968 unique relations. Formal external
-validation verifies 282 packaged and 91 external artifacts.
+17 metrics and four claims. The regenerated report records exact artifact and
+PROV counts. Six newly hash-registered validation/query/specification sources
+increase the inventory to 288 packaged and 91 external artifacts; they do not
+add training runs or scientific claims.

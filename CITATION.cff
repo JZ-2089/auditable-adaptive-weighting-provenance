@@ -5,6 +5,10 @@ type: software
 authors:
   - family-names: Zhang
     given-names: Jiaming
+  - family-names: He
+    given-names: Chaocheng
+  - family-names: Husmeier
+    given-names: Dirk
 year: 2026
 repository-code: "https://github.com/JZ-2089/auditable-adaptive-weighting-provenance"
 url: "https://github.com/JZ-2089/auditable-adaptive-weighting-provenance"

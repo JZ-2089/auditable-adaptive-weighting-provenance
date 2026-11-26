@@ -27,6 +27,9 @@ OUTPUT = ROOT / "generated"
 EXPECTED_CONFIRMATION_SEEDS = [5101, 5113, 5147, 5167, 5191, 5227, 5261, 5281, 5309, 5333]
 EXPECTED_LONG_SEEDS = [6101, 6131, 6173]
 ARMS = ["zero_rk4", "fixed_rate1", "grouped_rate1"]
+# Wall-clock PDF dates would change output hashes on an otherwise identical
+# rebuild. Keep version metadata, but omit dates from these derived figures.
+PDF_METADATA = {"CreationDate": None, "ModDate": None}
 
 
 def sha256(path: Path) -> str:
@@ -245,7 +248,7 @@ def plot_confirmation(summary: dict) -> None:
         ax.set_ylabel("Relative $L^2$ error")
         ax.grid(axis="y", alpha=0.22)
     fig.suptitle("Matched Allen--Cahn controller comparison (10 fresh seeds)", fontsize=11)
-    fig.savefig(OUTPUT / "figure_confirmatory_paired.pdf", bbox_inches="tight")
+    fig.savefig(OUTPUT / "figure_confirmatory_paired.pdf", bbox_inches="tight", metadata=PDF_METADATA)
     fig.savefig(OUTPUT / "figure_confirmatory_paired.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
@@ -277,7 +280,7 @@ def plot_long_sequence(summary: dict) -> None:
         ax.set_ylabel("Grouped $-$ fixed")
         ax.grid(axis="y", alpha=0.22)
     fig.suptitle("Allen--Cahn long-sequence development study (3 seeds)", fontsize=11)
-    fig.savefig(OUTPUT / "figure_long_sequence_effects.pdf", bbox_inches="tight")
+    fig.savefig(OUTPUT / "figure_long_sequence_effects.pdf", bbox_inches="tight", metadata=PDF_METADATA)
     fig.savefig(OUTPUT / "figure_long_sequence_effects.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 

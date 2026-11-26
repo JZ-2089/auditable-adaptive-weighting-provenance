@@ -1,0 +1,47 @@
+{
+  "specification_version": "1.0.0",
+  "status": "fixed before first execution; developer-designed verification cases",
+  "objective": "Measure which explicitly configured audit layers detect a small set of record defects, using copies of the released Allen--Cahn record without changing the scientific observations.",
+  "source_record": "allen_cahn_audit_record.json",
+  "source_scope": "The complete audit graph and all artifacts whose path_scope is packaged. External prediction arrays are excluded from this small comparison and remain covered by the separate full-package validation.",
+  "baselines": [
+    {
+      "id": "inventory",
+      "label": "Inventory and hashes",
+      "rules": "Check existence, byte count and SHA-256 for packaged artifacts and the audit-record export. Do not inspect scientific metadata or graph relationships."
+    },
+    {
+      "id": "links",
+      "label": "Links and hashes",
+      "rules": "Apply the same inventory checks plus identifier uniqueness and referential integrity using validate_links. Do not require application-specific scientific fields or their consistency. This is a configured link-checking baseline, not a claim about all PROV or RO-Crate tools."
+    },
+    {
+      "id": "profile",
+      "label": "Application profile and hashes",
+      "rules": "Apply the same inventory checks plus validate_profile, including its schema, link checks and application-specific cross-record consistency rules. Exclude frozen Allen--Cahn counts, result signs, confidence intervals and other case-regression assertions."
+    }
+  ],
+  "execution_rules": [
+    "Use a deep copy of the source record for each case; never alter the source record or source artifacts.",
+    "For metadata edits, export the changed record and regenerate its inventory checksum. Hash baselines therefore cannot detect a metadata defect merely because a stale record checksum was retained.",
+    "For the byte-integrity case, modify an in-memory copy of a packaged metrics file while retaining its original expected checksum and byte count.",
+    "Run every listed case and report every result, including missed faults and false positives; do not tune thresholds after seeing results.",
+    "Record the SHA-256 digests of this specification, the audit record, the runner, the profile checker and the schema in the result.",
+    "Treat the narrative-falsification case as a separately reported blind-spot probe, outside the six structural/integrity faults."
+  ],
+  "cases": [
+    {"id": "clean_original", "kind": "valid_control", "label": "Unmodified record", "operation": "identity"},
+    {"id": "clean_reordered", "kind": "valid_control", "label": "Reordered entity lists", "operation": "reverse_top_level_entity_lists"},
+    {"id": "missing_mechanism", "kind": "structural_fault", "label": "Missing prediction mechanism", "operation": "delete_first_prediction_mechanism"},
+    {"id": "wrong_interval", "kind": "structural_fault", "label": "Evaluation outside prediction interval", "operation": "extend_first_evaluation_end_beyond_prediction_by_one"},
+    {"id": "broken_checkpoint", "kind": "structural_fault", "label": "Unresolved checkpoint link", "operation": "replace_first_prediction_checkpoint_with_missing_id"},
+    {"id": "missing_limiting_evidence", "kind": "structural_fault", "label": "Absent limiting-evidence field", "operation": "delete_first_claim_limiting_evidence_ids"},
+    {"id": "inconsistent_status", "kind": "structural_fault", "label": "Unsupported primary-status promotion", "operation": "promote_first_claim_status_without_changing_linked_metrics"},
+    {"id": "modified_result_bytes", "kind": "integrity_fault", "label": "Modified packaged result bytes", "operation": "append_whitespace_to_first_packaged_metrics_artifact"},
+    {"id": "false_narrative", "kind": "blind_spot_probe", "label": "False scientific narrative", "operation": "replace_first_claim_statement_with_false_generality", "replacement": "Grouped adaptive loss weighting is guaranteed to improve every prediction interval for every equation and every seed."}
+  ],
+  "reporting": {
+    "primary_summary": "Detected faults among the six structural/integrity faults; rejected records among the two valid controls. Report the blind-spot probe separately.",
+    "interpretation": "A developer-designed fault-injection check of these implementations on one record. It is not an estimate of field detection accuracy, interoperability, audit time saved or external validity, and it cannot establish that metadata or scientific claims are true. A missing required limitation-disclosure field is detectable; an undeclared scientific limitation is not thereby discoverable."
+  }
+}

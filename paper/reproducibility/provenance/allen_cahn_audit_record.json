@@ -20675,8 +20675,8 @@
       "media_type": "application/pdf",
       "path": "evidence/generated/figure_confirmatory_paired.pdf",
       "path_scope": "packaged",
-      "sha256": "7c193e008bf3f50ecb6d4a0787b2171ad28ba6fece3d3b1fa78f5d6949512046",
-      "bytes": 23335,
+      "sha256": "996906685756edb4e80280b45cdd292ada28abf27bbf8d8f7faf60d2a89f5a1d",
+      "bytes": 23295,
       "description": "Paired confirmatory PDF figure."
     },
     {
@@ -20717,8 +20717,8 @@
       "media_type": "application/pdf",
       "path": "evidence/generated/figure_long_sequence_effects.pdf",
       "path_scope": "packaged",
-      "sha256": "a15d4d2eb345e4485f95498b1dcd8b5cf9c0156709a9de914ebd1d6d183e70f1",
-      "bytes": 22109,
+      "sha256": "28f42339509ccf48c61149fc40bb5eabe720f9c94618a8ac61722f2bc9881448",
+      "bytes": 22069,
       "description": "Long-sequence PDF figure."
     },
     {
@@ -21095,8 +21095,8 @@
       "media_type": "text/x-python",
       "path": "evidence/generators/evidence_synthesizer.py",
       "path_scope": "packaged",
-      "sha256": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
-      "bytes": 16886,
+      "sha256": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
+      "bytes": 17140,
       "description": "Hash-bound evidence generator source."
     },
     {
@@ -21109,9 +21109,93 @@
       "media_type": "text/x-python",
       "path": "build_provenance.py",
       "path_scope": "packaged",
-      "sha256": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
-      "bytes": 87569,
+      "sha256": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
+      "bytes": 88465,
       "description": "Builder for this audit package."
+    },
+    {
+      "id": "artifact:profile-schema",
+      "identity": {
+        "label": "audit_record.schema.json",
+        "type": "artifact",
+        "role": "application-profile schema"
+      },
+      "media_type": "application/json",
+      "path": "audit_record.schema.json",
+      "path_scope": "packaged",
+      "sha256": "5ce4a96b8faeda6e43b248459acca8d2477d23f439eeac3442171c6902100e80",
+      "bytes": 33497,
+      "description": "Hash-bound application-profile schema; validation does not establish scientific truth."
+    },
+    {
+      "id": "artifact:validator:profile",
+      "identity": {
+        "label": "profile_validation.py",
+        "type": "artifact",
+        "role": "generic profile validator"
+      },
+      "media_type": "text/x-python",
+      "path": "profile_validation.py",
+      "path_scope": "packaged",
+      "sha256": "019b5a519e81682cc8b5be20f8281917ec6bf2ed727367629332b6ad64614cd2",
+      "bytes": 15148,
+      "description": "Hash-bound generic profile validator; validation does not establish scientific truth."
+    },
+    {
+      "id": "artifact:validator:study",
+      "identity": {
+        "label": "validate_provenance.py",
+        "type": "artifact",
+        "role": "study bundle validator"
+      },
+      "media_type": "text/x-python",
+      "path": "validate_provenance.py",
+      "path_scope": "packaged",
+      "sha256": "4c314cfbbaa271594e94f04a75d744c7d843087b55e1984e236d02ee2f6be5b3",
+      "bytes": 61022,
+      "description": "Hash-bound study bundle validator; validation does not establish scientific truth."
+    },
+    {
+      "id": "artifact:query:claims",
+      "identity": {
+        "label": "query_claim_evidence.py",
+        "type": "artifact",
+        "role": "claim and competency query program"
+      },
+      "media_type": "text/x-python",
+      "path": "query_claim_evidence.py",
+      "path_scope": "packaged",
+      "sha256": "aa0fb330b70bbc47f66b5df426c1462034b09fcbebfb6ab999124fa40160ab9b",
+      "bytes": 12331,
+      "description": "Hash-bound claim and competency query program; validation does not establish scientific truth."
+    },
+    {
+      "id": "artifact:audit-comparison:program",
+      "identity": {
+        "label": "audit_comparison.py",
+        "type": "artifact",
+        "role": "audit comparison program"
+      },
+      "media_type": "text/x-python",
+      "path": "audit_comparison.py",
+      "path_scope": "packaged",
+      "sha256": "9b45fcc317bb4c9af99ab8419f017c284d47d0ce0a6138e9ace60b0de17e2eb0",
+      "bytes": 11613,
+      "description": "Hash-bound audit comparison program; validation does not establish scientific truth."
+    },
+    {
+      "id": "artifact:audit-comparison:specification",
+      "identity": {
+        "label": "audit_comparison_spec.json",
+        "type": "artifact",
+        "role": "frozen audit comparison specification"
+      },
+      "media_type": "application/json",
+      "path": "audit_comparison_spec.json",
+      "path_scope": "packaged",
+      "sha256": "3b644878bb985162bb2b95453c4a769c05736e68fe6f79638f383816f236f71d",
+      "bytes": 4682,
+      "description": "Hash-bound frozen audit comparison specification; validation does not establish scientific truth."
     },
     {
       "id": "artifact:reference:confirmatory:training",
@@ -25743,7 +25827,7 @@
       "media_type": "application/octet-stream",
       "path": "evidence/generated_outputs.sha256",
       "path_scope": "packaged",
-      "sha256": "d1b42ce9657c8ec0dd29a0b23b91f6ca5127afaf95871aff3a8fc6e840379937",
+      "sha256": "55c3f006a3e5dc2cff8a78c0b29fe5d7a12f813982d3b8f94b94a09bbedb789c",
       "bytes": 1052,
       "description": "Portable hashes of the generated manuscript tables and figures."
     }
@@ -25763,7 +25847,7 @@
         "config:1d7b381ba7d5601acb511371e46767cf3c4e8904a9a609de19b59290077e31bf"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5101:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -26058,7 +26142,7 @@
         "config:9770b22542b7ab2a660ed87c293412157ea808a45a0dc4baa2746de24f032880"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5101:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -26353,7 +26437,7 @@
         "config:acdd7d7f69d6ddd2b6b12f193cad9cb6b6c776567636027c139ed55cb7276f48"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5101:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -26648,7 +26732,7 @@
         "config:60960cfdd0ff74f6433675d833469e04fbed31a10b9bdf8454061544e29f5b43"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5113:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -26943,7 +27027,7 @@
         "config:d2bb30f3b41c8de16e7d95a675d2c10f7e147aaf91bc6d17f130c98a5e64386f"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5113:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -27238,7 +27322,7 @@
         "config:46c89d1a45935c319476136b78d005c7d0275ed792a08f352be93a91c93cbdf5"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5113:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -27533,7 +27617,7 @@
         "config:b6902b76f26b07eb8a3b16e7182594560b56fc2bed980a2d3112caad987246a3"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5147:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -27828,7 +27912,7 @@
         "config:be2807f2562360d26d123252538885827fe94a92ed0b312298d37eb3e9704adc"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5147:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -28123,7 +28207,7 @@
         "config:8ce7d7746b0fe79629582473df9072f2a25fe7345bf0ed4ff6c19eba07180ab1"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5147:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -28418,7 +28502,7 @@
         "config:17f0020134b494e06900c548a4e87d6bcd24af3255486a3db6fa670b967f29aa"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5167:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -28713,7 +28797,7 @@
         "config:100b4c1f7f5b896b3a3ca5e4c702b9a241f5c4599867377a90862509b9a3033c"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5167:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -29008,7 +29092,7 @@
         "config:d4ae0640e14cad96d8194c7febdfeb2bd0cbebe7f628f368de5d87243025255f"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5167:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -29303,7 +29387,7 @@
         "config:63285460b715ba928dbb0e9dc7347786b73d631c2b84188d9d1a22edfcd9f209"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5191:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -29598,7 +29682,7 @@
         "config:fa3d0b54a1ae982506940589a9bb7305301ed9eb3a05d43778f83b7663638cc4"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5191:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -29893,7 +29977,7 @@
         "config:1f422b1a2930152e0f6017c37792a09031ce6911da7401c98e25a4361489ab4b"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5191:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -30188,7 +30272,7 @@
         "config:506e5ec8adef5fea88ad8d8d046eadc2b0b68fd5898583e71af8c947fc5e1adb"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5227:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -30483,7 +30567,7 @@
         "config:c6288112d3b5d806579ba7e4309ff592bc9670a075fa3d4d32b33290f3aafde5"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5227:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -30778,7 +30862,7 @@
         "config:1888138d5a0a5d5a27c66620a58aa1a571b8004a1c1551a51d57185f81592631"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5227:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -31073,7 +31157,7 @@
         "config:84961131b22293824ce28fcf5caa0f2b73bb619989724fdfa8a1575fbfb7defc"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5261:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -31368,7 +31452,7 @@
         "config:697ebc8fba5fe2b81fdb5d026aa81dc0d30491e3b0d05f96194636e287aed5d6"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5261:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -31663,7 +31747,7 @@
         "config:2a633fe7331646ea0f5ea4ad7db8b63636105e662b2aabcd3a5b8b0be98540f7"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5261:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -31958,7 +32042,7 @@
         "config:57efde14436c462c3abc1f7c6bc0017098c33d5473a7b48d60416b211899e843"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5281:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -32253,7 +32337,7 @@
         "config:5d857fe6482276d6dc241fb396a4d5942450e3b1bd7f27093905a58f7e706864"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5281:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -32548,7 +32632,7 @@
         "config:57af0e31682c49c2c0ff9e474e1721efc9afa7006b95dfb0f2225300d5fdb686"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5281:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -32843,7 +32927,7 @@
         "config:9e341d3936e8bc1c300ce43ef956543ad6742ee9d2d5117fa63f4b6ee36efa33"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5309:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -33138,7 +33222,7 @@
         "config:a03bdbbf13be1aea8115928637e966a4ba015ab6f27de73ea662da4b4e030dae"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5309:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -33433,7 +33517,7 @@
         "config:7d883b49f5a0defe4625305ff10b0279bf088ba7363081e2c8ae0a78846b94d1"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5309:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -33728,7 +33812,7 @@
         "config:601cb3a94f8dca5361b91f827b50431beabafa34b2580be12c51e96e336ffd35"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5333:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -34023,7 +34107,7 @@
         "config:678246841aa96d3e10ac1b4883ae3876f799083ae3d751ab8ce3833cef5d186f"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5333:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -34318,7 +34402,7 @@
         "config:0e406c77a69afd403c995eba0b3292e1a009a83dea40181fa8a211d7ffb990f7"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:confirmatory:5333:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -34613,7 +34697,7 @@
         "config:909a12850e32e0ea5674783eeeaf85d90a021a9dad79491c5242b8911b199163"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6101:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -34860,7 +34944,7 @@
         "config:b20660941d8892828075e9968695b0ac5d28f486f839bc2017d9380bb05d1b12"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6101:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -35107,7 +35191,7 @@
         "config:e5dde182e97275b2ae3fcfc42dfa7edf09cc530d8e6963dcb7c385bc1b7c2d66"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6101:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -35354,7 +35438,7 @@
         "config:e0a62399689737419b28421d2d15128267f63855ebbc215329979c5f67fc04bc"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6131:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -35601,7 +35685,7 @@
         "config:df5bf87ec6e357a77b92cf0c6ffae7e60c2193efe7df003e9acdfc3729b6d7fd"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6131:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -35848,7 +35932,7 @@
         "config:52ecfcfc2df5ecc4856ae76ecd66103265c87292e7ece1f862f41b97b9634040"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6131:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -36095,7 +36179,7 @@
         "config:d85e7985c335f3710a2952701ff5adaf654694b28e045667569fa9f4602f9fe7"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6173:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -36342,7 +36426,7 @@
         "config:54c9c30055218abf446e611ab6b33e4212acbc53a872c0aeaa9dddb61c2a67bd"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6173:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -36589,7 +36673,7 @@
         "config:e3c0b0359b4a4d49291def4d34f49b79d52c959a5e0513ecacca28e017cf1a65"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_04:6173:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -36836,7 +36920,7 @@
         "config:928a321c028545d51574b4233462febc23363d6ead205b7cd984034370882c14"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6101:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -37083,7 +37167,7 @@
         "config:527057f0d089145dde023a1a3ec263ecc474bc2d039680e70ae595feb747f770"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6101:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -37330,7 +37414,7 @@
         "config:31c93267adb60f15e2fe6cf1da61070b246820d335f7fdcfb779f54bbaa5a5c3"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6101:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -37577,7 +37661,7 @@
         "config:f3610da4637b127d9d2b8f9bca882977eb1fdd449713db38914631b0925250fe"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6131:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -37824,7 +37908,7 @@
         "config:68c70ad9817c60687b9b926952c9bdd7bf9f4389557ffea3b2dddb05985d53eb"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6131:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -38071,7 +38155,7 @@
         "config:f0da6b4764b6fb4f3be2e793d5e5a49b9a951b398aac9e83c226b9574f633506"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6131:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -38318,7 +38402,7 @@
         "config:6281e656cd1b3d16bee9a3d3a0f13d7140077f2bd5741f8ac0b99487ee3a06c2"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6173:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -38565,7 +38649,7 @@
         "config:16c4fe7ff82e9c77479f9223633ff1330bb174a340906043974529a5d523a983"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6173:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -38812,7 +38896,7 @@
         "config:4a113c49809c8a139579c4c3b22f8fd31839a57852af528708684dea58fe84f6"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_08:6173:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -39059,7 +39143,7 @@
         "config:7d43497a0a58ea61dc0893925e6e24905b42a86f9373968d9e1c8e50479c1d9d"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6101:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -39306,7 +39390,7 @@
         "config:8c5f28d5fede94c4d5ebee63f5097d5bbf3f4b7a44ae5247d8f30a5c09125c37"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6101:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -39553,7 +39637,7 @@
         "config:6b54358d3cdbf1c9635f71789d407ad34bf9480ad309f888f365f9a8b4742e8a"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6101:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -39800,7 +39884,7 @@
         "config:a61187a000f088002890596de20ead3e7ed00ecf49dacf8203987b9b2f92b982"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6131:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -40047,7 +40131,7 @@
         "config:9a3c954a8f24eefd651bc8319a4ff6156fa69539081538f50f008b61fe21acb4"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6131:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -40294,7 +40378,7 @@
         "config:f9bb12ba2678cc632c93a4c60f1bfe6168151e0fb38db9b5f04d5246e15d98c0"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6131:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -40541,7 +40625,7 @@
         "config:67ab06f90129d054f36d105d442c8bf382aaf4298458408e665a755e03426f94"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6173:zero_rk4",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -40788,7 +40872,7 @@
         "config:80613b478051a91a44f7cc3fce7ed9423f8279eb36ba805acf84b0d3e05034b5"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6173:fixed_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -41035,7 +41119,7 @@
         "config:4ae80d61bc74bd9a209d26cc15b1ddd44f93a17d01abd02f3a5ce05bae00046a"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:configuration:long:blocks_12:6173:grouped_rate1",
       "qualification": "Exact configuration object extracted by JSON Pointer and identified by canonical SHA-256.",
@@ -41283,7 +41367,7 @@
         "spatial-domain:confirmatory:direct"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:spatial-domain:spatial-domain:confirmatory:direct",
       "qualification": "Coordinate metadata extracted from the declared hash-verified NPZ array member."
@@ -41303,7 +41387,7 @@
         "spatial-domain:confirmatory:continuation"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:spatial-domain:spatial-domain:confirmatory:continuation",
       "qualification": "Coordinate metadata extracted from the declared hash-verified NPZ array member."
@@ -41323,7 +41407,7 @@
         "spatial-domain:long-sequence:direct"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:spatial-domain:spatial-domain:long-sequence:direct",
       "qualification": "Coordinate metadata extracted from the declared hash-verified NPZ array member."
@@ -41343,7 +41427,7 @@
         "spatial-domain:long-sequence:continuation"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:spatial-domain:spatial-domain:long-sequence:continuation",
       "qualification": "Coordinate metadata extracted from the declared hash-verified NPZ array member."
@@ -41366,7 +41450,7 @@
         "controller-trace:confirmatory:5101:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5101:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41390,7 +41474,7 @@
         "controller-trace:confirmatory:5113:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5113:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41414,7 +41498,7 @@
         "controller-trace:confirmatory:5147:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5147:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41438,7 +41522,7 @@
         "controller-trace:confirmatory:5167:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5167:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41462,7 +41546,7 @@
         "controller-trace:confirmatory:5191:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5191:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41486,7 +41570,7 @@
         "controller-trace:confirmatory:5227:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5227:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41510,7 +41594,7 @@
         "controller-trace:confirmatory:5261:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5261:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41534,7 +41618,7 @@
         "controller-trace:confirmatory:5281:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5281:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41558,7 +41642,7 @@
         "controller-trace:confirmatory:5309:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5309:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41582,7 +41666,7 @@
         "controller-trace:confirmatory:5333:grouped_rate1"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:controller-trace:confirmatory:5333:grouped_rate1",
       "qualification": "Trace entity is hash-bound to the raw NPZ adaptive_trace, diagnostic JSON and pooled evidence record.",
@@ -41642,7 +41726,7 @@
         "metric:confirmatory:grouped-fixed:training"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:confirmatory:grouped-fixed:training",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41701,7 +41785,7 @@
         "metric:confirmatory:grouped-fixed:validation"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:confirmatory:grouped-fixed:validation",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41760,7 +41844,7 @@
         "metric:confirmatory:grouped-fixed:test"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:confirmatory:grouped-fixed:test",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41819,7 +41903,7 @@
         "metric:confirmatory:grouped-fixed:continuation-test"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:confirmatory:grouped-fixed:continuation-test",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41878,7 +41962,7 @@
         "metric:confirmatory:grouped-fixed:terminal"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:confirmatory:grouped-fixed:terminal",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41909,7 +41993,7 @@
         "metric:long:blocks_04:grouped-fixed:training"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:long:blocks_04:grouped-fixed:training",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41940,7 +42024,7 @@
         "metric:long:blocks_08:grouped-fixed:training"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:long:blocks_08:grouped-fixed:training",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -41971,7 +42055,7 @@
         "metric:long:blocks_12:grouped-fixed:training"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:long:blocks_12:grouped-fixed:training",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42026,7 +42110,7 @@
         "metric:long:grouped-fixed:training-trend"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:long:grouped-fixed:training-trend",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42055,7 +42139,7 @@
         "metric:controller:gradient-cosine"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:gradient-cosine",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42084,7 +42168,7 @@
         "metric:controller:weighted-gradient-ratio"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:weighted-gradient-ratio",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42113,7 +42197,7 @@
         "metric:controller:rk4-budget-share"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:rk4-budget-share",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42142,7 +42226,7 @@
         "metric:controller:replay-budget-share"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:replay-budget-share",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42171,7 +42255,7 @@
         "metric:controller:physics-budget-max-discrepancy"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:physics-budget-max-discrepancy",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42200,7 +42284,7 @@
         "metric:controller:constraint-budget-max-discrepancy"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:constraint-budget-max-discrepancy",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42229,7 +42313,7 @@
         "metric:controller:fixed-anchor-max-discrepancy"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:fixed-anchor-max-discrepancy",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42258,7 +42342,7 @@
         "metric:controller:guard-trigger-count"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:metric:metric:controller:guard-trigger-count",
       "qualification": "Aggregate metric reproduced from the declared JSON Pointer source and linked run-level evidence."
@@ -42385,7 +42469,7 @@
         "C1"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:claim:C1",
       "qualification": "This is a frozen secondary grouped-versus-fixed contrast. Held-out direct, continuation and terminal evidence limits generalisation of the training result."
@@ -42512,7 +42596,7 @@
         "C2"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:claim:C2",
       "qualification": "Failure to observe a reduction is not evidence of equivalence or absence of an effect."
@@ -42558,7 +42642,7 @@
         "C3"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:claim:C3",
       "qualification": "The linked locked protocol records only three paired seeds per block count; this is development evidence rather than confirmatory inference."
@@ -42589,7 +42673,7 @@
         "C4"
       ],
       "generator_id": "artifact:generator:provenance-builder",
-      "generator_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+      "generator_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:claim:C4",
       "qualification": "Updates within each trace are serially dependent and no mediator was randomized. These diagnostics establish controller behaviour and budget invariants, not improved held-out prediction or a causal mediator effect."
@@ -42614,7 +42698,7 @@
         "artifact:table:confirmatory"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:table:confirmatory",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42639,7 +42723,7 @@
         "artifact:figure:confirmatory:pdf"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:confirmatory:pdf",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42664,7 +42748,7 @@
         "artifact:figure:confirmatory:png"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:confirmatory:png",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42687,7 +42771,7 @@
         "artifact:table:long"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:table:long",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42710,7 +42794,7 @@
         "artifact:figure:long:pdf"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:long:pdf",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42733,7 +42817,7 @@
         "artifact:figure:long:png"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:long:png",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42760,7 +42844,7 @@
         "artifact:table:controller"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:table:controller",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42787,7 +42871,7 @@
         "artifact:figure:controller:pdf"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:controller:pdf",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42814,7 +42898,7 @@
         "artifact:figure:controller:png"
       ],
       "generator_id": "artifact:generator:evidence-synthesis",
-      "generator_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+      "generator_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
       "package_version": "2.0.0",
       "prov_activity_id": "activity:generation:presentation:artifact:figure:controller:png",
       "qualification": "Generated table or figure is explicitly derived from the formal claim and aggregate metric entities listed as inputs."
@@ -42902,7 +42986,7 @@
         "type": "prov:SoftwareAgent",
         "software_version": "source-snapshot-no-semantic-version",
         "source_artifact_id": "artifact:generator:evidence-synthesis",
-        "source_digest": "7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86",
+        "source_digest": "c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35",
         "qualification": "No semantic version was recorded; the source SHA-256 is the operative identifier."
       },
       {
@@ -42915,7 +42999,7 @@
         "type": "prov:SoftwareAgent",
         "software_version": "2.0.0",
         "source_artifact_id": "artifact:generator:provenance-builder",
-        "source_digest": "81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2",
+        "source_digest": "4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c",
         "qualification": "Package version and source SHA-256 jointly identify this builder."
       }
     ],
@@ -51345,6 +51429,72 @@
         "type": "prov:Entity",
         "record_type": "artifact",
         "record_id": "artifact:generator:provenance-builder"
+      },
+      {
+        "id": "entity:artifact:profile-schema",
+        "identity": {
+          "label": "audit_record.schema.json",
+          "type": "prov:Entity",
+          "role": "application-profile schema"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:profile-schema"
+      },
+      {
+        "id": "entity:artifact:validator:profile",
+        "identity": {
+          "label": "profile_validation.py",
+          "type": "prov:Entity",
+          "role": "generic profile validator"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:validator:profile"
+      },
+      {
+        "id": "entity:artifact:validator:study",
+        "identity": {
+          "label": "validate_provenance.py",
+          "type": "prov:Entity",
+          "role": "study bundle validator"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:validator:study"
+      },
+      {
+        "id": "entity:artifact:query:claims",
+        "identity": {
+          "label": "query_claim_evidence.py",
+          "type": "prov:Entity",
+          "role": "claim and competency query program"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:query:claims"
+      },
+      {
+        "id": "entity:artifact:audit-comparison:program",
+        "identity": {
+          "label": "audit_comparison.py",
+          "type": "prov:Entity",
+          "role": "audit comparison program"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:audit-comparison:program"
+      },
+      {
+        "id": "entity:artifact:audit-comparison:specification",
+        "identity": {
+          "label": "audit_comparison_spec.json",
+          "type": "prov:Entity",
+          "role": "frozen audit comparison specification"
+        },
+        "type": "prov:Entity",
+        "record_type": "artifact",
+        "record_id": "artifact:audit-comparison:specification"
       },
       {
         "id": "entity:artifact:reference:confirmatory:training",

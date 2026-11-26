@@ -1,0 +1,313 @@
+{
+  "result_schema_version": "1.0.0",
+  "record_id": "allen-cahn-dim-provenance-20261125",
+  "specification_sha256": "3b644878bb985162bb2b95453c4a769c05736e68fe6f79638f383816f236f71d",
+  "source_record_sha256": "522968f6afbacf87dd74c5a31a4333260178060373e805adee118358cf908433",
+  "runner_sha256": "9b45fcc317bb4c9af99ab8419f017c284d47d0ce0a6138e9ace60b0de17e2eb0",
+  "profile_checker_sha256": "019b5a519e81682cc8b5be20f8281917ec6bf2ed727367629332b6ad64614cd2",
+  "schema_validator_sha256": "4c314cfbbaa271594e94f04a75d744c7d843087b55e1984e236d02ee2f6be5b3",
+  "schema_sha256": "5ce4a96b8faeda6e43b248459acca8d2477d23f439eeac3442171c6902100e80",
+  "packaged_artifacts_checked": 288,
+  "external_artifacts_excluded": 91,
+  "baselines": [
+    {
+      "id": "inventory",
+      "label": "Inventory and hashes",
+      "rules": "Check existence, byte count and SHA-256 for packaged artifacts and the audit-record export. Do not inspect scientific metadata or graph relationships."
+    },
+    {
+      "id": "links",
+      "label": "Links and hashes",
+      "rules": "Apply the same inventory checks plus identifier uniqueness and referential integrity using validate_links. Do not require application-specific scientific fields or their consistency. This is a configured link-checking baseline, not a claim about all PROV or RO-Crate tools."
+    },
+    {
+      "id": "profile",
+      "label": "Application profile and hashes",
+      "rules": "Apply the same inventory checks plus validate_profile, including its schema, link checks and application-specific cross-record consistency rules. Exclude frozen Allen--Cahn counts, result signs, confidence intervals and other case-regression assertions."
+    }
+  ],
+  "cases": [
+    {
+      "id": "clean_original",
+      "kind": "valid_control",
+      "label": "Unmodified record",
+      "changed_locations": [],
+      "record_export_sha256": "522968f6afbacf87dd74c5a31a4333260178060373e805adee118358cf908433",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "clean_reordered",
+      "kind": "valid_control",
+      "label": "Reordered entity lists",
+      "changed_locations": [
+        "/protocols",
+        "/configurations",
+        "/spatial_domains",
+        "/runs",
+        "/checkpoints",
+        "/predictions",
+        "/evaluations",
+        "/controller_traces",
+        "/metrics",
+        "/claims",
+        "/artifacts",
+        "/generations"
+      ],
+      "record_export_sha256": "b66fcb033d1dbfdbb3fc7b6c22a2cf337b880b23edf3187c7086ee97c3a3e128",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "missing_mechanism",
+      "kind": "structural_fault",
+      "label": "Missing prediction mechanism",
+      "changed_locations": [
+        "/predictions/0/mechanism"
+      ],
+      "record_export_sha256": "a134ca0d6f567166c5709356df45de1657c258682bf834beb4429daea0dda1f4",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "$.predictions[0]: missing required property mechanism"
+          ]
+        }
+      }
+    },
+    {
+      "id": "wrong_interval",
+      "kind": "structural_fault",
+      "label": "Evaluation outside prediction interval",
+      "changed_locations": [
+        "/evaluations/0/interval/end"
+      ],
+      "record_export_sha256": "aedb2a2313c9e9d64fa95afe8c9ebb754c5c7aa8213a258440cee797f35e8beb",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "evaluation:confirmatory:5101:zero_rk4:training: evaluation interval extends outside prediction temporal domain"
+          ]
+        }
+      }
+    },
+    {
+      "id": "broken_checkpoint",
+      "kind": "structural_fault",
+      "label": "Unresolved checkpoint link",
+      "changed_locations": [
+        "/predictions/0/checkpoint_id"
+      ],
+      "record_export_sha256": "693f076470c1c1cfc8912f6812ae1747471c0c1cf57af7cf0e0d9ec280b0a5e2",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": false,
+          "errors": [
+            "predictions[0].checkpoint_id: unresolved checkpoints reference 'checkpoint:missing'"
+          ]
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "predictions[0].checkpoint_id: unresolved checkpoints reference 'checkpoint:missing'"
+          ]
+        }
+      }
+    },
+    {
+      "id": "missing_limiting_evidence",
+      "kind": "structural_fault",
+      "label": "Absent limiting-evidence field",
+      "changed_locations": [
+        "/claims/0/limiting_evidence_ids"
+      ],
+      "record_export_sha256": "6e886f84c8d34ea26c23abaab0a7c735c5e333275a8fc82b88638d28bc72d27d",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "$.claims[0]: missing required property limiting_evidence_ids"
+          ]
+        }
+      }
+    },
+    {
+      "id": "inconsistent_status",
+      "kind": "structural_fault",
+      "label": "Unsupported primary-status promotion",
+      "changed_locations": [
+        "/claims/0/inferential_status"
+      ],
+      "record_export_sha256": "0de5a61cce969be2f0dcb8d03f022fb6b2f33d23984f49ee587b55663def579e",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "C1: locked_confirmatory_primary claim exceeds linked metric metric:confirmatory:grouped-fixed:training status locked_confirmatory_secondary"
+          ]
+        }
+      }
+    },
+    {
+      "id": "modified_result_bytes",
+      "kind": "integrity_fault",
+      "label": "Modified packaged result bytes",
+      "changed_locations": [
+        "artifact:metrics:confirmatory:5101:zero_rk4 (bytes only)"
+      ],
+      "record_export_sha256": "522968f6afbacf87dd74c5a31a4333260178060373e805adee118358cf908433",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": true,
+      "outcomes": {
+        "inventory": {
+          "accepted": false,
+          "errors": [
+            "Byte count mismatch: artifact:metrics:confirmatory:5101:zero_rk4",
+            "SHA-256 mismatch: artifact:metrics:confirmatory:5101:zero_rk4"
+          ]
+        },
+        "links": {
+          "accepted": false,
+          "errors": [
+            "Byte count mismatch: artifact:metrics:confirmatory:5101:zero_rk4",
+            "SHA-256 mismatch: artifact:metrics:confirmatory:5101:zero_rk4"
+          ]
+        },
+        "profile": {
+          "accepted": false,
+          "errors": [
+            "Byte count mismatch: artifact:metrics:confirmatory:5101:zero_rk4",
+            "SHA-256 mismatch: artifact:metrics:confirmatory:5101:zero_rk4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "false_narrative",
+      "kind": "blind_spot_probe",
+      "label": "False scientific narrative",
+      "changed_locations": [
+        "/claims/0/statement"
+      ],
+      "record_export_sha256": "da1d3f542bd13d12ce1657795540ff4fe192e6d0b8cfcc0a05dfec9679c57251",
+      "record_checksum_refreshed": true,
+      "artifact_checksum_retained": false,
+      "outcomes": {
+        "inventory": {
+          "accepted": true,
+          "errors": []
+        },
+        "links": {
+          "accepted": true,
+          "errors": []
+        },
+        "profile": {
+          "accepted": true,
+          "errors": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "inventory": {
+      "faults_detected": 1,
+      "faults_total": 6,
+      "false_positives": 0,
+      "valid_controls_total": 2,
+      "blind_spot_probes_rejected": 0,
+      "blind_spot_probes_total": 1
+    },
+    "links": {
+      "faults_detected": 2,
+      "faults_total": 6,
+      "false_positives": 0,
+      "valid_controls_total": 2,
+      "blind_spot_probes_rejected": 0,
+      "blind_spot_probes_total": 1
+    },
+    "profile": {
+      "faults_detected": 6,
+      "faults_total": 6,
+      "false_positives": 0,
+      "valid_controls_total": 2,
+      "blind_spot_probes_rejected": 0,
+      "blind_spot_probes_total": 1
+    }
+  },
+  "interpretation": "A developer-designed fault-injection check of these implementations on one record. It is not an estimate of field detection accuracy, interoperability, audit time saved or external validity, and it cannot establish that metadata or scientific claims are true. A missing required limitation-disclosure field is detectable; an undeclared scientific limitation is not thereby discoverable."
+}

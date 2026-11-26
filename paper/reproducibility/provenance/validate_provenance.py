@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Validate the DIM provenance bundle without third-party dependencies.
 
-Default validation is portable and never overwrites validation_report.json.
+Default study validation is portable and never overwrites validation_report.json.
+The --mode profile path checks in-memory schema and semantic consistency only;
+it deliberately omits file integrity and frozen Allen--Cahn regression.
+The default --mode study retains all integrity and case regression checks.
 Use ``--verify-external --write-report`` only in the source workspace to create
 the formal report that records both packaged and external hash verification.
 """
@@ -205,9 +208,15 @@ def load_query_module():
 
 def main() -> int:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--mode", choices=["profile", "study"], default="study", help="profile: generic metadata only; study: profile plus bytes and frozen-case regression")
+    parser.add_argument("--record", type=Path, help="audit JSON to validate; alternative records require --mode profile")
     parser.add_argument("--verify-external", action="store_true", help="hash external workspace artifacts as well as packaged files")
     parser.add_argument("--write-report", action="store_true", help="write formal validation_report.json; requires --verify-external")
     args = parser.parse_args()
+    if args.record and args.mode != "profile":
+        parser.error("--record is for generic --mode profile; study mode audits the frozen local bundle")
+    if args.mode == "profile" and (args.verify_external or args.write_report):
+        parser.error("profile mode checks metadata only; use study mode for byte verification and the formal report")
     if args.write_report and not args.verify_external:
         parser.error("--write-report requires --verify-external so a formal report cannot downgrade external verification")
 
@@ -217,7 +226,15 @@ def main() -> int:
         checks.append({"name": name, "status": "passed", "detail": detail})
 
     schema = json.loads((ROOT / "audit_record.schema.json").read_text(encoding="utf-8"))
-    audit = json.loads((ROOT / "allen_cahn_audit_record.json").read_text(encoding="utf-8"))
+    audit_path = args.record or ROOT / "allen_cahn_audit_record.json"
+    audit = json.loads(audit_path.read_text(encoding="utf-8"))
+    from profile_validation import validate_profile
+    profile_report = validate_profile(audit, schema)
+    if args.mode == "profile":
+        print(json.dumps({"validation_mode": "profile", "filesystem_integrity_performed": False, "frozen_study_regression_performed": False, **profile_report}, indent=2))
+        return 0 if profile_report["passed"] else 1
+    if not profile_report["passed"]:
+        raise AssertionError("generic profile validation failed:\n" + "\n".join(profile_report["errors"][:100]))
     if schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema":
         raise AssertionError("schema does not declare JSON Schema Draft 2020-12")
     validator = SchemaValidator(schema)
@@ -701,7 +718,7 @@ def main() -> int:
     query_module = load_query_module()
     rebuilt_queries = query_module.build_query_results(audit)
     stored_queries = json.loads((ROOT / "competency_query_results.json").read_text(encoding="utf-8"))
-    if rebuilt_queries != stored_queries or [item["competency_query_id"] for item in stored_queries["queries"]] != ["CQ1", "CQ2", "CQ3", "CQ4"]:
+    if rebuilt_queries != stored_queries or [item["competency_question_id"] for item in stored_queries["competency_results"]] != [f"CQ{index}" for index in range(1, 7)]:
         raise AssertionError("stored competency-query output cannot be rebuilt from the audit record")
     for query in stored_queries["queries"]:
         for boundary in ("supporting", "limiting"):
@@ -721,11 +738,11 @@ def main() -> int:
             if query[boundary]["configuration_ids"] != expected_configs:
                 raise AssertionError(f"competency-query configuration summary differs from paths: {query['claim_id']} {boundary}")
     if not all(next(item for item in stored_queries["queries"] if item["claim_id"] == claim_id)["supporting"]["configuration_ids"] for claim_id in ["C1", "C2"]):
-        raise AssertionError("CQ1/CQ2 do not return exact configuration entities")
+        raise AssertionError("C1/C2 claim traversals do not return exact configuration entities for CQ1")
     c4_query = next(item for item in stored_queries["queries"] if item["claim_id"] == "C4")
     if set(c4_query["supporting"]["controller_trace_ids"]) != set(controller_traces):
-        raise AssertionError("CQ4 does not traverse controller traces")
-    passed("competency_queries", "dependency-free CQ1--CQ4 program reproduces stored supporting/limiting paths through predictions/evaluations/controller traces, runs, exact configurations, spatial domains and protocols")
+        raise AssertionError("C4 claim traversal does not resolve controller traces for CQ1/CQ4")
+    passed("competency_queries", "claim queries C1--C4 are distinct from CQ1--CQ6; rebuilt CQ1--CQ4 answers report origins, mechanisms/domains, evaluations and claim boundaries, while CQ5--CQ6 explicitly delegate unperformed integrity/schema checks")
 
     canonical_crate_path = ROOT / "ro-crate-metadata.json"
     alias_crate_path = ROOT / "ro-crate-metadata.jsonld"
@@ -767,6 +784,13 @@ def main() -> int:
         "schema_version": 2,
         "validated_utc": datetime.now(timezone.utc).isoformat(),
         "status": "passed",
+        "validation_layers": {
+            "generic_profile": profile_report,
+            "frozen_study_regression": {
+                "status": "passed", "scope": "Allen--Cahn frozen campaign only; counts, seeds, stored-source values and C1--C4 outcome assertions are not general profile requirements",
+                "checks": [check["name"] for check in checks],
+            },
+        },
         "validation_modes": {
             "packaged": {"status": "passed", "performed": True, "verified_artifacts": verified_packaged},
             "external_workspace": {

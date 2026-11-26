@@ -28,10 +28,25 @@
       ],
       "hasPart": [
         {
+          "@id": "AUDIT_COMPARISON.md"
+        },
+        {
           "@id": "README.md"
         },
         {
           "@id": "allen_cahn_audit_record.json"
+        },
+        {
+          "@id": "audit_comparison.py"
+        },
+        {
+          "@id": "audit_comparison_results.json"
+        },
+        {
+          "@id": "audit_comparison_spec.json"
+        },
+        {
+          "@id": "audit_comparison_table.tex"
         },
         {
           "@id": "audit_record.schema.json"
@@ -889,7 +904,13 @@
           "@id": "evidence/spatial_domain_sources.json"
         },
         {
+          "@id": "profile_validation.py"
+        },
+        {
           "@id": "query_claim_evidence.py"
+        },
+        {
+          "@id": "test_profile_validation.py"
         },
         {
           "@id": "validate_provenance.py"
@@ -903,37 +924,77 @@
       "description": "No reuse licence has been assigned to this evidence bundle. This metadata statement grants no reuse rights; source components retain their own terms."
     },
     {
+      "@id": "AUDIT_COMPARISON.md",
+      "@type": "File",
+      "name": "AUDIT_COMPARISON.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "3956",
+      "identifier": "sha256:0166b2af64dc0fe8603e8ee1a586cf4569985c7cdb6e2f66f2051a194df3e912"
+    },
+    {
       "@id": "README.md",
       "@type": "File",
       "name": "README.md",
       "encodingFormat": "text/markdown",
-      "contentSize": "6856",
-      "identifier": "sha256:57159c8633c47eccadc2c90a6d77baad16c81593405e29ef36d5430cc5df7861"
+      "contentSize": "8845",
+      "identifier": "sha256:ee6c6df3f167b83194e8fd1f34c72db6f3f18acca334a5baf1bc471e05e92525"
     },
     {
       "@id": "allen_cahn_audit_record.json",
       "@type": "File",
       "name": "allen_cahn_audit_record.json",
       "encodingFormat": "application/json",
-      "contentSize": "4812878",
-      "identifier": "sha256:eb3e25a4cebf8a54b6d8d184dc52a4d85cfd5457c8ae4461646654658e28ba43",
+      "contentSize": "4818160",
+      "identifier": "sha256:522968f6afbacf87dd74c5a31a4333260178060373e805adee118358cf908433",
       "description": "Custom DIM audit record containing a W3C PROV class/relation projection; this RO-Crate root does not assert PROV conformance."
+    },
+    {
+      "@id": "audit_comparison.py",
+      "@type": "File",
+      "name": "audit_comparison.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "11613",
+      "identifier": "sha256:9b45fcc317bb4c9af99ab8419f017c284d47d0ce0a6138e9ace60b0de17e2eb0"
+    },
+    {
+      "@id": "audit_comparison_results.json",
+      "@type": "File",
+      "name": "audit_comparison_results.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10146",
+      "identifier": "sha256:47b320f15fd8921225ed75ad60b4e232e8f60e84bc716cc64a9a7783d7a812eb"
+    },
+    {
+      "@id": "audit_comparison_spec.json",
+      "@type": "File",
+      "name": "audit_comparison_spec.json",
+      "encodingFormat": "application/json",
+      "contentSize": "4682",
+      "identifier": "sha256:3b644878bb985162bb2b95453c4a769c05736e68fe6f79638f383816f236f71d"
+    },
+    {
+      "@id": "audit_comparison_table.tex",
+      "@type": "File",
+      "name": "audit_comparison_table.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "1102",
+      "identifier": "sha256:dbe1f03e75e31e3043d2ea0b040ddfa816dd19d4c5655b4c14cf70729b3e4b2a"
     },
     {
       "@id": "audit_record.schema.json",
       "@type": "File",
       "name": "audit_record.schema.json",
       "encodingFormat": "application/json",
-      "contentSize": "21164",
-      "identifier": "sha256:16cbbcf6fe27910b6dd40b1be8261331a4cd73463a7883904397373382f9aef4"
+      "contentSize": "33497",
+      "identifier": "sha256:5ce4a96b8faeda6e43b248459acca8d2477d23f439eeac3442171c6902100e80"
     },
     {
       "@id": "build_provenance.py",
       "@type": "File",
       "name": "build_provenance.py",
       "encodingFormat": "text/x-python",
-      "contentSize": "87569",
-      "identifier": "sha256:81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2"
+      "contentSize": "88465",
+      "identifier": "sha256:4cbb7320a037939d68acd71cd64af19126785b51e27310997cd1dd3eabf3f85c"
     },
     {
       "@id": "claim_evidence_matrix.csv",
@@ -948,8 +1009,8 @@
       "@type": "File",
       "name": "competency_query_results.json",
       "encodingFormat": "application/json",
-      "contentSize": "558211",
-      "identifier": "sha256:babd2f32645c2786fe66f0a7d15c0c9d9eb621f3634d8c70f4c2fa1b4d4eeeaa"
+      "contentSize": "750970",
+      "identifier": "sha256:be07e8578e8b017e4cf2f26de35351278d9f72bd36f09eea6c2034cbd34c875b"
     },
     {
       "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/completion.json",
@@ -2908,8 +2969,8 @@
       "@type": "File",
       "name": "figure_confirmatory_paired.pdf",
       "encodingFormat": "application/pdf",
-      "contentSize": "23335",
-      "identifier": "sha256:7c193e008bf3f50ecb6d4a0787b2171ad28ba6fece3d3b1fa78f5d6949512046"
+      "contentSize": "23295",
+      "identifier": "sha256:996906685756edb4e80280b45cdd292ada28abf27bbf8d8f7faf60d2a89f5a1d"
     },
     {
       "@id": "evidence/generated/figure_confirmatory_paired.png",
@@ -2940,8 +3001,8 @@
       "@type": "File",
       "name": "figure_long_sequence_effects.pdf",
       "encodingFormat": "application/pdf",
-      "contentSize": "22109",
-      "identifier": "sha256:a15d4d2eb345e4485f95498b1dcd8b5cf9c0156709a9de914ebd1d6d183e70f1"
+      "contentSize": "22069",
+      "identifier": "sha256:28f42339509ccf48c61149fc40bb5eabe720f9c94618a8ac61722f2bc9881448"
     },
     {
       "@id": "evidence/generated/figure_long_sequence_effects.png",
@@ -2981,7 +3042,7 @@
       "name": "generated_outputs.sha256",
       "encodingFormat": "application/octet-stream",
       "contentSize": "1052",
-      "identifier": "sha256:d1b42ce9657c8ec0dd29a0b23b91f6ca5127afaf95871aff3a8fc6e840379937"
+      "identifier": "sha256:55c3f006a3e5dc2cff8a78c0b29fe5d7a12f813982d3b8f94b94a09bbedb789c"
     },
     {
       "@id": "evidence/generators/confirmatory_evaluator.py",
@@ -3004,8 +3065,8 @@
       "@type": "File",
       "name": "evidence_synthesizer.py",
       "encodingFormat": "text/x-python",
-      "contentSize": "16886",
-      "identifier": "sha256:7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86"
+      "contentSize": "17140",
+      "identifier": "sha256:c2496f432768a0091f4227bf4d3a2ef85427fb63e57929d4e33b552abc1e8a35"
     },
     {
       "@id": "evidence/generators/long_evaluator.py",
@@ -3200,20 +3261,36 @@
       "identifier": "sha256:378c32ef76b35f67f798d67b7390021d83571af63654d76b256d3422aa48aa14"
     },
     {
+      "@id": "profile_validation.py",
+      "@type": "File",
+      "name": "profile_validation.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "15148",
+      "identifier": "sha256:019b5a519e81682cc8b5be20f8281917ec6bf2ed727367629332b6ad64614cd2"
+    },
+    {
       "@id": "query_claim_evidence.py",
       "@type": "File",
       "name": "query_claim_evidence.py",
       "encodingFormat": "text/x-python",
-      "contentSize": "8204",
-      "identifier": "sha256:8c2c760d8da221aadafac291787ff086c4f3d02af1a45af733d527faf9162fbe"
+      "contentSize": "12331",
+      "identifier": "sha256:aa0fb330b70bbc47f66b5df426c1462034b09fcbebfb6ab999124fa40160ab9b"
+    },
+    {
+      "@id": "test_profile_validation.py",
+      "@type": "File",
+      "name": "test_profile_validation.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "7031",
+      "identifier": "sha256:fa723caaae297d50f50a65326d2018f1c1b30a7ed2679a5ecb55528eac915784"
     },
     {
       "@id": "validate_provenance.py",
       "@type": "File",
       "name": "validate_provenance.py",
       "encodingFormat": "text/x-python",
-      "contentSize": "59098",
-      "identifier": "sha256:5934444cc166023a6b2a46ac145882df3b881051da8a156bb545c83cbe6734c1"
+      "contentSize": "61022",
+      "identifier": "sha256:4c314cfbbaa271594e94f04a75d744c7d843087b55e1984e236d02ee2f6be5b3"
     }
   ]
 }

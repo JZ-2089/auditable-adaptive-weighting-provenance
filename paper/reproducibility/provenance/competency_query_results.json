@@ -1,10 +1,4340 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "audit_record_id": "allen-cahn-dim-provenance-20261125",
-  "description": "Operational CQ1--CQ4 claim-to-protocol traversals rebuilt directly from the audit record.",
+  "description": "Claim identifiers are independent of six competency questions; traversals answer CQ1--CQ4 and report the separate verification requirements of CQ5--CQ6.",
+  "competency_results": [
+    {
+      "competency_question_id": "CQ1",
+      "question": "Which protocol, configuration, seed, run and checkpoint produced a scored prediction?",
+      "execution": "record_query",
+      "results": [
+        {
+          "id": "run:confirmatory:5101:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:9770b22542b7ab2a660ed87c293412157ea808a45a0dc4baa2746de24f032880",
+          "config_digest": "9770b22542b7ab2a660ed87c293412157ea808a45a0dc4baa2746de24f032880",
+          "seed": 5101,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5101:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5101:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:acdd7d7f69d6ddd2b6b12f193cad9cb6b6c776567636027c139ed55cb7276f48",
+          "config_digest": "acdd7d7f69d6ddd2b6b12f193cad9cb6b6c776567636027c139ed55cb7276f48",
+          "seed": 5101,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5101:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5113:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:d2bb30f3b41c8de16e7d95a675d2c10f7e147aaf91bc6d17f130c98a5e64386f",
+          "config_digest": "d2bb30f3b41c8de16e7d95a675d2c10f7e147aaf91bc6d17f130c98a5e64386f",
+          "seed": 5113,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5113:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5113:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:46c89d1a45935c319476136b78d005c7d0275ed792a08f352be93a91c93cbdf5",
+          "config_digest": "46c89d1a45935c319476136b78d005c7d0275ed792a08f352be93a91c93cbdf5",
+          "seed": 5113,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5113:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5147:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:be2807f2562360d26d123252538885827fe94a92ed0b312298d37eb3e9704adc",
+          "config_digest": "be2807f2562360d26d123252538885827fe94a92ed0b312298d37eb3e9704adc",
+          "seed": 5147,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5147:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5147:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:8ce7d7746b0fe79629582473df9072f2a25fe7345bf0ed4ff6c19eba07180ab1",
+          "config_digest": "8ce7d7746b0fe79629582473df9072f2a25fe7345bf0ed4ff6c19eba07180ab1",
+          "seed": 5147,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5147:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5167:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:100b4c1f7f5b896b3a3ca5e4c702b9a241f5c4599867377a90862509b9a3033c",
+          "config_digest": "100b4c1f7f5b896b3a3ca5e4c702b9a241f5c4599867377a90862509b9a3033c",
+          "seed": 5167,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5167:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5167:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:d4ae0640e14cad96d8194c7febdfeb2bd0cbebe7f628f368de5d87243025255f",
+          "config_digest": "d4ae0640e14cad96d8194c7febdfeb2bd0cbebe7f628f368de5d87243025255f",
+          "seed": 5167,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5167:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5191:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:fa3d0b54a1ae982506940589a9bb7305301ed9eb3a05d43778f83b7663638cc4",
+          "config_digest": "fa3d0b54a1ae982506940589a9bb7305301ed9eb3a05d43778f83b7663638cc4",
+          "seed": 5191,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5191:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5191:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:1f422b1a2930152e0f6017c37792a09031ce6911da7401c98e25a4361489ab4b",
+          "config_digest": "1f422b1a2930152e0f6017c37792a09031ce6911da7401c98e25a4361489ab4b",
+          "seed": 5191,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5191:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5227:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:c6288112d3b5d806579ba7e4309ff592bc9670a075fa3d4d32b33290f3aafde5",
+          "config_digest": "c6288112d3b5d806579ba7e4309ff592bc9670a075fa3d4d32b33290f3aafde5",
+          "seed": 5227,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5227:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5227:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:1888138d5a0a5d5a27c66620a58aa1a571b8004a1c1551a51d57185f81592631",
+          "config_digest": "1888138d5a0a5d5a27c66620a58aa1a571b8004a1c1551a51d57185f81592631",
+          "seed": 5227,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5227:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5261:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:697ebc8fba5fe2b81fdb5d026aa81dc0d30491e3b0d05f96194636e287aed5d6",
+          "config_digest": "697ebc8fba5fe2b81fdb5d026aa81dc0d30491e3b0d05f96194636e287aed5d6",
+          "seed": 5261,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5261:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5261:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:2a633fe7331646ea0f5ea4ad7db8b63636105e662b2aabcd3a5b8b0be98540f7",
+          "config_digest": "2a633fe7331646ea0f5ea4ad7db8b63636105e662b2aabcd3a5b8b0be98540f7",
+          "seed": 5261,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5261:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5281:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:5d857fe6482276d6dc241fb396a4d5942450e3b1bd7f27093905a58f7e706864",
+          "config_digest": "5d857fe6482276d6dc241fb396a4d5942450e3b1bd7f27093905a58f7e706864",
+          "seed": 5281,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5281:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5281:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:57af0e31682c49c2c0ff9e474e1721efc9afa7006b95dfb0f2225300d5fdb686",
+          "config_digest": "57af0e31682c49c2c0ff9e474e1721efc9afa7006b95dfb0f2225300d5fdb686",
+          "seed": 5281,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5281:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5309:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:a03bdbbf13be1aea8115928637e966a4ba015ab6f27de73ea662da4b4e030dae",
+          "config_digest": "a03bdbbf13be1aea8115928637e966a4ba015ab6f27de73ea662da4b4e030dae",
+          "seed": 5309,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5309:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5309:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:7d883b49f5a0defe4625305ff10b0279bf088ba7363081e2c8ae0a78846b94d1",
+          "config_digest": "7d883b49f5a0defe4625305ff10b0279bf088ba7363081e2c8ae0a78846b94d1",
+          "seed": 5309,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5309:grouped_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5333:fixed_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:678246841aa96d3e10ac1b4883ae3876f799083ae3d751ab8ce3833cef5d186f",
+          "config_digest": "678246841aa96d3e10ac1b4883ae3876f799083ae3d751ab8ce3833cef5d186f",
+          "seed": 5333,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5333:fixed_rate1:final"
+        },
+        {
+          "id": "run:confirmatory:5333:grouped_rate1",
+          "protocol_id": "protocol:confirmatory",
+          "config_id": "config:0e406c77a69afd403c995eba0b3292e1a009a83dea40181fa8a211d7ffb990f7",
+          "config_digest": "0e406c77a69afd403c995eba0b3292e1a009a83dea40181fa8a211d7ffb990f7",
+          "seed": 5333,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:confirmatory:5333:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6101:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:b20660941d8892828075e9968695b0ac5d28f486f839bc2017d9380bb05d1b12",
+          "config_digest": "b20660941d8892828075e9968695b0ac5d28f486f839bc2017d9380bb05d1b12",
+          "seed": 6101,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6101:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6101:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:e5dde182e97275b2ae3fcfc42dfa7edf09cc530d8e6963dcb7c385bc1b7c2d66",
+          "config_digest": "e5dde182e97275b2ae3fcfc42dfa7edf09cc530d8e6963dcb7c385bc1b7c2d66",
+          "seed": 6101,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6101:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6131:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:df5bf87ec6e357a77b92cf0c6ffae7e60c2193efe7df003e9acdfc3729b6d7fd",
+          "config_digest": "df5bf87ec6e357a77b92cf0c6ffae7e60c2193efe7df003e9acdfc3729b6d7fd",
+          "seed": 6131,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6131:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6131:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:52ecfcfc2df5ecc4856ae76ecd66103265c87292e7ece1f862f41b97b9634040",
+          "config_digest": "52ecfcfc2df5ecc4856ae76ecd66103265c87292e7ece1f862f41b97b9634040",
+          "seed": 6131,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6131:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6173:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:54c9c30055218abf446e611ab6b33e4212acbc53a872c0aeaa9dddb61c2a67bd",
+          "config_digest": "54c9c30055218abf446e611ab6b33e4212acbc53a872c0aeaa9dddb61c2a67bd",
+          "seed": 6173,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6173:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_04:6173:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:e3c0b0359b4a4d49291def4d34f49b79d52c959a5e0513ecacca28e017cf1a65",
+          "config_digest": "e3c0b0359b4a4d49291def4d34f49b79d52c959a5e0513ecacca28e017cf1a65",
+          "seed": 6173,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_04:6173:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6101:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:527057f0d089145dde023a1a3ec263ecc474bc2d039680e70ae595feb747f770",
+          "config_digest": "527057f0d089145dde023a1a3ec263ecc474bc2d039680e70ae595feb747f770",
+          "seed": 6101,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6101:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6101:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:31c93267adb60f15e2fe6cf1da61070b246820d335f7fdcfb779f54bbaa5a5c3",
+          "config_digest": "31c93267adb60f15e2fe6cf1da61070b246820d335f7fdcfb779f54bbaa5a5c3",
+          "seed": 6101,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6101:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6131:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:68c70ad9817c60687b9b926952c9bdd7bf9f4389557ffea3b2dddb05985d53eb",
+          "config_digest": "68c70ad9817c60687b9b926952c9bdd7bf9f4389557ffea3b2dddb05985d53eb",
+          "seed": 6131,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6131:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6131:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:f0da6b4764b6fb4f3be2e793d5e5a49b9a951b398aac9e83c226b9574f633506",
+          "config_digest": "f0da6b4764b6fb4f3be2e793d5e5a49b9a951b398aac9e83c226b9574f633506",
+          "seed": 6131,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6131:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6173:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:16c4fe7ff82e9c77479f9223633ff1330bb174a340906043974529a5d523a983",
+          "config_digest": "16c4fe7ff82e9c77479f9223633ff1330bb174a340906043974529a5d523a983",
+          "seed": 6173,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6173:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_08:6173:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:4a113c49809c8a139579c4c3b22f8fd31839a57852af528708684dea58fe84f6",
+          "config_digest": "4a113c49809c8a139579c4c3b22f8fd31839a57852af528708684dea58fe84f6",
+          "seed": 6173,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_08:6173:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6101:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:8c5f28d5fede94c4d5ebee63f5097d5bbf3f4b7a44ae5247d8f30a5c09125c37",
+          "config_digest": "8c5f28d5fede94c4d5ebee63f5097d5bbf3f4b7a44ae5247d8f30a5c09125c37",
+          "seed": 6101,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6101:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6101:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:6b54358d3cdbf1c9635f71789d407ad34bf9480ad309f888f365f9a8b4742e8a",
+          "config_digest": "6b54358d3cdbf1c9635f71789d407ad34bf9480ad309f888f365f9a8b4742e8a",
+          "seed": 6101,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6101:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6131:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:9a3c954a8f24eefd651bc8319a4ff6156fa69539081538f50f008b61fe21acb4",
+          "config_digest": "9a3c954a8f24eefd651bc8319a4ff6156fa69539081538f50f008b61fe21acb4",
+          "seed": 6131,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6131:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6131:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:f9bb12ba2678cc632c93a4c60f1bfe6168151e0fb38db9b5f04d5246e15d98c0",
+          "config_digest": "f9bb12ba2678cc632c93a4c60f1bfe6168151e0fb38db9b5f04d5246e15d98c0",
+          "seed": 6131,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6131:grouped_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6173:fixed_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:80613b478051a91a44f7cc3fce7ed9423f8279eb36ba805acf84b0d3e05034b5",
+          "config_digest": "80613b478051a91a44f7cc3fce7ed9423f8279eb36ba805acf84b0d3e05034b5",
+          "seed": 6173,
+          "arm": "fixed_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6173:fixed_rate1:final"
+        },
+        {
+          "id": "run:long:blocks_12:6173:grouped_rate1",
+          "protocol_id": "protocol:long-sequence",
+          "config_id": "config:4ae80d61bc74bd9a209d26cc15b1ddd44f93a17d01abd02f3a5ce05bae00046a",
+          "config_digest": "4ae80d61bc74bd9a209d26cc15b1ddd44f93a17d01abd02f3a5ce05bae00046a",
+          "seed": 6173,
+          "arm": "grouped_rate1",
+          "checkpoint_id": "checkpoint:long:blocks_12:6173:grouped_rate1:final"
+        }
+      ]
+    },
+    {
+      "competency_question_id": "CQ2",
+      "question": "Which prediction mechanism and domain were evaluated?",
+      "execution": "record_query",
+      "results": [
+        {
+          "id": "prediction:confirmatory:5101:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:fixed_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:grouped_rate1:validation",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, validation interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:fixed_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:grouped_rate1:direct-test",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "direct_prediction[:, test interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:fixed_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:grouped_rate1:numerical-continuation-test",
+          "mechanism": "DOP853 continuation from the native final-network FD-grid state at t=0.8, periodically interpolated to the reference grid for scoring",
+          "temporal_domain": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:continuation",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "continued_prediction",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5101:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5113:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5147:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5167:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5191:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5227:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5261:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5281:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5309:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:fixed_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:confirmatory:5333:grouped_rate1:terminal-state",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "native_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:confirmatory:direct",
+          "output_field": "terminal_state",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6101:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6101:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6131:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6131:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6173:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_04:6173:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6101:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6101:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6131:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6131:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6173:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_08:6173:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6101:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6101:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6131:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6131:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6173:fixed_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        },
+        {
+          "id": "prediction:long:blocks_12:6173:grouped_rate1:training",
+          "mechanism": "direct final-network coordinate queries",
+          "temporal_domain": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "native_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "evaluation_spatial_domain_id": "spatial-domain:long-sequence:direct",
+          "output_field": "direct_prediction[:, training interval]",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "competency_question_id": "CQ3",
+      "question": "Which reference, interval, metric and aggregation rule generated the value?",
+      "execution": "record_query",
+      "results": [
+        {
+          "id": "evaluation:confirmatory:5101:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5101:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.016011362183611166,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5101:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013010463637699253,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5113:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.024683060785183262,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5113:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.02381405315017766,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5147:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.016436225494669485,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5147:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.014558530912870982,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5167:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.01513016443893716,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5167:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.014364645773803045,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5191:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.014679606360327906,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5191:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.014415885868862364,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5227:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.017172378982957016,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5227:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.016337758032220304,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5261:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013029177946398428,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5261:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.011975038678229112,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5281:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.019168704882433253,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5281:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.01719307072401482,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5309:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.016594734248106913,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5309:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013511428851038768,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:fixed_rate1:training",
+          "prediction_id": "prediction:confirmatory:5333:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.0182332882054445,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:grouped_rate1:training",
+          "prediction_id": "prediction:confirmatory:5333:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.01593371087530949,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5101:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04991180944510017,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5101:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05190862849849017,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5113:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.08016097147972331,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5113:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.07865452845976342,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5147:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04969501233633264,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5147:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05338222282857078,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5167:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06247503572581476,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5167:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.0625806631822437,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5191:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.054751750954258674,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5191:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05359690166165693,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5227:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06484987894636782,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5227:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06565973299675323,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5261:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05240794458766565,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5261:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05574631042812186,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5281:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.0572632023216482,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5281:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05686090971911425,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5309:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05475777216547592,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5309:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05418804522194661,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:fixed_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5333:fixed_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.0494860678629884,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:fixed_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:grouped_rate1:validation",
+          "prediction_id": "prediction:confirmatory:5333:grouped_rate1:validation",
+          "reference_artifact_id": "artifact:reference:confirmatory:validation",
+          "interval": {
+            "label": "validation",
+            "start": 0.8,
+            "end": 1.0,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04859697239702117,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:grouped_rate1",
+          "source_pointer": "/direct_validation_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5101:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.21753948522254152,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5101:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.22970685942347036,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5113:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.20919992093394174,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5113:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2073962495323802,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5147:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.22942879691671528,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5147:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.23907492328530172,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5167:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.20608603910404452,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5167:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.20863349869960524,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5191:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2153769864393157,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5191:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2137175834773956,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5227:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2219781604896348,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5227:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.22383920370460253,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5261:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.20032249751558948,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5261:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2071529430899887,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5281:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2042309526685987,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5281:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.20839295266118663,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5309:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.22214855591685995,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5309:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.2208821732602237,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:fixed_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5333:fixed_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.19661121381148083,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:fixed_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:grouped_rate1:direct-test",
+          "prediction_id": "prediction:confirmatory:5333:grouped_rate1:direct-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.1967508546718372,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:grouped_rate1",
+          "source_pointer": "/direct_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5101:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.03413146254702139,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5101:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04009241562874945,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5113:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.10725690870089176,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5113:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.10666933652029366,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5147:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.03231590708211511,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5147:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.031205622464809,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5167:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06722185931540907,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5167:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06642618091056628,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5191:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.03975721909266564,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5191:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.038824514276269165,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5227:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06450620179303652,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5227:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.06819700243183925,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5261:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.047818954868565716,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5261:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05238538189093676,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5281:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05444254008535278,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5281:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.05314288179557962,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5309:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04389429489751902,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5309:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.04539502686459461,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:fixed_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5333:fixed_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.040659576949408104,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:fixed_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:grouped_rate1:numerical-continuation-test",
+          "prediction_id": "prediction:confirmatory:5333:grouped_rate1:numerical-continuation-test",
+          "reference_artifact_id": "artifact:reference:confirmatory:test",
+          "interval": {
+            "label": "test",
+            "start": 1.0,
+            "end": 1.2,
+            "closure": "left-open-right-closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.03644394586868207,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:grouped_rate1",
+          "source_pointer": "/continuation_test_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5101:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.012569644569432938,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5101:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5101:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.013427208982419054,
+          "source_artifact_id": "artifact:metrics:confirmatory:5101:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5113:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.04207109759479444,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5113:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5113:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.04162536970264064,
+          "source_artifact_id": "artifact:metrics:confirmatory:5113:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5147:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.017030834846054235,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5147:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5147:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.01623137555515447,
+          "source_artifact_id": "artifact:metrics:confirmatory:5147:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5167:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.023594729661202234,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5167:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5167:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.023440718003588438,
+          "source_artifact_id": "artifact:metrics:confirmatory:5167:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5191:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.017643813121268302,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5191:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5191:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.01806687735443297,
+          "source_artifact_id": "artifact:metrics:confirmatory:5191:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5227:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.021518619934258316,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5227:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5227:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.022975180330382143,
+          "source_artifact_id": "artifact:metrics:confirmatory:5227:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5261:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.015116085362261602,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5261:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5261:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.01692032109207816,
+          "source_artifact_id": "artifact:metrics:confirmatory:5261:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5281:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.02436604197668784,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5281:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5281:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.023345386842950212,
+          "source_artifact_id": "artifact:metrics:confirmatory:5281:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5309:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.015506019848010767,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5309:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5309:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.016112709679747844,
+          "source_artifact_id": "artifact:metrics:confirmatory:5309:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:fixed_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5333:fixed_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.02330032536473781,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:fixed_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:confirmatory:5333:grouped_rate1:terminal-state",
+          "prediction_id": "prediction:confirmatory:5333:grouped_rate1:terminal-state",
+          "reference_artifact_id": "artifact:reference:confirmatory:training",
+          "interval": {
+            "label": "training terminal",
+            "start": 0.8,
+            "end": 0.8,
+            "closure": "point"
+          },
+          "metric": "relative_l2",
+          "aggregation": "spatial norm ratio",
+          "value": 0.020439702184840106,
+          "source_artifact_id": "artifact:metrics:confirmatory:5333:grouped_rate1",
+          "source_pointer": "/terminal_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6101:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6101:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.015269724048160046,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6101:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6101:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6101:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013932612633621317,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6101:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6131:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6131:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.015341098935061135,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6131:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6131:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6131:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013731938477043053,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6131:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6173:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6173:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.013952201616500468,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6173:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_04:6173:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_04:6173:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 0.8,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.01245204600577256,
+          "source_artifact_id": "artifact:metrics:long:blocks_04:6173:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6101:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6101:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09496117620260794,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6101:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6101:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6101:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09576463420505328,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6101:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6131:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6131:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09378851317476847,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6131:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6131:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6131:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09300510381800581,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6131:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6173:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6173:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.0764538850445169,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6173:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_08:6173:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_08:6173:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 1.6,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.07617481902646513,
+          "source_artifact_id": "artifact:metrics:long:blocks_08:6173:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6101:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6101:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09616410760264409,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6101:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6101:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6101:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.09437900586766897,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6101:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6131:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6131:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.11003885473512018,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6131:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6131:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6131:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.10900754504125837,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6131:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6173:fixed_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6173:fixed_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.11716171849858298,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6173:fixed_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        },
+        {
+          "id": "evaluation:long:blocks_12:6173:grouped_rate1:training",
+          "prediction_id": "prediction:long:blocks_12:6173:grouped_rate1:training",
+          "reference_artifact_id": "artifact:reference:long:truth",
+          "interval": {
+            "label": "training",
+            "start": 0.0,
+            "end": 2.4,
+            "closure": "closed"
+          },
+          "metric": "relative_l2",
+          "aggregation": "space-time aggregate norm ratio",
+          "value": 0.11830821073536504,
+          "source_artifact_id": "artifact:metrics:long:blocks_12:6173:grouped_rate1",
+          "source_pointer": "/direct_training_relative_l2"
+        }
+      ]
+    },
+    {
+      "competency_question_id": "CQ4",
+      "question": "What supports and limits each claim, and what inferential status applies?",
+      "execution": "record_query",
+      "results": [
+        {
+          "claim_id": "C1",
+          "query_id": "claim-evidence:C1",
+          "inferential_status": "locked_confirmatory_secondary",
+          "supporting_evidence_ids": [
+            "metric:confirmatory:grouped-fixed:training",
+            "evaluation:confirmatory:5101:fixed_rate1:training",
+            "evaluation:confirmatory:5101:grouped_rate1:training",
+            "evaluation:confirmatory:5113:fixed_rate1:training",
+            "evaluation:confirmatory:5113:grouped_rate1:training",
+            "evaluation:confirmatory:5147:fixed_rate1:training",
+            "evaluation:confirmatory:5147:grouped_rate1:training",
+            "evaluation:confirmatory:5167:fixed_rate1:training",
+            "evaluation:confirmatory:5167:grouped_rate1:training",
+            "evaluation:confirmatory:5191:fixed_rate1:training",
+            "evaluation:confirmatory:5191:grouped_rate1:training",
+            "evaluation:confirmatory:5227:fixed_rate1:training",
+            "evaluation:confirmatory:5227:grouped_rate1:training",
+            "evaluation:confirmatory:5261:fixed_rate1:training",
+            "evaluation:confirmatory:5261:grouped_rate1:training",
+            "evaluation:confirmatory:5281:fixed_rate1:training",
+            "evaluation:confirmatory:5281:grouped_rate1:training",
+            "evaluation:confirmatory:5309:fixed_rate1:training",
+            "evaluation:confirmatory:5309:grouped_rate1:training",
+            "evaluation:confirmatory:5333:fixed_rate1:training",
+            "evaluation:confirmatory:5333:grouped_rate1:training"
+          ],
+          "limiting_evidence_ids": [
+            "metric:confirmatory:grouped-fixed:validation",
+            "metric:confirmatory:grouped-fixed:test",
+            "metric:confirmatory:grouped-fixed:continuation-test",
+            "metric:confirmatory:grouped-fixed:terminal",
+            "evaluation:confirmatory:5101:fixed_rate1:validation",
+            "evaluation:confirmatory:5101:grouped_rate1:validation",
+            "evaluation:confirmatory:5113:fixed_rate1:validation",
+            "evaluation:confirmatory:5113:grouped_rate1:validation",
+            "evaluation:confirmatory:5147:fixed_rate1:validation",
+            "evaluation:confirmatory:5147:grouped_rate1:validation",
+            "evaluation:confirmatory:5167:fixed_rate1:validation",
+            "evaluation:confirmatory:5167:grouped_rate1:validation",
+            "evaluation:confirmatory:5191:fixed_rate1:validation",
+            "evaluation:confirmatory:5191:grouped_rate1:validation",
+            "evaluation:confirmatory:5227:fixed_rate1:validation",
+            "evaluation:confirmatory:5227:grouped_rate1:validation",
+            "evaluation:confirmatory:5261:fixed_rate1:validation",
+            "evaluation:confirmatory:5261:grouped_rate1:validation",
+            "evaluation:confirmatory:5281:fixed_rate1:validation",
+            "evaluation:confirmatory:5281:grouped_rate1:validation",
+            "evaluation:confirmatory:5309:fixed_rate1:validation",
+            "evaluation:confirmatory:5309:grouped_rate1:validation",
+            "evaluation:confirmatory:5333:fixed_rate1:validation",
+            "evaluation:confirmatory:5333:grouped_rate1:validation",
+            "evaluation:confirmatory:5101:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5101:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5113:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5113:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5147:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5147:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5167:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5167:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5191:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5191:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5227:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5227:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5261:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5261:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5281:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5281:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5309:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5309:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5333:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5333:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5101:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5101:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5113:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5113:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5147:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5147:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5167:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5167:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5191:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5191:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5227:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5227:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5261:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5261:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5281:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5281:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5309:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5309:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5333:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5333:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5101:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5101:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5113:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5113:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5147:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5147:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5167:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5167:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5191:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5191:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5227:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5227:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5261:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5261:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5281:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5281:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5309:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5309:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5333:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5333:grouped_rate1:terminal-state"
+          ]
+        },
+        {
+          "claim_id": "C2",
+          "query_id": "claim-evidence:C2",
+          "inferential_status": "locked_confirmatory_secondary",
+          "supporting_evidence_ids": [
+            "metric:confirmatory:grouped-fixed:validation",
+            "metric:confirmatory:grouped-fixed:test",
+            "metric:confirmatory:grouped-fixed:continuation-test",
+            "metric:confirmatory:grouped-fixed:terminal",
+            "evaluation:confirmatory:5101:fixed_rate1:validation",
+            "evaluation:confirmatory:5101:grouped_rate1:validation",
+            "evaluation:confirmatory:5113:fixed_rate1:validation",
+            "evaluation:confirmatory:5113:grouped_rate1:validation",
+            "evaluation:confirmatory:5147:fixed_rate1:validation",
+            "evaluation:confirmatory:5147:grouped_rate1:validation",
+            "evaluation:confirmatory:5167:fixed_rate1:validation",
+            "evaluation:confirmatory:5167:grouped_rate1:validation",
+            "evaluation:confirmatory:5191:fixed_rate1:validation",
+            "evaluation:confirmatory:5191:grouped_rate1:validation",
+            "evaluation:confirmatory:5227:fixed_rate1:validation",
+            "evaluation:confirmatory:5227:grouped_rate1:validation",
+            "evaluation:confirmatory:5261:fixed_rate1:validation",
+            "evaluation:confirmatory:5261:grouped_rate1:validation",
+            "evaluation:confirmatory:5281:fixed_rate1:validation",
+            "evaluation:confirmatory:5281:grouped_rate1:validation",
+            "evaluation:confirmatory:5309:fixed_rate1:validation",
+            "evaluation:confirmatory:5309:grouped_rate1:validation",
+            "evaluation:confirmatory:5333:fixed_rate1:validation",
+            "evaluation:confirmatory:5333:grouped_rate1:validation",
+            "evaluation:confirmatory:5101:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5101:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5113:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5113:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5147:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5147:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5167:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5167:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5191:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5191:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5227:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5227:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5261:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5261:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5281:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5281:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5309:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5309:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5333:fixed_rate1:direct-test",
+            "evaluation:confirmatory:5333:grouped_rate1:direct-test",
+            "evaluation:confirmatory:5101:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5101:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5113:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5113:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5147:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5147:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5167:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5167:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5191:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5191:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5227:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5227:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5261:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5261:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5281:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5281:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5309:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5309:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5333:fixed_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5333:grouped_rate1:numerical-continuation-test",
+            "evaluation:confirmatory:5101:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5101:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5113:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5113:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5147:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5147:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5167:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5167:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5191:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5191:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5227:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5227:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5261:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5261:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5281:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5281:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5309:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5309:grouped_rate1:terminal-state",
+            "evaluation:confirmatory:5333:fixed_rate1:terminal-state",
+            "evaluation:confirmatory:5333:grouped_rate1:terminal-state"
+          ],
+          "limiting_evidence_ids": [
+            "metric:confirmatory:grouped-fixed:training",
+            "evaluation:confirmatory:5101:fixed_rate1:training",
+            "evaluation:confirmatory:5101:grouped_rate1:training",
+            "evaluation:confirmatory:5113:fixed_rate1:training",
+            "evaluation:confirmatory:5113:grouped_rate1:training",
+            "evaluation:confirmatory:5147:fixed_rate1:training",
+            "evaluation:confirmatory:5147:grouped_rate1:training",
+            "evaluation:confirmatory:5167:fixed_rate1:training",
+            "evaluation:confirmatory:5167:grouped_rate1:training",
+            "evaluation:confirmatory:5191:fixed_rate1:training",
+            "evaluation:confirmatory:5191:grouped_rate1:training",
+            "evaluation:confirmatory:5227:fixed_rate1:training",
+            "evaluation:confirmatory:5227:grouped_rate1:training",
+            "evaluation:confirmatory:5261:fixed_rate1:training",
+            "evaluation:confirmatory:5261:grouped_rate1:training",
+            "evaluation:confirmatory:5281:fixed_rate1:training",
+            "evaluation:confirmatory:5281:grouped_rate1:training",
+            "evaluation:confirmatory:5309:fixed_rate1:training",
+            "evaluation:confirmatory:5309:grouped_rate1:training",
+            "evaluation:confirmatory:5333:fixed_rate1:training",
+            "evaluation:confirmatory:5333:grouped_rate1:training"
+          ]
+        },
+        {
+          "claim_id": "C3",
+          "query_id": "claim-evidence:C3",
+          "inferential_status": "development_only",
+          "supporting_evidence_ids": [
+            "metric:long:blocks_04:grouped-fixed:training",
+            "metric:long:blocks_08:grouped-fixed:training",
+            "metric:long:blocks_12:grouped-fixed:training",
+            "metric:long:grouped-fixed:training-trend",
+            "evaluation:long:blocks_04:6101:fixed_rate1:training",
+            "evaluation:long:blocks_04:6101:grouped_rate1:training",
+            "evaluation:long:blocks_04:6131:fixed_rate1:training",
+            "evaluation:long:blocks_04:6131:grouped_rate1:training",
+            "evaluation:long:blocks_04:6173:fixed_rate1:training",
+            "evaluation:long:blocks_04:6173:grouped_rate1:training",
+            "evaluation:long:blocks_08:6101:fixed_rate1:training",
+            "evaluation:long:blocks_08:6101:grouped_rate1:training",
+            "evaluation:long:blocks_08:6131:fixed_rate1:training",
+            "evaluation:long:blocks_08:6131:grouped_rate1:training",
+            "evaluation:long:blocks_08:6173:fixed_rate1:training",
+            "evaluation:long:blocks_08:6173:grouped_rate1:training",
+            "evaluation:long:blocks_12:6101:fixed_rate1:training",
+            "evaluation:long:blocks_12:6101:grouped_rate1:training",
+            "evaluation:long:blocks_12:6131:fixed_rate1:training",
+            "evaluation:long:blocks_12:6131:grouped_rate1:training",
+            "evaluation:long:blocks_12:6173:fixed_rate1:training",
+            "evaluation:long:blocks_12:6173:grouped_rate1:training"
+          ],
+          "limiting_evidence_ids": [
+            "protocol:long-sequence"
+          ]
+        },
+        {
+          "claim_id": "C4",
+          "query_id": "claim-evidence:C4",
+          "inferential_status": "descriptive_diagnostic",
+          "supporting_evidence_ids": [
+            "metric:controller:gradient-cosine",
+            "metric:controller:weighted-gradient-ratio",
+            "metric:controller:rk4-budget-share",
+            "metric:controller:replay-budget-share",
+            "metric:controller:physics-budget-max-discrepancy",
+            "metric:controller:constraint-budget-max-discrepancy",
+            "metric:controller:fixed-anchor-max-discrepancy",
+            "metric:controller:guard-trigger-count"
+          ],
+          "limiting_evidence_ids": [
+            "protocol:confirmatory"
+          ]
+        }
+      ]
+    },
+    {
+      "competency_question_id": "CQ5",
+      "question": "Do available bytes and generator derivations match the declared inventory?",
+      "execution": "delegated_validation",
+      "performed_by_query": false,
+      "checks": [
+        "artifact_hashes",
+        "generation_records",
+        "ro_crate"
+      ],
+      "command": "python validate_provenance.py --verify-external",
+      "qualification": "Querying declared hashes does not verify bytes or execute generators; the separate integrity and frozen-study report states what was checked."
+    },
+    {
+      "competency_question_id": "CQ6",
+      "question": "Which required fields or roles are absent or explicitly unavailable?",
+      "execution": "declared_gaps_and_delegated_validation",
+      "schema_validation_performed_by_query": false,
+      "results": [
+        {
+          "run_id": "run:long:blocks_04:6101:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_04:6101:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_04:6131:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_04:6131:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_04:6173:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_04:6173:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6101:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6101:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6131:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6131:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6173:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_08:6173:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6101:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6101:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6131:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6131:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6173:fixed_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        },
+        {
+          "run_id": "run:long:blocks_12:6173:grouped_rate1",
+          "unavailable_prediction_roles": [
+            "validation"
+          ]
+        }
+      ],
+      "checks": [
+        "profile_schema"
+      ],
+      "command": "python validate_provenance.py --mode profile --record RECORD.json",
+      "qualification": "Explicit unavailable roles are reported here. Schema validation identifies absent required fields; the supplied legacy gap audit is a separate documented assessment."
+    }
+  ],
   "queries": [
     {
-      "competency_query_id": "CQ1",
+      "query_id": "claim-evidence:C1",
+      "competency_question_ids": [
+        "CQ1",
+        "CQ2",
+        "CQ3",
+        "CQ4"
+      ],
       "claim_id": "C1",
       "claim_statement": "Grouped adaptive loss weighting reduced final-network relative L2 retention error over the fitted interval compared with fixed coefficients in all ten paired Allen--Cahn seeds; both arms retained the same positive rate-normalised RK4 term.",
       "direction": "grouped_rate1 minus fixed_rate1 is negative for final-network fitted-interval retention error; both arms use positive rate-normalised RK4",
@@ -3419,7 +7749,13 @@
       }
     },
     {
-      "competency_query_id": "CQ2",
+      "query_id": "claim-evidence:C2",
+      "competency_question_ids": [
+        "CQ1",
+        "CQ2",
+        "CQ3",
+        "CQ4"
+      ],
       "claim_id": "C2",
       "claim_statement": "The confirmatory data did not demonstrate a grouped-over-fixed error reduction on direct validation, direct test, numerical-continuation test or terminal-state evaluation.",
       "direction": "two-sided 95 percent paired t intervals include zero on all four held-out or terminal criteria",
@@ -6834,7 +11170,13 @@
       }
     },
     {
-      "competency_query_id": "CQ3",
+      "query_id": "claim-evidence:C3",
+      "competency_question_ids": [
+        "CQ1",
+        "CQ2",
+        "CQ3",
+        "CQ4"
+      ],
       "claim_id": "C3",
       "claim_statement": "The three-seed development study did not show growing support for a grouped-over-fixed final-network fitted-interval retention advantage as the number of temporal blocks increased.",
       "direction": "fitted-interval retention-error difference slope is non-negative across 4, 8 and 12 blocks",
@@ -7821,7 +12163,11 @@
       }
     },
     {
-      "competency_query_id": "CQ4",
+      "query_id": "claim-evidence:C4",
+      "competency_question_ids": [
+        "CQ1",
+        "CQ4"
+      ],
       "claim_id": "C4",
       "claim_statement": "The grouped controller maintained its configured within-group coefficient budgets while allocating a majority of the active later-block constraint budget to replay, with no recorded guard triggers.",
       "direction": "budget discrepancies are at floating-point scale, guard count is zero, and median later-block replay share exceeds one half",

@@ -302,6 +302,16 @@ def main() -> None:
         copy_file(src, relative)
         add_packaged_artifact(artifacts, artifact_id, relative, role, f"Hash-bound {role} source.")
     add_packaged_artifact(artifacts, "artifact:generator:provenance-builder", "build_provenance.py", "provenance generator", "Builder for this audit package.")
+    for artifact_id, relative, role in [
+        ("artifact:profile-schema", "audit_record.schema.json", "application-profile schema"),
+        ("artifact:validator:profile", "profile_validation.py", "generic profile validator"),
+        ("artifact:validator:study", "validate_provenance.py", "study bundle validator"),
+        ("artifact:query:claims", "query_claim_evidence.py", "claim and competency query program"),
+        ("artifact:audit-comparison:program", "audit_comparison.py", "audit comparison program"),
+        ("artifact:audit-comparison:specification", "audit_comparison_spec.json", "frozen audit comparison specification"),
+    ]:
+        add_packaged_artifact(artifacts, artifact_id, relative, role, f"Hash-bound {role}; validation does not establish scientific truth.")
+
 
     confirm_summary = load(LATEST / "inputs/confirmation_summary.json")
     confirm_manifest = load(LATEST / "inputs/confirmation_manifest.json")
@@ -1425,6 +1435,7 @@ def main() -> None:
             )
 
     subprocess.run([sys.executable, str(ROOT / "query_claim_evidence.py"), "--write"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "audit_comparison.py"), "--write"], cwd=ROOT, check=True)
     write_ro_crate(audit["created_utc"])
     subprocess.run([sys.executable, str(ROOT / "validate_provenance.py"), "--verify-external", "--write-report"], cwd=ROOT, check=True)
     print(

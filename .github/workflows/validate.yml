@@ -14,3 +14,5 @@ jobs:
       - run: python paper/reproducibility/latest_allen_cahn_evidence/generate_and_audit.py
       - run: python paper/reproducibility/provenance/validate_provenance.py --verify-external
       - run: python paper/reproducibility/provenance/query_claim_evidence.py --claim C1
+      - run: python -m unittest discover -s paper/reproducibility/provenance -p 'test_*.py'
+      - run: python paper/reproducibility/provenance/audit_comparison.py --check
