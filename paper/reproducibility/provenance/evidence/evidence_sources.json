@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-11-24T23:13:38.568083+00:00",
+  "purpose": "Hash-bound source register for the DIM manuscript Allen-Cahn evidence bundle. Generated outputs must be derived only from these copied inputs.",
+  "path_base": "provenance_root",
+  "sources": [
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/confirmation_summary.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/00_confirmation_summary.json",
+      "sha256": "14fd7925f6579690a9bc668a347ee2e5cc48819f8035172afa7fe54ce144e5bb",
+      "bytes": 40155,
+      "artifact_id": "artifact:source-registry:00"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/confirmation_manifest.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/01_confirmation_manifest.json",
+      "sha256": "c607113659ad439be55f7e03e66f27147d625d6b3c962375527b02f06c646fe6",
+      "bytes": 2702,
+      "artifact_id": "artifact:source-registry:01"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/selection_lock.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/02_selection_lock.json",
+      "sha256": "115faffe4f6f6c1eaefdb839ff10ff1ab4e77905d0526b39e6e76a5855bbdb16",
+      "bytes": 586,
+      "artifact_id": "artifact:source-registry:02"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/PROTOCOL.md",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/03_confirmation_PROTOCOL.md",
+      "sha256": "57eb3dcba7969690405241472997b2c703172acc00f9ab43a8969e39952665b9",
+      "bytes": 2727,
+      "artifact_id": "artifact:source-registry:03"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/analysis/summary.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/04_long_sequence_summary.json",
+      "sha256": "69692ffa157a4dd9b4a9a6689a5a9c76e50601a281e645676ff4c598a1656e9f",
+      "bytes": 54100,
+      "artifact_id": "artifact:source-registry:04"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/manifest.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/05_long_sequence_manifest.json",
+      "sha256": "b160bd2623026f48efc8bdcee57f0e72b53935de5d27118e3e2620139c741038",
+      "bytes": 2428,
+      "artifact_id": "artifact:source-registry:05"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/PROTOCOL.md",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/06_long_sequence_PROTOCOL.md",
+      "sha256": "ad7acf2f5640b67200277a170e85be960e4e06364bfedadc85c4d5d4be9ba660",
+      "bytes": 1411,
+      "artifact_id": "artifact:source-registry:06"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/controller_mechanism_evidence.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/07_controller_mechanism_evidence.json",
+      "sha256": "70bf55f42c498e088bcf15c4e69ea48d09448d5baf585e9a5c91c2e7b5be9d1c",
+      "bytes": 261363,
+      "artifact_id": "artifact:source-registry:07"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/table_controller_mechanism.tex",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/08_source_table_controller_mechanism.tex",
+      "sha256": "9b48c0e3e7c5f082fc24dfa0725603345b0ee2b8648ab0fee50f8962aabd8178",
+      "bytes": 1171,
+      "artifact_id": "artifact:source-registry:08"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/figure_controller_mechanism.pdf",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/09_source_figure_controller_mechanism.pdf",
+      "sha256": "e85d6ec9dfc9f559c3a1a657468ca2f129b66140a59a5545a3cb33e9cc93c6ac",
+      "bytes": 50363,
+      "artifact_id": "artifact:source-registry:09"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/figure_controller_mechanism.png",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/10_source_figure_controller_mechanism.png",
+      "sha256": "ca3a8fa2c77662a896f24830dfc2c7fce5e721aaee86516aa6d3031d3c66f789",
+      "bytes": 305511,
+      "artifact_id": "artifact:source-registry:10"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/paper_evidence.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/11_source_confirmatory_paper_evidence.json",
+      "sha256": "f9114f653bda47967c6e4a235cd166281f225f0d63e837325b9602276385e86f",
+      "bytes": 6360,
+      "artifact_id": "artifact:source-registry:11"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/analysis/table_confirmatory_direct_test.tex",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/12_source_table_confirmatory_direct_test.tex",
+      "sha256": "e93c62343bab3869c189d94b2788611b8208798dfa64cb335167359973322fc9",
+      "bytes": 873,
+      "artifact_id": "artifact:source-registry:12"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/analysis/paper_evidence.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/13_source_long_sequence_paper_evidence.json",
+      "sha256": "842e0818dc91c7cf6139297339d2e02929d0fb526777fea41c5490da8d1aae8c",
+      "bytes": 17470,
+      "artifact_id": "artifact:source-registry:13"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/analysis/table_long_sequence.tex",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/14_source_table_long_sequence.tex",
+      "sha256": "848c7f6f866c1e51f0d0bcb70ae8f00241b680f4300b33e0e9311699eaaa3197",
+      "bytes": 1223,
+      "artifact_id": "artifact:source-registry:14"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_long_sequence_development_20261119/analysis/figure_long_sequence.pdf",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/15_source_figure_long_sequence.pdf",
+      "sha256": "b3a639a7dd32a7c8f5f34e1cb67cb7f80808aca626a9a55e3282c6f7bc9b4900",
+      "bytes": 19321,
+      "artifact_id": "artifact:source-registry:15"
+    },
+    {
+      "source_path": "RK4_Publication_Study/allen_cahn_paper_evidence_manifest.json",
+      "source_path_scope": "repository_relative",
+      "bundle_path": "evidence/source_registry/16_source_allen_cahn_paper_evidence_manifest.json",
+      "sha256": "e8192cc3f8b102e64b5bd4db01d03edb4798a66a1efd52175b13a15290696e4b",
+      "bytes": 3060,
+      "artifact_id": "artifact:source-registry:16"
+    }
+  ]
+}

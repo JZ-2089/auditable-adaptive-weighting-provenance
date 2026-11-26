@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-19T23:12:38.990372+00:00",
+  "pde": "u_t = 1e-4*u_xx + 5*u - 5*u^3",
+  "method": "periodic Fourier collocation with float64 DOP853",
+  "time_range": [
+    0.0,
+    3.2
+  ],
+  "output_dt": 0.005,
+  "truth_nodes": 2048,
+  "released_nodes": 1024,
+  "coarse_fine_comparison": {
+    "aggregate_relative_l2_t_ge_0.01": 9.175079531463964e-07,
+    "max_snapshot_relative_l2_t_ge_0.01": 2.3706883137737842e-05
+  },
+  "runs": [
+    {
+      "nodes": 1024,
+      "nfev": 5234,
+      "rtol": 1e-11,
+      "atol": 1e-13,
+      "max_step": 0.009303164766253636,
+      "wall_seconds": 1.1648742110119201
+    },
+    {
+      "nodes": 2048,
+      "nfev": 18029,
+      "rtol": 1e-11,
+      "atol": 1e-13,
+      "max_step": 0.0023925665130178878,
+      "wall_seconds": 6.215971096011344
+    }
+  ],
+  "files": {
+    "training_initial_only.mat": "77a34cfa4a98e064f5f5466954b819f8889d6dc85ad3c510d36ac36542622d66",
+    "reference_truth.npz": "fb915a25d875103d5b4d21dbbb838b738cc1ef5dc120146c01829e7beec62ef4"
+  },
+  "qualification": "The 2048-node solution is the released numerical reference; the 1024/2048 comparison is an empirical refinement check, not a proof."
+}

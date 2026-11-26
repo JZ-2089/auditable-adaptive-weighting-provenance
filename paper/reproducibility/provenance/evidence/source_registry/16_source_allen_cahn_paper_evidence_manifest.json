@@ -1,0 +1,65 @@
+{
+  "all_verification_checks_passed": true,
+  "generator": "prepare_allen_cahn_paper_evidence.py",
+  "generator_sha256": "47c2d3017a6c4ab4df54295fd9017db255031ebc2f604274ebfbe72aecf962c4",
+  "outputs": {
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/controller_mechanism_evidence.json": {
+      "bytes": 261363,
+      "sha256": "5a82a5035205032f5eaa5f351df23e852312b3bba58042ec4a0d1bbe938b38fd"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/figure_confirmatory_paired.pdf": {
+      "bytes": 21624,
+      "sha256": "256f89c2d90a29c58ed1d1da68357b5581c068e2f87dc610859d79d672f20c27"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/figure_confirmatory_paired.png": {
+      "bytes": 227710,
+      "sha256": "3c6642a527124dd610ec0a23632316f556e67cadf6970a2b286e0d3f1b167298"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/figure_controller_mechanism.pdf": {
+      "bytes": 50363,
+      "sha256": "e85d6ec9dfc9f559c3a1a657468ca2f129b66140a59a5545a3cb33e9cc93c6ac"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/figure_controller_mechanism.png": {
+      "bytes": 305511,
+      "sha256": "ca3a8fa2c77662a896f24830dfc2c7fce5e721aaee86516aa6d3031d3c66f789"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/paper_evidence.json": {
+      "bytes": 6360,
+      "sha256": "f9114f653bda47967c6e4a235cd166281f225f0d63e837325b9602276385e86f"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/table_confirmatory_direct_test.tex": {
+      "bytes": 873,
+      "sha256": "e93c62343bab3869c189d94b2788611b8208798dfa64cb335167359973322fc9"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/analysis/table_controller_mechanism.tex": {
+      "bytes": 1171,
+      "sha256": "9b48c0e3e7c5f082fc24dfa0725603345b0ee2b8648ab0fee50f8962aabd8178"
+    },
+    "allen_cahn_confirmatory_adaptive_20261118/confirmation_summary.json": {
+      "bytes": 40155,
+      "sha256": "14fd7925f6579690a9bc668a347ee2e5cc48819f8035172afa7fe54ce144e5bb"
+    },
+    "allen_cahn_long_sequence_development_20261119/analysis/figure_long_sequence.pdf": {
+      "bytes": 19321,
+      "sha256": "b3a639a7dd32a7c8f5f34e1cb67cb7f80808aca626a9a55e3282c6f7bc9b4900"
+    },
+    "allen_cahn_long_sequence_development_20261119/analysis/figure_long_sequence.png": {
+      "bytes": 173658,
+      "sha256": "7024d628ad8a201babeaf73b242b1c5c02533440e9c6c9cca1d85150f5ab460a"
+    },
+    "allen_cahn_long_sequence_development_20261119/analysis/paper_evidence.json": {
+      "bytes": 17470,
+      "sha256": "842e0818dc91c7cf6139297339d2e02929d0fb526777fea41c5490da8d1aae8c"
+    },
+    "allen_cahn_long_sequence_development_20261119/analysis/summary.json": {
+      "bytes": 54100,
+      "sha256": "69692ffa157a4dd9b4a9a6689a5a9c76e50601a281e645676ff4c598a1656e9f"
+    },
+    "allen_cahn_long_sequence_development_20261119/analysis/table_long_sequence.tex": {
+      "bytes": 1223,
+      "sha256": "848c7f6f866c1e51f0d0bcb70ae8f00241b680f4300b33e0e9311699eaaa3197"
+    }
+  },
+  "schema_version": 1,
+  "training_launched": false
+}

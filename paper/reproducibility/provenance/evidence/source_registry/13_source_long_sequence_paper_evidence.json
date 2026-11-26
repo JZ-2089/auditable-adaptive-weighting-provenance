@@ -1,0 +1,513 @@
+{
+  "adaptive_minus_fixed_training_error_trend": {
+    "blocks": [
+      4.0,
+      8.0,
+      12.0
+    ],
+    "linear_slope_per_block": 0.0001156878454679106,
+    "mean_differences": [
+      -0.0014821424944282391,
+      -8.63391241230314e-05,
+      -0.0005566397306849546
+    ],
+    "qualification": "Three-seed development trend; not confirmatory inference."
+  },
+  "confirmatory": false,
+  "interpretation": "Grouped adaptive RK4 had a lower mean training-retention error than fixed RK4 at 4, 8 and 12 blocks, but the advantage did not increase monotonically with sequence length. The fitted slope is positive, so this three-seed development study does not support the proposed strengthening of the adaptive advantage with more blocks.",
+  "n_paired_seeds": 3,
+  "scenarios": {
+    "blocks_04": {
+      "arms": {
+        "fixed_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.04434654907477111,
+            "standard_deviation": 0.006749033509337764
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.2876428082644962,
+            "standard_deviation": 0.028603616939536346
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.014854341533240549,
+            "standard_deviation": 0.0007820907336440492
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.015501313893782058,
+            "standard_deviation": 0.0010217821209030293
+          },
+          "training_seconds": {
+            "mean": 592.2043101602854,
+            "standard_deviation": 187.23109480242923
+          }
+        },
+        "grouped_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.042088750023228226,
+            "standard_deviation": 0.006926941000015205
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.28837992150449926,
+            "standard_deviation": 0.029537639965014184
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.01337219903881231,
+            "standard_deviation": 0.0008031679353900947
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.013928515365817296,
+            "standard_deviation": 0.0010432334232562451
+          },
+          "training_seconds": {
+            "mean": 464.71748973805614,
+            "standard_deviation": 165.91423435051053
+          }
+        },
+        "zero_rk4": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.06315935880215433,
+            "standard_deviation": 0.007207121757985497
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.2816044624267345,
+            "standard_deviation": 0.01102391751409558
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.014672529203193743,
+            "standard_deviation": 0.0015725906019002547
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.01567510452119727,
+            "standard_deviation": 0.001733074190173007
+          },
+          "training_seconds": {
+            "mean": 395.14616470236797,
+            "standard_deviation": 181.83041242605364
+          }
+        }
+      },
+      "blocks": 4,
+      "contrasts": {
+        "fixed_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.020317770076366315,
+              0.037607574393402676,
+              0.0008252331962486092
+            ],
+            "paired_mean_difference": 0.006038345837761657,
+            "wins_lower_error": 1
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.001001181910166479,
+              0.0022140388961845916,
+              -0.0006674199958776935
+            ],
+            "paired_mean_difference": 0.00018181233004680637,
+            "wins_lower_error": 2
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.0015350753891114413,
+              0.002045226070957626,
+              -0.001031522564091827
+            ],
+            "paired_mean_difference": -0.00017379062741521416,
+            "wins_lower_error": 2
+          }
+        },
+        "grouped_rate1_minus_fixed_rate1": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.0003322030366765816,
+              0.0014364106796767029,
+              0.001107132077009132
+            ],
+            "paired_mean_difference": 0.0007371132400030844,
+            "wins_lower_error": 1
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.0013371114145387282,
+              -0.001609160458018082,
+              -0.001500155610727907
+            ],
+            "paired_mean_difference": -0.0014821424944282391,
+            "wins_lower_error": 3
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.0013868730582467272,
+              -0.001735421839220562,
+              -0.0015961006864270016
+            ],
+            "paired_mean_difference": -0.0015727985279647635,
+            "wins_lower_error": 3
+          }
+        },
+        "grouped_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.020649973113042897,
+              0.03904398507307938,
+              0.0019323652732577412
+            ],
+            "paired_mean_difference": 0.006775459077764741,
+            "wins_lower_error": 1
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.002338293324705207,
+              0.0006048784381665097,
+              -0.0021675756066056005
+            ],
+            "paired_mean_difference": -0.0013003301643814327,
+            "wins_lower_error": 2
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.0029219484473581685,
+              0.0003098042317370639,
+              -0.0026276232505188287
+            ],
+            "paired_mean_difference": -0.0017465891553799778,
+            "wins_lower_error": 2
+          }
+        }
+      }
+    },
+    "blocks_08": {
+      "arms": {
+        "fixed_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.048874519258258094,
+            "standard_deviation": 0.004325098126541191
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.14030954630818562,
+            "standard_deviation": 0.009568769986825479
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.08840119147396443,
+            "standard_deviation": 0.010363270855938977
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.06758574546158151,
+            "standard_deviation": 0.006816337133308014
+          },
+          "training_seconds": {
+            "mean": 1444.137423219004,
+            "standard_deviation": 36.591326719434804
+          }
+        },
+        "grouped_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.04978318774673723,
+            "standard_deviation": 0.004158751367900546
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.13812628112683076,
+            "standard_deviation": 0.006531550155500331
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.08831485234984139,
+            "standard_deviation": 0.010603728533340264
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.06683094154199982,
+            "standard_deviation": 0.007517542061761735
+          },
+          "training_seconds": {
+            "mean": 1031.855298009022,
+            "standard_deviation": 403.86258285776836
+          }
+        },
+        "zero_rk4": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.05047573010833204,
+            "standard_deviation": 0.003220168744544194
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.1527307423349666,
+            "standard_deviation": 0.020597501307005994
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.09934292478997303,
+            "standard_deviation": 0.008358482005492655
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.07509164964672127,
+            "standard_deviation": 0.006879608094015612
+          },
+          "training_seconds": {
+            "mean": 912.0778719823187,
+            "standard_deviation": 301.0950216417317
+          }
+        }
+      },
+      "blocks": 8,
+      "contrasts": {
+        "fixed_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.0035463561542238287,
+              -0.03707795328345673,
+              0.003360721357337698
+            ],
+            "paired_mean_difference": -0.012421196026780953,
+            "wins_lower_error": 2
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.013923277311315624,
+              0.00047478178476399735,
+              -0.019376704421474156
+            ],
+            "paired_mean_difference": -0.010941733316008595,
+            "wins_lower_error": 2
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.009781082954004414,
+              -0.00011878182854736796,
+              -0.012617847772867515
+            ],
+            "paired_mean_difference": -0.007505904185139765,
+            "wins_lower_error": 3
+          }
+        },
+        "grouped_rate1_minus_fixed_rate1": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.019666411103379217,
+              0.002865495155945169,
+              0.010251120403369424
+            ],
+            "paired_mean_difference": -0.0021832651813548745,
+            "wins_lower_error": 1
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              0.0008034580024453425,
+              -0.0007834093567626599,
+              -0.0002790660180517768
+            ],
+            "paired_mean_difference": -8.63391241230314e-05,
+            "wins_lower_error": 2
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              0.00015293018948359105,
+              -0.0010139656066852076,
+              -0.0014033763415434164
+            ],
+            "paired_mean_difference": -0.0007548039195816777,
+            "wins_lower_error": 2
+          }
+        },
+        "grouped_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.023212767257603045,
+              -0.03421245812751156,
+              0.013611841760707122
+            ],
+            "paired_mean_difference": -0.014604461208135827,
+            "wins_lower_error": 2
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.013119819308870281,
+              -0.00030862757199866253,
+              -0.019655770439525933
+            ],
+            "paired_mean_difference": -0.011028072440131625,
+            "wins_lower_error": 3
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.009628152764520823,
+              -0.0011327474352325756,
+              -0.014021224114410931
+            ],
+            "paired_mean_difference": -0.008260708104721444,
+            "wins_lower_error": 3
+          }
+        }
+      }
+    },
+    "blocks_12": {
+      "arms": {
+        "fixed_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.05320990191513416,
+            "standard_deviation": 0.0005351712486624618
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.11018833432901519,
+            "standard_deviation": 0.013637024712340564
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.10778822694544908,
+            "standard_deviation": 0.010678197877921292
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.0910031236747646,
+            "standard_deviation": 0.00936295824211444
+          },
+          "training_seconds": {
+            "mean": 1580.9690550340067,
+            "standard_deviation": 632.9142604142555
+          }
+        },
+        "grouped_rate1": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.05459500183898442,
+            "standard_deviation": 0.0032599143949309955
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.10411148267079263,
+            "standard_deviation": 0.022266022481139538
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.10723158721476411,
+            "standard_deviation": 0.012063052310719581
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.09028961247447448,
+            "standard_deviation": 0.011300111873520216
+          },
+          "training_seconds": {
+            "mean": 2093.3692089236574,
+            "standard_deviation": 332.8110432224932
+          }
+        },
+        "zero_rk4": {
+          "continuation_future_0.8_relative_l2": {
+            "mean": 0.05297001880788394,
+            "standard_deviation": 0.0002010959526470534
+          },
+          "direct_future_0.8_relative_l2": {
+            "mean": 0.11878626017631529,
+            "standard_deviation": 0.02320544213258183
+          },
+          "direct_training_relative_l2": {
+            "mean": 0.10613389961576518,
+            "standard_deviation": 0.0031594089963316654
+          },
+          "interface_mean_relative_l2": {
+            "mean": 0.0879524604707023,
+            "standard_deviation": 0.002855069091521423
+          },
+          "training_seconds": {
+            "mean": 1918.7439355943159,
+            "standard_deviation": 207.34810115299115
+          }
+        }
+      },
+      "blocks": 12,
+      "contrasts": {
+        "fixed_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.006387954349030486,
+              -0.02026179203463066,
+              0.0008559688417607986
+            ],
+            "paired_mean_difference": -0.008597925847300117,
+            "wins_lower_error": 2
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.013568863173718027,
+              0.006221095279405772,
+              0.012310749883363947
+            ],
+            "paired_mean_difference": 0.0016543273296838977,
+            "wins_lower_error": 1
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.010487996060361243,
+              0.00689560077207893,
+              0.01274438490046921
+            ],
+            "paired_mean_difference": 0.003050663204062299,
+            "wins_lower_error": 1
+          }
+        },
+        "grouped_rate1_minus_fixed_rate1": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.014216728397933365,
+              0.0030632179322072073,
+              -0.007077044508941449
+            ],
+            "paired_mean_difference": -0.006076851658222536,
+            "wins_lower_error": 2
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.0017851017349751197,
+              -0.0010313096938618094,
+              0.0011464922367820651
+            ],
+            "paired_mean_difference": -0.0005566397306849546,
+            "wins_lower_error": 2
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.002235851234610148,
+              -0.001842571254552866,
+              0.0019378888882926881
+            ],
+            "paired_mean_difference": -0.0007135112002901086,
+            "wins_lower_error": 2
+          }
+        },
+        "grouped_rate1_minus_zero_rk4": {
+          "direct_future_0.8_relative_l2": {
+            "paired_differences": [
+              -0.02060468274696385,
+              -0.017198574102423453,
+              -0.0062210756671806505
+            ],
+            "paired_mean_difference": -0.014674777505522651,
+            "wins_lower_error": 3
+          },
+          "direct_training_relative_l2": {
+            "paired_differences": [
+              -0.015353964908693146,
+              0.005189785585543963,
+              0.013457242120146012
+            ],
+            "paired_mean_difference": 0.001097687598998943,
+            "wins_lower_error": 1
+          },
+          "interface_mean_relative_l2": {
+            "paired_differences": [
+              -0.012723847294971391,
+              0.005053029517526064,
+              0.014682273788761899
+            ],
+            "paired_mean_difference": 0.002337152003772191,
+            "wins_lower_error": 1
+          }
+        }
+      }
+    }
+  },
+  "study": "Allen--Cahn long-sequence three-seed development comparison",
+  "verification": {
+    "all_numeric_values_finite": true,
+    "clipped_gradient_updates_total": 0,
+    "expected_runs": 27,
+    "maximum_absolute_summary_row_discrepancy": 0.0,
+    "metrics_files": 27,
+    "nonfinite_updates_total": 0,
+    "record_status_counts": {
+      "complete": 27
+    }
+  }
+}

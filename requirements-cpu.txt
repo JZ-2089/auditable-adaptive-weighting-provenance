@@ -1,0 +1,11 @@
+jax==0.4.38
+jaxlib==0.4.38
+flax==0.10.2
+optax==0.2.4
+numpy==2.2.1
+scipy==1.15.1
+matplotlib==3.10.0
+tqdm==4.67.1
+ml-collections==1.1.0
+wandb==0.19.11
+pytest==8.3.4

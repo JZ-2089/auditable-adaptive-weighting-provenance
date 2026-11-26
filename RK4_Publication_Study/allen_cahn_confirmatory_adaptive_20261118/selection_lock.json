@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "locked_utc": "2026-11-18T22:14:46.510354+00:00",
+  "selected_method": "grouped_rate1",
+  "development_campaign": "../allen_cahn_guarded_adaptive_20261117",
+  "primary_outcome": "direct_test_relative_l2",
+  "primary_contrast": "grouped_rate1 - zero_rk4",
+  "secondary_predeclared_contrast": "fixed_rate1 - zero_rk4",
+  "test_interval": [
+    1.0,
+    1.2
+  ],
+  "multiplicity": "Holm correction over the two predeclared direct-test contrasts",
+  "direction": "negative paired difference favours RK4",
+  "training_must_complete_before_test_evaluation": true
+}

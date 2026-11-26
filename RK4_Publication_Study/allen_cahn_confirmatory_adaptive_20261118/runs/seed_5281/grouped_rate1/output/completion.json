@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "completed_updates": 20000,
+  "expected_updates": 20000,
+  "initial_parameters_sha256": "9f4d6bdf0be999ca0f852a3bc0156bc691f8a8481339a69ab4d8d786dd0bc519",
+  "pair_schedule_sha256": "d922e2e54a25eeacad8574845375b7760cbe70abd60263fb098cccf7a6663628",
+  "prediction_sha256": "3514fe28bc24ec910c23e4d86e9093fdefeab2f059775a271f301cafcf2d2404",
+  "reference_errors_eligible": false
+}

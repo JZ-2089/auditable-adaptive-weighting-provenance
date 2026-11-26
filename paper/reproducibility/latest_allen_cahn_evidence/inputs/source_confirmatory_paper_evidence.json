@@ -1,0 +1,196 @@
+{
+  "arms": {
+    "fixed_rate1": {
+      "continuation_test_relative_l2": {
+        "mean": 0.05320049253319851,
+        "median": 0.04585662488304237,
+        "standard_deviation": 0.022364189728596957
+      },
+      "direct_test_relative_l2": {
+        "mean": 0.21229226090187225,
+        "median": 0.21228845368662871,
+        "standard_deviation": 0.010666186878975628
+      },
+      "direct_training_relative_l2": {
+        "mean": 0.017113870352806912,
+        "median": 0.016515479871388197,
+        "standard_deviation": 0.0031843572496259393
+      },
+      "direct_validation_relative_l2": {
+        "mean": 0.05757594458253755,
+        "median": 0.0547547615598673,
+        "standard_deviation": 0.009521980524664268
+      },
+      "training_seconds": {
+        "mean": 1128.3272368547011,
+        "standard_deviation": 624.1554191009864
+      }
+    },
+    "grouped_rate1": {
+      "continuation_test_relative_l2": {
+        "mean": 0.05387823086523198,
+        "median": 0.048890204377765686,
+        "standard_deviation": 0.022258026622438424
+      },
+      "direct_test_relative_l2": {
+        "mean": 0.2155547241805992,
+        "median": 0.21117554108850042,
+        "standard_deviation": 0.012665800735919216
+      },
+      "direct_training_relative_l2": {
+        "mean": 0.015511458650422577,
+        "median": 0.014487208390866674,
+        "standard_deviation": 0.0033133879009873794
+      },
+      "direct_validation_relative_l2": {
+        "mean": 0.05811749153936822,
+        "median": 0.054967177825034234,
+        "standard_deviation": 0.008776648350948506
+      },
+      "training_seconds": {
+        "mean": 1194.4834422452027,
+        "standard_deviation": 590.1053954531841
+      }
+    },
+    "zero_rk4": {
+      "continuation_test_relative_l2": {
+        "mean": 0.07660162722928944,
+        "median": 0.08255203707026082,
+        "standard_deviation": 0.021299430694554183
+      },
+      "direct_test_relative_l2": {
+        "mean": 0.23591411689034358,
+        "median": 0.23569960035425985,
+        "standard_deviation": 0.01565053472950849
+      },
+      "direct_training_relative_l2": {
+        "mean": 0.018489730272669633,
+        "median": 0.01878388984830584,
+        "standard_deviation": 0.0036180980768247234
+      },
+      "direct_validation_relative_l2": {
+        "mean": 0.07138672990186899,
+        "median": 0.07466713064004063,
+        "standard_deviation": 0.008942154634512976
+      },
+      "training_seconds": {
+        "mean": 1093.3970607678116,
+        "standard_deviation": 574.0732781696144
+      }
+    }
+  },
+  "confirmatory": true,
+  "interpretation": "Both predeclared rate-normalised RK4 arms reduced direct held-out test error relative to zero-RK4 after Holm correction. Fixed RK4 had the lowest mean test error. The grouped controller did not improve the confirmatory primary outcome relative to fixed RK4.",
+  "n_paired_seeds": 10,
+  "negative_difference_favours": "treatment",
+  "predeclared_primary_contrasts": {
+    "fixed_rate1_minus_zero_rk4": {
+      "control_mean": 0.23591411689034358,
+      "holm_adjusted_one_sided_p": 0.005859375,
+      "mean_difference_95pct_t_ci": [
+        -0.03652528411781172,
+        -0.010718427859130972
+      ],
+      "n": 10,
+      "one_sided_exact_sign_flip_p": 0.0029296875,
+      "paired_bootstrap_95pct_ci": [
+        -0.03407999084298376,
+        -0.012858743431871739
+      ],
+      "paired_differences": [
+        -0.04186382485918866,
+        -0.021109521822432142,
+        -0.006832411335094768,
+        -0.0326033020667057,
+        -0.019761006017393945,
+        0.011066300108878296,
+        -0.054297463530287055,
+        -0.028328005411974194,
+        -0.02536735366396889,
+        -0.017121971286546384
+      ],
+      "paired_mean_difference": -0.023621855988471344,
+      "paired_median_difference": -0.023238437743200516,
+      "relative_mean_change_percent": -10.01290482309337,
+      "ties": 0,
+      "treatment_mean": 0.21229226090187225,
+      "wins_lower_error": 9
+    },
+    "grouped_rate1_minus_zero_rk4": {
+      "control_mean": 0.23591411689034358,
+      "holm_adjusted_one_sided_p": 0.005859375,
+      "mean_difference_95pct_t_ci": [
+        -0.03259721169223074,
+        -0.008121573727258078
+      ],
+      "n": 10,
+      "one_sided_exact_sign_flip_p": 0.00390625,
+      "paired_bootstrap_95pct_ci": [
+        -0.02980506276809003,
+        -0.009861209851055982
+      ],
+      "paired_differences": [
+        -0.02969645065825982,
+        -0.022913193223993683,
+        0.002813715033491676,
+        -0.030055842471144983,
+        -0.02142040897931402,
+        0.012927343323846013,
+        -0.04746701795588784,
+        -0.024166005419386266,
+        -0.026633736320605145,
+        -0.016982330426190018
+      ],
+      "paired_mean_difference": -0.02035939270974441,
+      "paired_median_difference": -0.023539599321689975,
+      "relative_mean_change_percent": -8.63000187445661,
+      "ties": 0,
+      "treatment_mean": 0.2155547241805992,
+      "wins_lower_error": 8
+    }
+  },
+  "primary_outcome": "direct_test_relative_l2 over t in (1.0, 1.2]",
+  "secondary_grouped_minus_fixed": {
+    "control_mean": 0.21229226090187225,
+    "mean_difference_95pct_t_ci": [
+      -0.00024381074467620103,
+      0.006768737302130071
+    ],
+    "n": 10,
+    "one_sided_exact_sign_flip_p": 0.966796875,
+    "paired_bootstrap_95pct_ci": [
+      0.0005399168641548896,
+      0.006266354192609025
+    ],
+    "paired_differences": [
+      0.012167374200928838,
+      -0.0018036714015615407,
+      0.009646126368586444,
+      0.0025474595955607138,
+      -0.0016594029619200756,
+      0.001861043214967717,
+      0.006830445574399213,
+      0.004161999992587928,
+      -0.0012663826566362557,
+      0.00013964086035636591
+    ],
+    "paired_mean_difference": 0.003262463278726935,
+    "paired_median_difference": 0.0022042514052642154,
+    "relative_mean_change_percent": 1.5367791858578121,
+    "ties": 0,
+    "treatment_mean": 0.2155547241805992,
+    "wins_lower_error": 3
+  },
+  "study": "Allen--Cahn ten-seed confirmatory paired comparison",
+  "verification": {
+    "all_numeric_values_finite": true,
+    "clipped_gradient_updates_total": 0,
+    "expected_runs": 30,
+    "maximum_absolute_summary_row_discrepancy": 0.0,
+    "metrics_files": 30,
+    "nonfinite_updates_total": 0,
+    "record_status_counts": {
+      "complete": 30
+    }
+  }
+}

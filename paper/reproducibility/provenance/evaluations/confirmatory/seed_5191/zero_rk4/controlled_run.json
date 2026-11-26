@@ -1,0 +1,2390 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "config": {
+    "data_path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/reference/training_initial_only.mat",
+    "output_dir": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/runs/seed_5191/zero_rk4/output",
+    "alpha": 5.0,
+    "beta": 5.0,
+    "nu": 0.0001,
+    "slabs": 4,
+    "epochs": 5000,
+    "pairs_per_step": 8,
+    "spatial_points": 256,
+    "rk4_substeps": 4,
+    "early_stopping": false,
+    "early_stopping_warmup": 1000,
+    "early_stopping_patience": 750,
+    "early_stopping_min_delta": 1e-05,
+    "early_stopping_ema_decay": 0.9,
+    "hidden": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "architecture": "modified",
+    "activation": "tanh",
+    "normalize_inputs": true,
+    "gate_activation": "sigmoid",
+    "use_residual_gates": true,
+    "residual_gate_init": 0.1,
+    "weight_factorization": true,
+    "weight_fact_mean": 0.5,
+    "weight_fact_stddev": 0.1,
+    "lr_decay_spans_run": true,
+    "hard_initial_condition": true,
+    "hard_initial_transition": 0.2,
+    "method": "fd_rk4",
+    "learning_rate": 0.0005,
+    "rk4_weight": 0.0,
+    "residual_weight": 1.0,
+    "initial_weight": 100.0,
+    "boundary_weight": 1.0,
+    "previous_weight": 1.0,
+    "data_weight": 0.0,
+    "deduplicate_replay": true,
+    "normalize_rk4_defect": true,
+    "adaptive_weights": false,
+    "adaptive_update_every": 50,
+    "adaptive_first_slab_warmup": 500,
+    "adaptive_later_slab_warmup": 100,
+    "adaptive_ema_decay": 0.9,
+    "adaptive_rate": 0.1,
+    "adaptive_progress_power": 0.25,
+    "adaptive_min_multiplier": 0.01,
+    "adaptive_max_multiplier": 100.0,
+    "adaptive_gradient_epsilon": 1e-12,
+    "adaptive_max_temporal_gradient_ratio": 1e+30,
+    "rk4_previous_controller": "grouped",
+    "inverse_loss_normalize": true,
+    "inverse_loss_ema_decay": 0.99,
+    "inverse_loss_power": 1.0,
+    "inverse_loss_min": 0.01,
+    "inverse_loss_max": 100.0,
+    "inverse_loss_warmup_epochs": 200,
+    "inverse_loss_update_every": 1,
+    "inverse_loss_epsilon": 1e-12,
+    "mode": "forward",
+    "observations": 500,
+    "observation_path": null,
+    "initial_alpha": 1.0,
+    "initial_beta": 1.0,
+    "initial_nu": 0.001,
+    "parameter_learning_rate": 0.005,
+    "infer_parameters": [
+      "alpha",
+      "beta",
+      "nu"
+    ],
+    "seed": 5191,
+    "use_wandb": false,
+    "wandb_project": "allen-cahn-fd-rk4-pinn",
+    "wandb_entity": null,
+    "wandb_run_name": "invloss-forward-0-1-to-3",
+    "log_every": 500,
+    "checkpoint_dir": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/runs/seed_5191/zero_rk4/checkpoints",
+    "checkpoint_every": 1,
+    "resume_checkpoint": null,
+    "train_end_time": 0.8,
+    "forecast_end_time": 1.2,
+    "forecast_strategy": "direct",
+    "temporal_integrator": "rk4",
+    "diagnostic_every": 500,
+    "gradient_clip_norm": 0.0
+  },
+  "protocol": "fixed_updates_dynamic_weights_final_iterate_v2",
+  "checkpoint_selection": "final_iterate",
+  "reference_errors_eligible": false,
+  "reference_values_used": "initial_only",
+  "physics_engagement": "all enabled coefficients constant from update 1",
+  "temporal_active": false,
+  "defect_normalization": "rate",
+  "gradient_clipping_threshold": 0.0,
+  "data_sha256": "26aefa6d1461110688854dcf3b107317ebfb64fe6dbac54532da6a50635d1868",
+  "source_sha256": {
+    "GPT-code-invloss.py": "a1d5f73a91c09271fcd75ae0891ade27585550b424b2d071c651920ecbd70f2c",
+    "adaptive_weight_controllers.py": "b40704e197312d63b3e40e1963034b5dba74c689a2f566829ff9cbb7e613573f",
+    "controlled_runner.py": "aa11762eb48abbc31aff4fced4332b523d3ddcee1fe98a7e763f62cb7b7d0d93",
+    "forward_invloss_config.py": "dcb373dcc7b66a18c20d1cdd1fa4e21150511f951759068efdd61271fb4e586c",
+    "inverse_invloss_config.py": "953037a21253f227fbc835e75b842022ff7b0db439f780a01d3eae0eec907c03"
+  },
+  "environment": {
+    "python": "3.13.1",
+    "jax": "0.4.38",
+    "devices": [
+      "cuda:0"
+    ]
+  },
+  "completed_updates": 20000,
+  "nonfinite_updates": 0,
+  "clipped_gradient_updates": 0,
+  "block_records": [
+    {
+      "block": 1,
+      "time_interval": [
+        0.0,
+        0.2
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 8.12184950405026e-08,
+      "configured_weights": [
+        1.0,
+        0.0,
+        101.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 15.577155113220215,
+      "update_wall_seconds": 44.73042406712193,
+      "gradient_diagnostic_wall_seconds": 20.647682736162096,
+      "monitor_wall_seconds": 4.927857483970001,
+      "entry_grid_rms_after": 8.12184950405026e-08,
+      "final_losses": {
+        "residual": 0.00273624574765563,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 5.8896810514852405e-05,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.0027951425588367235,
+      "final_parameters_sha256": "279e5c84279842986dcb7f882268e1157f1d1d455fc0ecdaed31bc92307cc2fd",
+      "wall_seconds_before_checkpoint": 75.54108441399876,
+      "checkpoint_wall_seconds": 0.027815119945444167,
+      "wall_seconds": 75.57331080804579
+    },
+    {
+      "block": 2,
+      "time_interval": [
+        0.2,
+        0.4
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 1.5060767509567086e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 13.946451187133789,
+      "update_wall_seconds": 57.74785230064299,
+      "gradient_diagnostic_wall_seconds": 19.128182377899066,
+      "monitor_wall_seconds": 3.94354971696157,
+      "entry_grid_rms_after": 0.0008285618969239295,
+      "final_losses": {
+        "residual": 0.0003379909903742373,
+        "rk4": 0.0,
+        "initial": 6.07273364039429e-07,
+        "boundary": 2.2779709979658946e-05,
+        "previous": 2.338263357160031e-06,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.0004238363001149992,
+      "final_parameters_sha256": "2e4e8e81dea642050e68a636a32374584065944ee28e29cb97c28669f01516b8",
+      "wall_seconds_before_checkpoint": 84.35486081603449,
+      "checkpoint_wall_seconds": 0.027876385021954775,
+      "wall_seconds": 84.38706885604188
+    },
+    {
+      "block": 3,
+      "time_interval": [
+        0.4,
+        0.6
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 2.805449730658438e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 17.22032928466797,
+      "update_wall_seconds": 63.706005220650695,
+      "gradient_diagnostic_wall_seconds": 18.602533386205323,
+      "monitor_wall_seconds": 4.033433774951845,
+      "entry_grid_rms_after": 0.0008977535180747509,
+      "final_losses": {
+        "residual": 0.0001690279459580779,
+        "rk4": 0.0,
+        "initial": 3.10800515990195e-07,
+        "boundary": 6.4738342189230025e-06,
+        "previous": 7.771403943479527e-06,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.00021435323571949993,
+      "final_parameters_sha256": "6902b740f1b1d278e8cc6ef129a48769df4cd5d76dd93f2f5868570c577dd0f1",
+      "wall_seconds_before_checkpoint": 89.64442907494958,
+      "checkpoint_wall_seconds": 0.028600755031220615,
+      "wall_seconds": 89.67720295896288
+    },
+    {
+      "block": 4,
+      "time_interval": [
+        0.6,
+        0.8
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 3.30144539475441e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 50.1023063659668,
+      "update_wall_seconds": 67.49016916414257,
+      "gradient_diagnostic_wall_seconds": 19.162740227999166,
+      "monitor_wall_seconds": 3.940162591985427,
+      "entry_grid_rms_after": 0.0010410224786028266,
+      "final_losses": {
+        "residual": 0.0002635491546243429,
+        "rk4": 0.0,
+        "initial": 2.0021002455905546e-07,
+        "boundary": 2.527964625187451e-06,
+        "previous": 6.681300146738067e-05,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.0003529111231728166,
+      "final_parameters_sha256": "6e8303a671a9470f6a20f17576ade247bbad5384d342473bf8ac060ec1342ba0",
+      "wall_seconds_before_checkpoint": 93.99033287691418,
+      "checkpoint_wall_seconds": 0.03027142898645252,
+      "wall_seconds": 94.02499070495833
+    }
+  ],
+  "gradient_diagnostics": [
+    {
+      "block": 1,
+      "completed_updates_in_block": 0,
+      "losses": {
+        "residual": 4.395000457763672,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.00730638112872839,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.04236005246639252,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0011026927968487144,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 11.064815456541314,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.2880329837190001,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 11.064815456541314,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.2880329837190001,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 500,
+      "losses": {
+        "residual": 0.6634482145309448,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.3224535882472992,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.005464616231620312,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.004951620940119028,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 1.4274054592276646,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 1.2934066112555171,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 1.4274054592276646,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 1.2934066112555171,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 1000,
+      "losses": {
+        "residual": 0.12995904684066772,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.007248467765748501,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0031985975801944733,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0013126592384651303,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.8355016078573217,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.34287805102375624,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.8355016078573217,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.34287805102375624,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 1500,
+      "losses": {
+        "residual": 0.041702527552843094,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.0005761709180660546,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0011769033735617995,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.00034769161720760167,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.3074174341255536,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.09082008534434068,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.3074174341255536,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.09082008534434068,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 2000,
+      "losses": {
+        "residual": 0.02007237821817398,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.0009080114541575313,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0004795365093741566,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.00026699737645685673,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.12525912202560846,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.06974204529656007,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.12525912202560846,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.06974204529656007,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 2500,
+      "losses": {
+        "residual": 0.013418956659734249,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.0006929538794793189,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0006126968655735254,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.00021577418374363333,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.16004176939466638,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.05636210024299021,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.16004176939466638,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.05636210024299021,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 3000,
+      "losses": {
+        "residual": 0.01019683014601469,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.0005061739939264953,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.00116499955765903,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0001458871556678787,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.30430805350575185,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.03810699847988794,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.30430805350575185,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.03810699847988794,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 3500,
+      "losses": {
+        "residual": 0.007525453809648752,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.0004387306980788708,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0007926954422146082,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.00020840000070165843,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.20705896878444094,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.054435899264675944,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.20705896878444094,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.054435899264675944,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 4000,
+      "losses": {
+        "residual": 0.005488420836627483,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.000270150339929387,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0009234881727024913,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.00023386321845464408,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.24122317165113344,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.06108711400502698,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.24122317165113344,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.06108711400502698,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 4500,
+      "losses": {
+        "residual": 0.003840772435069084,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 0.00015902338782325387,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0003800073463935405,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0002596874546725303,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.09926123588516365,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0678326299196671,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.09926123588516365,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0678326299196671,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 1,
+      "completed_updates_in_block": 5000,
+      "losses": {
+        "residual": 0.0027361486572772264,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 5.8743837143993005e-05,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 101.0,
+        "boundary": 1.0,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0011181129375472665,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.0001898890914162621,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.29206085906874735,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.04960068818135194,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.29206085906874735,
+        "rk4": 0.0,
+        "initial": 0.0,
+        "boundary": 0.04960068818135194,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 0,
+      "losses": {
+        "residual": 0.06581509858369827,
+        "rk4": 0.0,
+        "initial": 8.041205035169696e-08,
+        "boundary": 0.0025821905583143234,
+        "previous": 2.255057829358975e-08,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.011640476994216442,
+        "rk4": 0.0,
+        "initial": 2.91481501335511e-06,
+        "boundary": 0.0018701119115576148,
+        "previous": 1.1076862165282364e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 3.0405941982556888,
+        "rk4": 0.0,
+        "initial": 0.0007613751243183232,
+        "boundary": 0.48848955512700615,
+        "previous": 0.0002893373085258404,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 3.0405941982556888,
+        "rk4": 0.0,
+        "initial": 0.07613751243183232,
+        "boundary": 0.48848955512700615,
+        "previous": 0.0002893373085258404,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 500,
+      "losses": {
+        "residual": 0.0038689272478222847,
+        "rk4": 0.0,
+        "initial": 5.56856957700802e-06,
+        "boundary": 5.065906225354411e-05,
+        "previous": 8.59106603456894e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0006936037098057568,
+        "rk4": 0.0,
+        "initial": 3.5727150589082157e-06,
+        "boundary": 0.0004273663798812777,
+        "previous": 1.5988627637852915e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.18117534332758398,
+        "rk4": 0.0,
+        "initial": 0.0009332243588930599,
+        "boundary": 0.11163182881957318,
+        "previous": 0.004176369100499954,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.18117534332758398,
+        "rk4": 0.0,
+        "initial": 0.09332243588930599,
+        "boundary": 0.11163182881957318,
+        "previous": 0.004176369100499954,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 1000,
+      "losses": {
+        "residual": 0.0018921109149232507,
+        "rk4": 0.0,
+        "initial": 1.7352526811009739e-06,
+        "boundary": 2.6002860977314413e-05,
+        "previous": 6.84127235217602e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0007463136571459472,
+        "rk4": 0.0,
+        "initial": 7.839753379812464e-06,
+        "boundary": 0.00031508729443885386,
+        "previous": 1.7320346159976907e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.19494364166729766,
+        "rk4": 0.0,
+        "initial": 0.002047812014426629,
+        "boundary": 0.08230355164061304,
+        "previous": 0.004524225602780032,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.19494364166729766,
+        "rk4": 0.0,
+        "initial": 0.2047812014426629,
+        "boundary": 0.08230355164061304,
+        "previous": 0.004524225602780032,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 1500,
+      "losses": {
+        "residual": 0.0012687152484431863,
+        "rk4": 0.0,
+        "initial": 1.2456573585950537e-06,
+        "boundary": 1.4800982171436772e-05,
+        "previous": 6.824206593591953e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0013242261484265327,
+        "rk4": 0.0,
+        "initial": 1.4548132639902178e-05,
+        "boundary": 0.00023284433700609952,
+        "previous": 2.0244167899363674e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.3458994288708892,
+        "rk4": 0.0,
+        "initial": 0.003800099233246101,
+        "boundary": 0.06082097327705731,
+        "previous": 0.005287953362555712,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.3458994288708892,
+        "rk4": 0.0,
+        "initial": 0.38000992332461014,
+        "boundary": 0.06082097327705731,
+        "previous": 0.005287953362555712,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 2000,
+      "losses": {
+        "residual": 0.0008842498064041138,
+        "rk4": 0.0,
+        "initial": 8.085748959274497e-07,
+        "boundary": 1.583846278663259e-05,
+        "previous": 5.74070327274967e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.001015017507597804,
+        "rk4": 0.0,
+        "initial": 1.0231898158963304e-05,
+        "boundary": 0.00025107248802669346,
+        "previous": 1.6595668057561852e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.26513143286681773,
+        "rk4": 0.0,
+        "initial": 0.0026726611112881694,
+        "boundary": 0.0655823254334753,
+        "previous": 0.0043349333568608196,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.26513143286681773,
+        "rk4": 0.0,
+        "initial": 0.26726611112881693,
+        "boundary": 0.0655823254334753,
+        "previous": 0.0043349333568608196,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 2500,
+      "losses": {
+        "residual": 0.0007331741508096457,
+        "rk4": 0.0,
+        "initial": 1.0517643431739998e-06,
+        "boundary": 1.0053720870928373e-05,
+        "previous": 5.465558842843166e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.001308546052314341,
+        "rk4": 0.0,
+        "initial": 1.4309303878690116e-05,
+        "boundary": 0.00019976047042291611,
+        "previous": 1.708281342871487e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.34180365089800113,
+        "rk4": 0.0,
+        "initial": 0.0037377150761296195,
+        "boundary": 0.052179178543158254,
+        "previous": 0.004462179979999281,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.34180365089800113,
+        "rk4": 0.0,
+        "initial": 0.37377150761296196,
+        "boundary": 0.052179178543158254,
+        "previous": 0.004462179979999281,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 3000,
+      "losses": {
+        "residual": 0.000553498393855989,
+        "rk4": 0.0,
+        "initial": 4.826006829716789e-07,
+        "boundary": 3.258670403738506e-05,
+        "previous": 3.955150077672442e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.00039217222365550697,
+        "rk4": 0.0,
+        "initial": 4.405360868986463e-06,
+        "boundary": 0.0003650918370112777,
+        "previous": 1.19978649308905e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.10243880801073939,
+        "rk4": 0.0,
+        "initial": 0.001150718712482154,
+        "boundary": 0.09536517464005577,
+        "previous": 0.003133947046881877,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.10243880801073939,
+        "rk4": 0.0,
+        "initial": 0.1150718712482154,
+        "boundary": 0.09536517464005577,
+        "previous": 0.003133947046881877,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 3500,
+      "losses": {
+        "residual": 0.00046978352474980056,
+        "rk4": 0.0,
+        "initial": 1.2476486972445855e-06,
+        "boundary": 4.506707773543894e-05,
+        "previous": 2.596821786937653e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0005402352544479072,
+        "rk4": 0.0,
+        "initial": 1.6295498426188715e-05,
+        "boundary": 0.0004323149041738361,
+        "previous": 2.9528612230933504e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.14111416406592567,
+        "rk4": 0.0,
+        "initial": 0.004256526429026231,
+        "boundary": 0.11292442655945586,
+        "previous": 0.0007713131263996116,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.14111416406592567,
+        "rk4": 0.0,
+        "initial": 0.4256526429026231,
+        "boundary": 0.11292442655945586,
+        "previous": 0.0007713131263996116,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 4000,
+      "losses": {
+        "residual": 0.0004417927411850542,
+        "rk4": 0.0,
+        "initial": 1.3878233176001231e-06,
+        "boundary": 1.6404046618845314e-05,
+        "previous": 3.880120857502334e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.001183814718388021,
+        "rk4": 0.0,
+        "initial": 1.7119324184022844e-05,
+        "boundary": 0.0002399747318122536,
+        "previous": 1.636418528505601e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.309222737721892,
+        "rk4": 0.0,
+        "initial": 0.004471716907980712,
+        "boundary": 0.06268349464019703,
+        "previous": 0.00427446803611605,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.309222737721892,
+        "rk4": 0.0,
+        "initial": 0.4471716907980712,
+        "boundary": 0.06268349464019703,
+        "previous": 0.00427446803611605,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 4500,
+      "losses": {
+        "residual": 0.00040551554411649704,
+        "rk4": 0.0,
+        "initial": 2.4968858269858174e-06,
+        "boundary": 4.495258690440096e-05,
+        "previous": 4.067912868777057e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0008520418195985258,
+        "rk4": 0.0,
+        "initial": 2.5433597329538316e-05,
+        "boundary": 0.0004108909924980253,
+        "previous": 1.9009601601283066e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.2225607605796301,
+        "rk4": 0.0,
+        "initial": 0.006643477627195906,
+        "boundary": 0.10732831382474764,
+        "previous": 0.004965473869217855,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.2225607605796301,
+        "rk4": 0.0,
+        "initial": 0.6643477627195906,
+        "boundary": 0.10732831382474764,
+        "previous": 0.004965473869217855,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 2,
+      "completed_updates_in_block": 5000,
+      "losses": {
+        "residual": 0.00033615395659580827,
+        "rk4": 0.0,
+        "initial": 6.07273364039429e-07,
+        "boundary": 2.2996202460490167e-05,
+        "previous": 2.338263357160031e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0009096857975237072,
+        "rk4": 0.0,
+        "initial": 7.2378247750748415e-06,
+        "boundary": 0.00027483623125590384,
+        "previous": 9.952232176146936e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.23761787077629723,
+        "rk4": 0.0,
+        "initial": 0.0018905830087562686,
+        "boundary": 0.07178962259384726,
+        "previous": 0.0025996099154288054,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.23761787077629723,
+        "rk4": 0.0,
+        "initial": 0.18905830087562686,
+        "boundary": 0.07178962259384726,
+        "previous": 0.0025996099154288054,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 0,
+      "losses": {
+        "residual": 0.3065744638442993,
+        "rk4": 0.0,
+        "initial": 2.0756193919169164e-07,
+        "boundary": 0.00018092112441081554,
+        "previous": 1.233196257999225e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.018631618469953537,
+        "rk4": 0.0,
+        "initial": 4.908585196972126e-06,
+        "boundary": 0.0004054376622661948,
+        "previous": 6.010789093124913e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 4.866741375976375,
+        "rk4": 0.0,
+        "initial": 0.0012821652994952596,
+        "boundary": 0.10590385636717829,
+        "previous": 0.0015700705780849684,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 4.866741375976375,
+        "rk4": 0.0,
+        "initial": 0.12821652994952595,
+        "boundary": 0.10590385636717829,
+        "previous": 0.0015700705780849684,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 500,
+      "losses": {
+        "residual": 0.003497442463412881,
+        "rk4": 0.0,
+        "initial": 5.096543645777274e-06,
+        "boundary": 1.5300236555049196e-05,
+        "previous": 6.273134931689128e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.00048739920021034777,
+        "rk4": 0.0,
+        "initial": 4.892909601039719e-06,
+        "boundary": 0.0001903269876493141,
+        "previous": 5.875740316696465e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.12731292550385762,
+        "rk4": 0.0,
+        "initial": 0.0012780706970086124,
+        "boundary": 0.049715070499732665,
+        "previous": 0.015347946588684372,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.12731292550385762,
+        "rk4": 0.0,
+        "initial": 0.12780706970086123,
+        "boundary": 0.049715070499732665,
+        "previous": 0.015347946588684372,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 1000,
+      "losses": {
+        "residual": 0.0013640089891850948,
+        "rk4": 0.0,
+        "initial": 1.94173435374978e-06,
+        "boundary": 8.860295565682463e-06,
+        "previous": 4.273622835171409e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0005315266898833215,
+        "rk4": 0.0,
+        "initial": 4.533424089459004e-06,
+        "boundary": 7.497926708310843e-05,
+        "previous": 3.477276914054528e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.1388394109863594,
+        "rk4": 0.0,
+        "initial": 0.001184169943507499,
+        "boundary": 0.01958523904094614,
+        "previous": 0.009082950823970376,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.1388394109863594,
+        "rk4": 0.0,
+        "initial": 0.1184169943507499,
+        "boundary": 0.01958523904094614,
+        "previous": 0.009082950823970376,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 1500,
+      "losses": {
+        "residual": 0.0007440124172717333,
+        "rk4": 0.0,
+        "initial": 9.96023459265416e-07,
+        "boundary": 8.997548320621718e-06,
+        "previous": 2.739183219091501e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0002274889120599255,
+        "rk4": 0.0,
+        "initial": 4.776390142069431e-06,
+        "boundary": 0.00017451911116950214,
+        "previous": 2.8496457161963917e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.05942208953469683,
+        "rk4": 0.0,
+        "initial": 0.0012476347972508123,
+        "boundary": 0.04558591517945326,
+        "previous": 0.007443523350508687,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.05942208953469683,
+        "rk4": 0.0,
+        "initial": 0.12476347972508123,
+        "boundary": 0.04558591517945326,
+        "previous": 0.007443523350508687,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 2000,
+      "losses": {
+        "residual": 0.0004931519506499171,
+        "rk4": 0.0,
+        "initial": 5.607175808108877e-07,
+        "boundary": 9.657051123213023e-06,
+        "previous": 2.1173007553443313e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0003341052506584674,
+        "rk4": 0.0,
+        "initial": 3.291967914265115e-06,
+        "boundary": 0.00018918307614512742,
+        "previous": 2.6544650609139353e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.08727120780906458,
+        "rk4": 0.0,
+        "initial": 0.0008598907541273108,
+        "boundary": 0.049416270829867236,
+        "previous": 0.006933694441986774,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.08727120780906458,
+        "rk4": 0.0,
+        "initial": 0.08598907541273108,
+        "boundary": 0.049416270829867236,
+        "previous": 0.006933694441986774,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 2500,
+      "losses": {
+        "residual": 0.00042782098171301186,
+        "rk4": 0.0,
+        "initial": 1.3447571518554469e-06,
+        "boundary": 4.296861152397469e-05,
+        "previous": 1.6654434148222208e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0018845535814762115,
+        "rk4": 0.0,
+        "initial": 2.3082768166204914e-05,
+        "boundary": 0.0004956402699463069,
+        "previous": 2.534406667109579e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.4922618453681557,
+        "rk4": 0.0,
+        "initial": 0.006029420529821524,
+        "boundary": 0.12946556485351896,
+        "previous": 0.0066200914377157315,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.4922618453681557,
+        "rk4": 0.0,
+        "initial": 0.6029420529821524,
+        "boundary": 0.12946556485351896,
+        "previous": 0.0066200914377157315,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 3000,
+      "losses": {
+        "residual": 0.00027238615439273417,
+        "rk4": 0.0,
+        "initial": 3.593063411244657e-07,
+        "boundary": 1.519202305644285e-05,
+        "previous": 1.3152876817912329e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0002771059807855636,
+        "rk4": 0.0,
+        "initial": 6.672454674117034e-06,
+        "boundary": 0.00028717960231006145,
+        "previous": 1.868326944531873e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.07238250098317839,
+        "rk4": 0.0,
+        "initial": 0.001742903403384972,
+        "boundary": 0.07501381885597949,
+        "previous": 0.004880233061592666,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.07238250098317839,
+        "rk4": 0.0,
+        "initial": 0.1742903403384972,
+        "boundary": 0.07501381885597949,
+        "previous": 0.004880233061592666,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 3500,
+      "losses": {
+        "residual": 0.00026516185607761145,
+        "rk4": 0.0,
+        "initial": 6.248933459573891e-07,
+        "boundary": 2.3578908439958468e-05,
+        "previous": 1.1759650988096837e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0014192593516781926,
+        "rk4": 0.0,
+        "initial": 1.52850534504978e-05,
+        "boundary": 0.00037831556983292103,
+        "previous": 1.9485964003251866e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.3707229310858086,
+        "rk4": 0.0,
+        "initial": 0.003992589381406198,
+        "boundary": 0.09881932908035486,
+        "previous": 0.005089903886683044,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.3707229310858086,
+        "rk4": 0.0,
+        "initial": 0.3992589381406198,
+        "boundary": 0.09881932908035486,
+        "previous": 0.005089903886683044,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 4000,
+      "losses": {
+        "residual": 0.00022752262884750962,
+        "rk4": 0.0,
+        "initial": 4.617267279627413e-07,
+        "boundary": 3.278411668361514e-06,
+        "previous": 9.634652997192461e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0014185697073116899,
+        "rk4": 0.0,
+        "initial": 1.1044387065339833e-05,
+        "boundary": 9.798005339689553e-05,
+        "previous": 9.386338206240907e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.3705427899575121,
+        "rk4": 0.0,
+        "initial": 0.0028848903056848444,
+        "boundary": 0.02559324519531314,
+        "previous": 0.0024517934709154874,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.3705427899575121,
+        "rk4": 0.0,
+        "initial": 0.28848903056848446,
+        "boundary": 0.02559324519531314,
+        "previous": 0.0024517934709154874,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 4500,
+      "losses": {
+        "residual": 0.0001522042730357498,
+        "rk4": 0.0,
+        "initial": 1.6998284024793975e-07,
+        "boundary": 7.790769814164378e-06,
+        "previous": 8.880318091541994e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.00026566509041003883,
+        "rk4": 0.0,
+        "initial": 1.8444078477841686e-06,
+        "boundary": 0.00020234652038197964,
+        "previous": 1.2292755855014548e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.06939404055187615,
+        "rk4": 0.0,
+        "initial": 0.00048177542930381465,
+        "boundary": 0.052854677365572034,
+        "previous": 0.003210975130306236,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.06939404055187615,
+        "rk4": 0.0,
+        "initial": 0.04817754293038146,
+        "boundary": 0.052854677365572034,
+        "previous": 0.003210975130306236,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 3,
+      "completed_updates_in_block": 5000,
+      "losses": {
+        "residual": 0.00016640867397654802,
+        "rk4": 0.0,
+        "initial": 3.10800515990195e-07,
+        "boundary": 6.510160346806515e-06,
+        "previous": 7.771403943479527e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.001101544825360179,
+        "rk4": 0.0,
+        "initial": 9.159744877251796e-06,
+        "boundary": 0.00018594649736769497,
+        "previous": 1.0052825018647127e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.287733123545784,
+        "rk4": 0.0,
+        "initial": 0.0023926053154962506,
+        "boundary": 0.04857084820176118,
+        "previous": 0.0026258856439444066,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.287733123545784,
+        "rk4": 0.0,
+        "initial": 0.23926053154962507,
+        "boundary": 0.04857084820176118,
+        "previous": 0.0026258856439444066,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 0,
+      "losses": {
+        "residual": 0.4141522943973541,
+        "rk4": 0.0,
+        "initial": 8.374263416044414e-07,
+        "boundary": 0.001420930027961731,
+        "previous": 5.351838353817584e-06,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0328427217900753,
+        "rk4": 0.0,
+        "initial": 1.4343621842272114e-05,
+        "boundary": 0.001608711201697588,
+        "previous": 5.832627721247263e-06,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 8.578805609035152,
+        "rk4": 0.0,
+        "initial": 0.0037466792277717916,
+        "boundary": 0.42020940799770734,
+        "previous": 0.0015235332726159909,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 8.578805609035152,
+        "rk4": 0.0,
+        "initial": 0.37466792277717914,
+        "boundary": 0.42020940799770734,
+        "previous": 0.0015235332726159909,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 500,
+      "losses": {
+        "residual": 0.007411998696625233,
+        "rk4": 0.0,
+        "initial": 6.1905420807306655e-06,
+        "boundary": 4.150360473431647e-05,
+        "previous": 0.0006240041111595929,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0010626476723700762,
+        "rk4": 0.0,
+        "initial": 5.295126811688533e-06,
+        "boundary": 0.00017414367175661027,
+        "previous": 0.00021844820003025234,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.2775728476593978,
+        "rk4": 0.0,
+        "initial": 0.001383133343302661,
+        "boundary": 0.0454878471276713,
+        "previous": 0.05706057663800174,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.2775728476593978,
+        "rk4": 0.0,
+        "initial": 0.1383133343302661,
+        "boundary": 0.0454878471276713,
+        "previous": 0.05706057663800174,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 1000,
+      "losses": {
+        "residual": 0.003038046881556511,
+        "rk4": 0.0,
+        "initial": 1.929335439854185e-06,
+        "boundary": 2.735852831392549e-05,
+        "previous": 0.00035132208722643554,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.000710180145688355,
+        "rk4": 0.0,
+        "initial": 6.71177303956938e-06,
+        "boundary": 9.982997289625928e-05,
+        "previous": 0.0001227379689225927,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.1855052530724705,
+        "rk4": 0.0,
+        "initial": 0.0017531737036431743,
+        "boundary": 0.026076460316119633,
+        "previous": 0.03206022883745611,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.1855052530724705,
+        "rk4": 0.0,
+        "initial": 0.17531737036431744,
+        "boundary": 0.026076460316119633,
+        "previous": 0.03206022883745611,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 1500,
+      "losses": {
+        "residual": 0.0019083984661847353,
+        "rk4": 0.0,
+        "initial": 1.276082002732437e-06,
+        "boundary": 1.3682266398973297e-05,
+        "previous": 0.00021772041509393603,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0004920278443023562,
+        "rk4": 0.0,
+        "initial": 8.0181380326394e-06,
+        "boundary": 0.00010048929834738374,
+        "previous": 6.958311860216781e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.12852196774318717,
+        "rk4": 0.0,
+        "initial": 0.0020944076428285343,
+        "boundary": 0.026248681879071686,
+        "previous": 0.018175717955837143,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.12852196774318717,
+        "rk4": 0.0,
+        "initial": 0.20944076428285344,
+        "boundary": 0.026248681879071686,
+        "previous": 0.018175717955837143,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 2000,
+      "losses": {
+        "residual": 0.0012824323493987322,
+        "rk4": 0.0,
+        "initial": 1.048460035235621e-06,
+        "boundary": 1.0849866157514043e-05,
+        "previous": 0.0001690267672529444,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0010403735795989633,
+        "rk4": 0.0,
+        "initial": 7.925325917312875e-06,
+        "boundary": 0.00020480372768361121,
+        "previous": 5.180262814974412e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.2717546602015381,
+        "rk4": 0.0,
+        "initial": 0.002070164308167087,
+        "boundary": 0.053496521361223126,
+        "previous": 0.013531298647363665,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.2717546602015381,
+        "rk4": 0.0,
+        "initial": 0.2070164308167087,
+        "boundary": 0.053496521361223126,
+        "previous": 0.013531298647363665,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 2500,
+      "losses": {
+        "residual": 0.0009521542233414948,
+        "rk4": 0.0,
+        "initial": 8.664494544063928e-07,
+        "boundary": 5.1218189582868945e-06,
+        "previous": 0.00014186761109158397,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0014301646733656526,
+        "rk4": 0.0,
+        "initial": 1.495419564889744e-05,
+        "boundary": 7.76740416768007e-05,
+        "previous": 5.310335836838931e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.37357149630091774,
+        "rk4": 0.0,
+        "initial": 0.0039061664356374363,
+        "boundary": 0.020289137686960265,
+        "previous": 0.013871060734284454,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.37357149630091774,
+        "rk4": 0.0,
+        "initial": 0.39061664356374365,
+        "boundary": 0.020289137686960265,
+        "previous": 0.013871060734284454,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 3000,
+      "losses": {
+        "residual": 0.0006986774387769401,
+        "rk4": 0.0,
+        "initial": 5.875491524420795e-07,
+        "boundary": 4.440557859197725e-06,
+        "previous": 0.00011810909199994057,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.0003570483240764588,
+        "rk4": 0.0,
+        "initial": 1.0998439393006265e-05,
+        "boundary": 0.00011543303116923198,
+        "previous": 4.0393271774519235e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.09326413885128558,
+        "rk4": 0.0,
+        "initial": 0.0028728883726033896,
+        "boundary": 0.030152115332955972,
+        "previous": 0.010551075172193648,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.09326413885128558,
+        "rk4": 0.0,
+        "initial": 0.28728883726033894,
+        "boundary": 0.030152115332955972,
+        "previous": 0.010551075172193648,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 3500,
+      "losses": {
+        "residual": 0.0005592645611613989,
+        "rk4": 0.0,
+        "initial": 6.757517780897615e-07,
+        "boundary": 5.019008767703781e-06,
+        "previous": 0.00010504689271328971,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.001114018727093935,
+        "rk4": 0.0,
+        "initial": 1.6278816474368796e-05,
+        "boundary": 0.00013979373034089804,
+        "previous": 3.595976158976555e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.2909914155608032,
+        "rk4": 0.0,
+        "initial": 0.00425216895759749,
+        "boundary": 0.0365153425962049,
+        "previous": 0.00939300361272342,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.2909914155608032,
+        "rk4": 0.0,
+        "initial": 0.42521689575974897,
+        "boundary": 0.0365153425962049,
+        "previous": 0.00939300361272342,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 4000,
+      "losses": {
+        "residual": 0.0004891557618975639,
+        "rk4": 0.0,
+        "initial": 1.1079654314016807e-06,
+        "boundary": 3.3694391277094837e-06,
+        "previous": 9.096031135413796e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.002424784703180194,
+        "rk4": 0.0,
+        "initial": 2.5834464395302348e-05,
+        "boundary": 9.350069012725726e-05,
+        "previous": 4.1018134652404115e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.6333749299252943,
+        "rk4": 0.0,
+        "initial": 0.0067481876038609084,
+        "boundary": 0.02442319640982877,
+        "previous": 0.010714294810198699,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.6333749299252943,
+        "rk4": 0.0,
+        "initial": 0.6748187603860909,
+        "boundary": 0.02442319640982877,
+        "previous": 0.010714294810198699,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 4500,
+      "losses": {
+        "residual": 0.0004913127049803734,
+        "rk4": 0.0,
+        "initial": 2.2476947378891055e-06,
+        "boundary": 4.4102021092840005e-06,
+        "previous": 7.789706432959065e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 0.003442279528826475,
+        "rk4": 0.0,
+        "initial": 3.9811402530176565e-05,
+        "boundary": 0.00012508296640589833,
+        "previous": 2.485249387973454e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.8991534598903819,
+        "rk4": 0.0,
+        "initial": 0.010399085846552544,
+        "boundary": 0.03267276264910368,
+        "previous": 0.006491688333772826,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.8991534598903819,
+        "rk4": 0.0,
+        "initial": 1.0399085846552545,
+        "boundary": 0.03267276264910368,
+        "previous": 0.006491688333772826,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    },
+    {
+      "block": 4,
+      "completed_updates_in_block": 5000,
+      "losses": {
+        "residual": 0.0002616284182295203,
+        "rk4": 0.0,
+        "initial": 2.0021002455905546e-07,
+        "boundary": 2.4579535420343745e-06,
+        "previous": 6.681300146738067e-05,
+        "data": 0.0
+      },
+      "weights": {
+        "residual": 1.0,
+        "rk4": 0.0,
+        "initial": 100.0,
+        "boundary": 1.0,
+        "previous": 1.0,
+        "data": 0.0
+      },
+      "network_gradient_rms": {
+        "residual": 6.50074944132939e-05,
+        "rk4": 0.0,
+        "initial": 2.2414665181713644e-06,
+        "boundary": 7.385081698885188e-05,
+        "previous": 2.486644370947033e-05,
+        "data": 0.0
+      },
+      "network_gradient_norm": {
+        "residual": 0.016980524978006346,
+        "rk4": 0.0,
+        "initial": 0.0005854906198536751,
+        "boundary": 0.01929047802631398,
+        "previous": 0.006495332151065054,
+        "data": 0.0
+      },
+      "weighted_network_gradient_norm": {
+        "residual": 0.016980524978006346,
+        "rk4": 0.0,
+        "initial": 0.058549061985367516,
+        "boundary": 0.01929047802631398,
+        "previous": 0.006495332151065054,
+        "data": 0.0
+      },
+      "weighted_temporal_to_pde_gradient_ratio": 0.0,
+      "temporal_pde_gradient_cosine": null,
+      "temporal_active": false
+    }
+  ],
+  "adaptive_updates": [],
+  "safeguard_event_count": 0,
+  "resume_from": null,
+  "initial_parameters_sha256": "8785c3e392f39dc25ff0e399979b656be5a8f1d5c823cbc4fda5e6ee1721c18d",
+  "network_parameter_count": 68230,
+  "grid": {
+    "space_nodes": 256,
+    "dx": 0.0078125,
+    "period": 2.0,
+    "periodic_duplicate_excluded": true,
+    "training_endpoint": 0.8
+  },
+  "sampling_scheme": "independent_per_block_SeedSequence_spawn",
+  "pair_schedule_sha256": "1b967e1c9dfe85039784a055c195f2fc9034577184d88b8c47b4b130ab7f9454",
+  "sampled_pairs_sha256": "1b967e1c9dfe85039784a055c195f2fc9034577184d88b8c47b4b130ab7f9454",
+  "block_pair_schedule_sha256": [
+    "fcd1c4c37c8bf4a5f7520a297832824a37b3d4d728c7f237b2e2612e7bef14ab",
+    "2408682e201f7b0e4d8e0d7e3510454244a84beca203ac1fadde90b8657ca286",
+    "ed3f3d7890f3ca65c5fa94bef468f4c321ae5d85cb267fd8ca39e0276aaa8307",
+    "506c6b916e9afb3b3fc0359958a610f3c418b4c0ba31e5ca4bac37dc8d3937eb"
+  ],
+  "final_network_history_difference_rms": 0.00709119625389576,
+  "final_parameters_sha256": "6e8303a671a9470f6a20f17576ade247bbad5384d342473bf8ac060ec1342ba0",
+  "evaluation_wall_seconds": 10.255724449059926,
+  "training_update_wall_seconds": 233.6744507525582,
+  "gradient_diagnostic_wall_seconds": 77.54113872826565,
+  "monitor_wall_seconds": 16.845003567868844,
+  "wall_seconds_this_invocation": 359.68528094305657,
+  "prediction_sha256": "630198aec82d3990e31ed5926d84b9b1523ebf8e5f31c8659daf24523a4a3228",
+  "device_memory_stats_after_run": [
+    {
+      "num_allocs": 2029274,
+      "bytes_in_use": 0,
+      "peak_bytes_in_use": 1075071744,
+      "largest_alloc_size": 1073741824,
+      "bytes_limit": 27999276843,
+      "bytes_reserved": 0,
+      "peak_bytes_reserved": 0,
+      "largest_free_block_bytes": 0,
+      "pool_bytes": 1885339648,
+      "peak_pool_bytes": 1885339648
+    }
+  ],
+  "process_peak_rss_kib": 2588720
+}

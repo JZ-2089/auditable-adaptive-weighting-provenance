@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "validated_utc": "2026-11-26T20:08:09.612516+00:00",
+  "status": "passed",
+  "validation_modes": {
+    "packaged": {
+      "status": "passed",
+      "performed": true,
+      "verified_artifacts": 282
+    },
+    "external_workspace": {
+      "status": "passed",
+      "performed": true,
+      "verified_artifacts": 91,
+      "verified_raw_prediction_arrays": 57,
+      "verified_continuation_field_arrays": 30
+    }
+  },
+  "counts": {
+    "protocols": 2,
+    "configurations": 57,
+    "spatial_domains": 4,
+    "runs": 57,
+    "checkpoints": 57,
+    "predictions": 315,
+    "evaluations": 258,
+    "controller_traces": 10,
+    "metrics": 17,
+    "claims": 4,
+    "artifacts": 373,
+    "generations": 731,
+    "prov_entities": 1097,
+    "prov_activities": 731,
+    "prov_relations": 8968,
+    "prov_agents": 6
+  },
+  "checks": [
+    {
+      "name": "json_schema",
+      "status": "passed",
+      "detail": "Draft 2020-12 schema validates the v2 audit record and enforces the minimum record fields"
+    },
+    {
+      "name": "record_counts",
+      "status": "passed",
+      "detail": "57 configurations/runs/checkpoints, four spatial domains, 315 mechanism/domain-specific predictions, 258 evaluations, ten controller traces, 17 metrics and four claims are present"
+    },
+    {
+      "name": "minimum_identity",
+      "status": "passed",
+      "detail": "every application record has non-empty label/type/role identity fields"
+    },
+    {
+      "name": "run_matrix",
+      "status": "passed",
+      "detail": "57/57 cells present: 30 confirmatory and 27 long-sequence development runs"
+    },
+    {
+      "name": "run_minimum_fields",
+      "status": "passed",
+      "detail": "campaign/protocol/arm/seed/block/update/stability/config/timing fields agree with copied controlled-run and record.json sources; missing long-sequence validation is explicit"
+    },
+    {
+      "name": "spatial_domains",
+      "status": "passed",
+      "detail": "four explicit periodic half-open spatial-domain entities resolve to packaged coordinate summaries and externally verified NPZ members"
+    },
+    {
+      "name": "checkpoint_digests",
+      "status": "passed",
+      "detail": "all 57 final-iterate parameter_state_sha256 values are sourced by JSON Pointer; unknown serialized checkpoint hashes remain null"
+    },
+    {
+      "name": "prediction_evaluations",
+      "status": "passed",
+      "detail": "315 distinct prediction records carry checkpoint/mechanism/temporal/native-spatial/evaluation-spatial/output/activity fields; confirmatory continuation fields are hash-addressed while long-sequence field_not_persisted status and null output artifacts are explicit; all 258 evaluations match source JSON"
+    },
+    {
+      "name": "artifact_hashes",
+      "status": "passed",
+      "detail": "verified 282 packaged artifacts and 91 external workspace artifacts, including 57 raw prediction arrays and 30 persisted confirmatory continuation-field arrays"
+    },
+    {
+      "name": "portable_source_registry",
+      "status": "passed",
+      "detail": "all 17 registered sources have existing bundle-relative copies and verified hashes"
+    },
+    {
+      "name": "controller_traces",
+      "status": "passed",
+      "detail": "ten grouped-run controller-trace entities resolve to their run, protocol, exact configuration, raw adaptive-trace NPZ and diagnostic JSON hashes"
+    },
+    {
+      "name": "aggregate_metrics",
+      "status": "passed",
+      "detail": "all 17 aggregate metric values match JSON Pointer sources; field metrics link predictions/evaluations, while C4 metrics link only the ten controller-trace entities and label IQRs explicitly"
+    },
+    {
+      "name": "formal_claim_boundary",
+      "status": "passed",
+      "detail": "all C1--C4 claims resolve supporting and limiting identifiers; C1/C2 held-out boundaries, qualified C3 development status and C4 budget/serial-dependence limits are explicit; fixed-versus-zero remains outside the graph"
+    },
+    {
+      "name": "generation_records",
+      "status": "passed",
+      "detail": "all 731 generation records bind inputs/outputs to a hash-verified generator and package version"
+    },
+    {
+      "name": "claim_traceability",
+      "status": "passed",
+      "detail": "validated 352 claim-to-metric-to-prediction/evaluation/controller-trace-to-run/configuration/protocol paths"
+    },
+    {
+      "name": "w3c_prov_graph",
+      "status": "passed",
+      "detail": "validated 1097 entities, 731 activities, 6 source-identified software agents and 8968 relations, including configuration/domain/checkpoint/prediction/evaluation/controller-trace/metric/presentation derivations"
+    },
+    {
+      "name": "claim_matrix",
+      "status": "passed",
+      "detail": "CSV reproduces C1--C4 directions and supporting/limiting evidence IDs"
+    },
+    {
+      "name": "competency_queries",
+      "status": "passed",
+      "detail": "dependency-free CQ1--CQ4 program reproduces stored supporting/limiting paths through predictions/evaluations/controller traces, runs, exact configurations, spatial domains and protocols"
+    },
+    {
+      "name": "ro_crate",
+      "status": "passed",
+      "detail": "canonical RO-Crate 1.3 descriptor is ro-crate-metadata.json with datePublished, explicit unassigned-licence status, no direct PROV-conformance claim and 289 hash-described packaged files"
+    },
+    {
+      "name": "portable_machine_paths",
+      "status": "passed",
+      "detail": "audit record and RO-Crate metadata contain no absolute /home paths; historical absolute commands may remain only inside copied raw records"
+    }
+  ]
+}

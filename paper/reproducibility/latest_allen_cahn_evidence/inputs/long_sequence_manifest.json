@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-19T23:15:01.742145+00:00",
+  "status": "development_locked",
+  "seeds": [
+    6101,
+    6131,
+    6173
+  ],
+  "scenarios": {
+    "blocks_04": {
+      "blocks": 4,
+      "train_end": 0.8,
+      "forecast_end": 1.6
+    },
+    "blocks_08": {
+      "blocks": 8,
+      "train_end": 1.6,
+      "forecast_end": 2.4
+    },
+    "blocks_12": {
+      "blocks": 12,
+      "train_end": 2.4,
+      "forecast_end": 3.2
+    }
+  },
+  "arms": {
+    "zero_rk4": {
+      "adaptive": false,
+      "rk4_weight": 0.0
+    },
+    "fixed_rate1": {
+      "adaptive": false,
+      "rk4_weight": 1.0
+    },
+    "grouped_rate1": {
+      "adaptive": true,
+      "rk4_weight": 1.0
+    }
+  },
+  "common": {
+    "block_width": 0.2,
+    "epochs_per_block": 5000,
+    "forecast_horizon": 0.8,
+    "spatial_points": 256,
+    "pairs_per_update": 8,
+    "rk4_substeps": 4,
+    "hidden": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "defect_normalization": "rate",
+    "checkpoint_selection": "final_iterate",
+    "explicit_causal_loss_weighting": false
+  },
+  "primary_development_question": "Does grouped adaptive RK4 reduce sequential training-retention and interface error relative to fixed RK4 as the number of 0.2-wide blocks grows?",
+  "source_hashes": {
+    "PROTOCOL.md": "ad7acf2f5640b67200277a170e85be960e4e06364bfedadc85c4d5d4be9ba660",
+    "run_study.py": "24643b22798d8e9aeebb3fc417362f20c4d1fcff733b5dc5370b88c5bb2d716c",
+    "evaluate_run.py": "414b79621722f0eab24c98413da9a0286365984b2ab58de89ec43f6a654d2fc8",
+    "summarize.py": "ae4b4859567f30992c1e7c8036e3b617a099c783cf28d0efc552f18da809813e",
+    "source_snapshot/GPT-code-invloss.py": "a1d5f73a91c09271fcd75ae0891ade27585550b424b2d071c651920ecbd70f2c",
+    "source_snapshot/controlled_runner.py": "aa11762eb48abbc31aff4fced4332b523d3ddcee1fe98a7e763f62cb7b7d0d93",
+    "source_snapshot/adaptive_weight_controllers.py": "b40704e197312d63b3e40e1963034b5dba74c689a2f566829ff9cbb7e613573f",
+    "source_snapshot/forward_invloss_config.py": "dcb373dcc7b66a18c20d1cdd1fa4e21150511f951759068efdd61271fb4e586c",
+    "reference/training_initial_only.mat": "77a34cfa4a98e064f5f5466954b819f8889d6dc85ad3c510d36ac36542622d66",
+    "reference/reference_truth.npz": "fb915a25d875103d5b4d21dbbb838b738cc1ef5dc120146c01829e7beec62ef4",
+    "reference/reference_report.json": "4b6fdbb44aab2d79113061aeb8d3f8e88b9efdea8155877bef31263be723a4f3"
+  }
+}

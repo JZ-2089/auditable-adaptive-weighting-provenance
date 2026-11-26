@@ -1,0 +1,3219 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.3/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.3"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Allen--Cahn adaptive RK4 evidence provenance bundle",
+      "description": "Hash-bound C1--C4 audit over 30 locked confirmatory and 27 long-sequence development runs.",
+      "dateCreated": "2026-11-25T00:00:00+00:00",
+      "datePublished": "2026-11-25",
+      "license": {
+        "@id": "#license-unassigned"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.3"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "allen_cahn_audit_record.json"
+        },
+        {
+          "@id": "audit_record.schema.json"
+        },
+        {
+          "@id": "build_provenance.py"
+        },
+        {
+          "@id": "claim_evidence_matrix.csv"
+        },
+        {
+          "@id": "competency_query_results.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5101/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5113/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5147/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5167/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5191/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5227/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5261/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5281/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5309/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/diagnostics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/confirmatory/seed_5333/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/record.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/completion.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/controlled_run.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/metrics.json"
+        },
+        {
+          "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/record.json"
+        },
+        {
+          "@id": "evidence/confirmation_PROTOCOL.md"
+        },
+        {
+          "@id": "evidence/confirmation_manifest.json"
+        },
+        {
+          "@id": "evidence/confirmation_summary.json"
+        },
+        {
+          "@id": "evidence/controller_mechanism_evidence.json"
+        },
+        {
+          "@id": "evidence/dim_evidence_summary.json"
+        },
+        {
+          "@id": "evidence/evidence_sources.json"
+        },
+        {
+          "@id": "evidence/generated/figure_confirmatory_paired.pdf"
+        },
+        {
+          "@id": "evidence/generated/figure_confirmatory_paired.png"
+        },
+        {
+          "@id": "evidence/generated/figure_controller_mechanism.pdf"
+        },
+        {
+          "@id": "evidence/generated/figure_controller_mechanism.png"
+        },
+        {
+          "@id": "evidence/generated/figure_long_sequence_effects.pdf"
+        },
+        {
+          "@id": "evidence/generated/figure_long_sequence_effects.png"
+        },
+        {
+          "@id": "evidence/generated/table_confirmatory_grouped_vs_fixed.tex"
+        },
+        {
+          "@id": "evidence/generated/table_controller_mechanism.tex"
+        },
+        {
+          "@id": "evidence/generated/table_long_sequence.tex"
+        },
+        {
+          "@id": "evidence/generated_outputs.sha256"
+        },
+        {
+          "@id": "evidence/generators/confirmatory_evaluator.py"
+        },
+        {
+          "@id": "evidence/generators/confirmatory_training.py"
+        },
+        {
+          "@id": "evidence/generators/evidence_synthesizer.py"
+        },
+        {
+          "@id": "evidence/generators/long_evaluator.py"
+        },
+        {
+          "@id": "evidence/generators/long_training.py"
+        },
+        {
+          "@id": "evidence/long_sequence_PROTOCOL.md"
+        },
+        {
+          "@id": "evidence/long_sequence_manifest.json"
+        },
+        {
+          "@id": "evidence/long_sequence_summary.json"
+        },
+        {
+          "@id": "evidence/selection_lock.json"
+        },
+        {
+          "@id": "evidence/source_registry/00_confirmation_summary.json"
+        },
+        {
+          "@id": "evidence/source_registry/01_confirmation_manifest.json"
+        },
+        {
+          "@id": "evidence/source_registry/02_selection_lock.json"
+        },
+        {
+          "@id": "evidence/source_registry/03_confirmation_PROTOCOL.md"
+        },
+        {
+          "@id": "evidence/source_registry/04_long_sequence_summary.json"
+        },
+        {
+          "@id": "evidence/source_registry/05_long_sequence_manifest.json"
+        },
+        {
+          "@id": "evidence/source_registry/06_long_sequence_PROTOCOL.md"
+        },
+        {
+          "@id": "evidence/source_registry/07_controller_mechanism_evidence.json"
+        },
+        {
+          "@id": "evidence/source_registry/08_source_table_controller_mechanism.tex"
+        },
+        {
+          "@id": "evidence/source_registry/09_source_figure_controller_mechanism.pdf"
+        },
+        {
+          "@id": "evidence/source_registry/10_source_figure_controller_mechanism.png"
+        },
+        {
+          "@id": "evidence/source_registry/11_source_confirmatory_paper_evidence.json"
+        },
+        {
+          "@id": "evidence/source_registry/12_source_table_confirmatory_direct_test.tex"
+        },
+        {
+          "@id": "evidence/source_registry/13_source_long_sequence_paper_evidence.json"
+        },
+        {
+          "@id": "evidence/source_registry/14_source_table_long_sequence.tex"
+        },
+        {
+          "@id": "evidence/source_registry/15_source_figure_long_sequence.pdf"
+        },
+        {
+          "@id": "evidence/source_registry/16_source_allen_cahn_paper_evidence_manifest.json"
+        },
+        {
+          "@id": "evidence/spatial_domain_sources.json"
+        },
+        {
+          "@id": "query_claim_evidence.py"
+        },
+        {
+          "@id": "validate_provenance.py"
+        }
+      ]
+    },
+    {
+      "@id": "#license-unassigned",
+      "@type": "CreativeWork",
+      "name": "Licence not assigned",
+      "description": "No reuse licence has been assigned to this evidence bundle. This metadata statement grants no reuse rights; source components retain their own terms."
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "README.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "6856",
+      "identifier": "sha256:57159c8633c47eccadc2c90a6d77baad16c81593405e29ef36d5430cc5df7861"
+    },
+    {
+      "@id": "allen_cahn_audit_record.json",
+      "@type": "File",
+      "name": "allen_cahn_audit_record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "4812878",
+      "identifier": "sha256:eb3e25a4cebf8a54b6d8d184dc52a4d85cfd5457c8ae4461646654658e28ba43",
+      "description": "Custom DIM audit record containing a W3C PROV class/relation projection; this RO-Crate root does not assert PROV conformance."
+    },
+    {
+      "@id": "audit_record.schema.json",
+      "@type": "File",
+      "name": "audit_record.schema.json",
+      "encodingFormat": "application/json",
+      "contentSize": "21164",
+      "identifier": "sha256:16cbbcf6fe27910b6dd40b1be8261331a4cd73463a7883904397373382f9aef4"
+    },
+    {
+      "@id": "build_provenance.py",
+      "@type": "File",
+      "name": "build_provenance.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "87569",
+      "identifier": "sha256:81fe8b166225d538819ffc629248edf739e49ebdc6ac3a17630c9cf0ad13aaf2"
+    },
+    {
+      "@id": "claim_evidence_matrix.csv",
+      "@type": "File",
+      "name": "claim_evidence_matrix.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "16946",
+      "identifier": "sha256:20dbe93eb7c068db79553d2316d618458f51b1a82984e5a088663f5e711fe933"
+    },
+    {
+      "@id": "competency_query_results.json",
+      "@type": "File",
+      "name": "competency_query_results.json",
+      "encodingFormat": "application/json",
+      "contentSize": "558211",
+      "identifier": "sha256:babd2f32645c2786fe66f0a7d15c0c9d9eb621f3634d8c70f4c2fa1b4d4eeeaa"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:a08f71b65e3313d16477853478661794d03b5c16a0df60c84fe24bcdb2f0c8bd"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73568",
+      "identifier": "sha256:73d30b5ecf4b413cde5a39162257ef50a194e28c88f4981b54ec74d0b7b92e5a"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10746",
+      "identifier": "sha256:0b7725021164a9cfc43afa2f9ded26bed1b020da24196a5d060498fe091071ea"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2356",
+      "identifier": "sha256:814bd773483b8a6e3bf6be4e80a9161b8edf94d4bc493544a2901025e535ffca"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:3105061b646c4d05ac2877fd391a2b623ea1f42687c42258f83db94afebf07bb"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491135",
+      "identifier": "sha256:d3947315245520cfdde5011938b36a78ef2b5965828452e125d44955aeb2b5ef"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491135",
+      "identifier": "sha256:d3947315245520cfdde5011938b36a78ef2b5965828452e125d44955aeb2b5ef"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10752",
+      "identifier": "sha256:4b067393c2b81e8193f704675e244e0c5fb57c31f05e805631f0e2a4a3edbef9"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2359",
+      "identifier": "sha256:3d43b59e8d00d713f550f69e6316ab710c68901b0ce78579e822bdd87b9b69d7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:6cb5f98e27488484f520eb0dd7658318327515c1ca8bbab0f02e43bc537f72ac"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69391",
+      "identifier": "sha256:7ce6a023e806de85507113067d26acec27bad4d97477c748d7649738651102d7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10669",
+      "identifier": "sha256:9c5e12754040afd3e5882a309cda136fff4da3f90cd6057eb2ccc04765bdbd08"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5101/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2346",
+      "identifier": "sha256:2416fa7f1ea036c3fecca55e17d2bb36287d9dc136f4d4ec625563b26e7993a7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:e475db9ec6271a8c8022d61ada35607be587052c8951e43f57ce20e251fdb9cd"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73636",
+      "identifier": "sha256:e9d8c6b0be4f5e70a7dfbc312f0963113806a120cd85b8035f4058c103299583"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10737",
+      "identifier": "sha256:b706eeb639287eb25d710fb002d12846587c912ce6d8842804bec12a74b607df"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2356",
+      "identifier": "sha256:7643acbbb3f7881b745a4bfcbf6df2f626a37c767b6e1066c81856c69e348cf2"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:c22e5e1da7195596c53532e095e635878ac288bc9883f8733d259edefa2ff37f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491181",
+      "identifier": "sha256:7591895456138ad3188a881833a7a2be152ad655afc715ffb077cc7aa43df0a8"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491181",
+      "identifier": "sha256:7591895456138ad3188a881833a7a2be152ad655afc715ffb077cc7aa43df0a8"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10738",
+      "identifier": "sha256:6a3a96ef739d12b2e4c4788b44d72a5890ca45266a31be73a28d90d5914d46b5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2357",
+      "identifier": "sha256:84ae9f44e1794227f26d0109cdc330875f27460ff0dab25a79379b24e442540a"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:41be23f32c04655693cc1956babfc9beff9fa183d4782d856526e2a3e89cf655"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69486",
+      "identifier": "sha256:a4aa5fd1436140a6babf59bc132db751544869e3b1fb1aecdcc660f8db353d2f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10666",
+      "identifier": "sha256:648001c54c77bdb1c4cad124c8e6787c01cc49ab7a525f62875a8e509c131f51"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5113/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2347",
+      "identifier": "sha256:48d581ad049ce792f483fdbd57371a5a58effe48b63da7309db9350017a94caa"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:fc1291097817784a8fd1cf712fb43af497bb83806cf76282acc402d3ae109da9"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73621",
+      "identifier": "sha256:0b46d0390909bf6720098f8a23ad3fb257a3dc015411f5f06464931238ad4c91"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10742",
+      "identifier": "sha256:4ba7867a6030e6cb69b33dd0990bb6b7c789bb681961884f1c3ac4525dde406f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2355",
+      "identifier": "sha256:6022d1f7b60f99b1826f5463809ecb56068be4b33a7d65c9658f1a79a8475ef1"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:7e24b6fa11913708e623e7c9992f6ae99f1711c057e3df40bd17a1640851102f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491160",
+      "identifier": "sha256:1774f32c42eba33f44f73f2840227b1d92b78f8ea07169a2542cbe62347effc2"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491160",
+      "identifier": "sha256:1774f32c42eba33f44f73f2840227b1d92b78f8ea07169a2542cbe62347effc2"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10743",
+      "identifier": "sha256:70d3bbb61cc39520271ebb83b5f22f62d0f7a5ef58299ac598370d224f4e5cba"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2356",
+      "identifier": "sha256:10b6e677d50bf6496686d9d54e3e9f0425d9dd1e12d10b4bd17bf363930972ee"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:df50deb3ab9e0ffb869d3ddc0a31a5555fdff3dcc15223fc8e0b79d036845059"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69446",
+      "identifier": "sha256:50579e7b55d79988e89866ccf8cb7fcc0d8515851556aa13aac86c8980240a8e"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10660",
+      "identifier": "sha256:08fae0d333ec75ccc3a02afd779f6aea8105a4bf042331fe392ff043b08b016a"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5147/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2346",
+      "identifier": "sha256:df46eb030c1b70581959688372445424e237d26758d75069078be5847289c124"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:12e8bc384bf4b65791a21f7bf46559082213c4da144fdd2872d2517e23d459c3"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73577",
+      "identifier": "sha256:b48c5e46824440ca08decf83fedb3a58b229db9c152501531a0e111bd06f52b1"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10744",
+      "identifier": "sha256:d43a3659b8e44828c4f7fcb19b83f2c83ce0f9d515c050fb8f6b0f074f112840"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2355",
+      "identifier": "sha256:306a9d40b8417b33d918e0de6842fbcca8fd55d98f9693653ecbb218b2e58e3e"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:8582dc934e25fbda3ed04b15f9e9147b8659a9f97054cfca764b4b7cfde142fe"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491367",
+      "identifier": "sha256:399b2e29d935f3e845be6d52f47de8d00e0969aebab0f9ab7c00573de07c7610"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491367",
+      "identifier": "sha256:399b2e29d935f3e845be6d52f47de8d00e0969aebab0f9ab7c00573de07c7610"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10759",
+      "identifier": "sha256:0086eed9dcc42694b5a99406b827e26e64b66c0a72ec7437f4ca25f6f0230aaa"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2358",
+      "identifier": "sha256:9480289de2b7c56c5e330f2e00004350cbd6517bda9df107e83b20e2a4eb8fa1"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:86a153bd78f597465dce98a7875ed1c77539cfa32683f7134ca396a6e292c85a"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69452",
+      "identifier": "sha256:4c0de7ae376f61c514c188ff3c98b4250b1e06391067c33b82352b6beffb76c5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10672",
+      "identifier": "sha256:2694a9681ce6e0dfe72cb7506ded0dd02fed5c730239620f6afdb8f1c14e696d"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5167/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2346",
+      "identifier": "sha256:609baaa190a9209c3bfedee9dbb77c31e86dc5e3ca91344eeb648bdb809db052"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:9de512df3d356c5fb8c497d43419ca04c703dab45a68b7f775054a68cb39f463"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73627",
+      "identifier": "sha256:42c959fe76e40333942e887e3edcc372752d28c5e1ff661f462d42993abb99c6"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10747",
+      "identifier": "sha256:91cd857b79a3eeaa433e593b370b1ba6057f3db8a92268267b9a2eb44fcdd0b4"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2354",
+      "identifier": "sha256:c407c20116a8f701b0cb310baae85374bb0937d62fef1979761299e2d05c06f5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:00ff5434e1fb34d3dcf334186608227bd3bd74dd50375aa926d3a835d5c3b191"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491292",
+      "identifier": "sha256:68da798e78409c50e0d976b21ce4539c590b33865e3c1dce575f6d1b4c3433f4"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491292",
+      "identifier": "sha256:68da798e78409c50e0d976b21ce4539c590b33865e3c1dce575f6d1b4c3433f4"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10754",
+      "identifier": "sha256:1f2969b7e108433e9f870622a5eca284682f191adc1c01cf9a3c604997fc57bd"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2358",
+      "identifier": "sha256:36300c941b3e4a089f90fa4bffeb5884982f0f18978115d59aa13c05c1e78175"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:c27453acdb4448a5482c5f83ac6db4593f3784e74fdebd00b6a9cd6775138e5b"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69463",
+      "identifier": "sha256:86759a8af50ed098bc232c95474f4ac0289475155900042d0ed787a9986cf12f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10657",
+      "identifier": "sha256:cadad6d73e772787e0138e9409a55d581b89b504f74bf648e22f1dfae876feb2"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5191/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2347",
+      "identifier": "sha256:a2a4d99be5910aaaa59a56d2fa580d5a00352d238ce908db2f069fd2dd16d53d"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:2b4ba61a110e02a22a9633c0a03f52c0023180a308f4399b11f4090ba5a3eac7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73624",
+      "identifier": "sha256:4e8c621a10a36e07d4d3397d0721f43821d157a741c7e342c9e308461a3d8cd6"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10747",
+      "identifier": "sha256:3b260bd64fe352ccc9da4bd59fc7322848627fad258f183cc1f267563d6fa182"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2354",
+      "identifier": "sha256:188a685cfad47d97b61e125bc8019578376d126ea2ed6749ddbd608cf0243da5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:3162ab4b706ed4b29084ffa6deabb9266ecdaaf04f2394626f7b2ac70ebaf1d5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491350",
+      "identifier": "sha256:caad5034d3bae5e7e1a60c4c47ce425c8ba72d90ed62c43901b4d570a22d7fa7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491350",
+      "identifier": "sha256:caad5034d3bae5e7e1a60c4c47ce425c8ba72d90ed62c43901b4d570a22d7fa7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10756",
+      "identifier": "sha256:23c6c01e75a355bda2510106f1418ae7b6953507df2a3cc2b5f36b441a65e2ed"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2358",
+      "identifier": "sha256:603c27337dde8414ea750323de6d054a227ff24c5705a7ae83e1219a85ab07ca"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:2db27401380d85e5f9fa365c2b3c0f5a53dc83e57eef738476c9c6f06597ca21"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69408",
+      "identifier": "sha256:e823df833ae5cd491cec166bc0ffc6297fe51413b06a1aa1d3d707510fb41e49"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10655",
+      "identifier": "sha256:2fa88322542d737316d6d4bb477d31e82721343be26fde33635238f604e37b88"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5227/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2347",
+      "identifier": "sha256:88a93047ba1356c0081ef6ab6258dc022c0ed08e0964e7d0bde28814b8c20a66"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:e509ac1c135c42a28d8fa8166b77b0670d9d9fae78403d66e6b4bfdef894f47f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73619",
+      "identifier": "sha256:131c49b633530dfd21bd6aa51c8f16eb112e0c6840c5bed94ff6639a14e12662"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10749",
+      "identifier": "sha256:71d17c978169dec1caf27955e6940205a25bd087f59560a3c46dfb7aa9753a05"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2356",
+      "identifier": "sha256:ab88b0e2ee91991a9bb40bb274e462bca3133a779b8682f1354fb491a6a5cac3"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:351795aaa2c495dbd7e8b5434a674b6b511eb92c4aaf2896acb764408c50d61e"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491509",
+      "identifier": "sha256:35ea81a3eb34ad237d6ba330c106864f2068b92a381a3d59a4718652285315f8"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491509",
+      "identifier": "sha256:35ea81a3eb34ad237d6ba330c106864f2068b92a381a3d59a4718652285315f8"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10737",
+      "identifier": "sha256:af5b5d9652c47b59f2437f622231e97cc8a1dedde7eafb344365463c8cba5e59"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2358",
+      "identifier": "sha256:4daf6d24bcb5e220090937f5f75c82375c62b1d3b9e30f6c3c5207c79ad621b2"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:f8c3eb572eaa7413d49e359df21cdb59f1032558cd9c0c525aff5ff927f3caff"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69461",
+      "identifier": "sha256:bf43bbe968811cefef9e2ccc25593b2d88fc9940dcb95d409feeef2cf29c7213"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10671",
+      "identifier": "sha256:56a3514644cd3d37fbce386996e817cba085d106daa3014216b5026ab8334988"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5261/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2347",
+      "identifier": "sha256:23a658c46becea927b488935100ba8668933eb56c9190cd8b1caf4166ef13a0f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:eeaa23ee6b58283a395f0e263c60f145df5aa2a9a54f3bdf86f04a2d7672aaab"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73616",
+      "identifier": "sha256:bb7b0e33d15ef2bdbade971f5278d1eed2490a3708ac9a4dce686156d888e709"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10738",
+      "identifier": "sha256:5076388f189c4110c28cf5ee9856adf3056f83eaa5b3ed452bad0f73b8dd5aa9"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2354",
+      "identifier": "sha256:dfa9b20dd0c4eed5052cd602cecfd7f612a441d1f8f15524210463830771eca3"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:1258213375e7eb1a7ca122d8bde483cc22303eec69807ca7011219a47ca9b605"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491234",
+      "identifier": "sha256:b505cfde733a0aafec7d2ab637dcd828d8823e66eec78af0bb8c6f239c7b0dba"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491234",
+      "identifier": "sha256:b505cfde733a0aafec7d2ab637dcd828d8823e66eec78af0bb8c6f239c7b0dba"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10754",
+      "identifier": "sha256:45e000e3b58b1a0df0f25f520e3cb61f4c1656e4979c246ef0a98c8bdf354205"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2358",
+      "identifier": "sha256:5d70ff010b88cc292e8db70273b9f0e3f2dd0757e0ef07b353a72683d1e0e0f0"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:555429bd05b928cae8ba9a2dc24b30fc6e6782daef02e68f7dfad1b7907c08ff"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69429",
+      "identifier": "sha256:5699d10a0c9c1e3e1d96af7dd51b1e1a7b3ad59891130b3b42f8b0e69b1a6368"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10666",
+      "identifier": "sha256:b0b0a8766a715b0cb1d67622fb938d7f614a562525e8e89365631f0549b1be8f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5281/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2344",
+      "identifier": "sha256:0452a6e61297dfba2afd5128a32d6c0cd7077ced9c3d77d0fbc1bddc179f7e2a"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:205e626be4da3a71264b31c8ea4f9a4bbbc623f757db26b129a65daab2bcde6f"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73601",
+      "identifier": "sha256:7aab493675df926ab0014547e4493fdcbdaeccfcd104d44ff1d7a7ae82302ccf"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10742",
+      "identifier": "sha256:a7a30bb441da6ce7226178b30b0417af8625669ec8f5c0eee267e64ac67ca253"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2355",
+      "identifier": "sha256:a652cad856397835c6db1313efa4b8fdcbec65a0b4b5322c20f0a7685fd22e74"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:7e4064970dc18727cd251b671cc37bd973d6963b791dc15d8261433d81ff2d33"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491358",
+      "identifier": "sha256:feb0f353107890dd1387b4bbc653f5910f60074dd6f5f9980cc35305316ee7d5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491358",
+      "identifier": "sha256:feb0f353107890dd1387b4bbc653f5910f60074dd6f5f9980cc35305316ee7d5"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10760",
+      "identifier": "sha256:bb1cf81e4f4494c766d8e62535c99accb255a05e2ab54205ac70b9dd91687dfc"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2357",
+      "identifier": "sha256:270e1a95392f6e52189bac36cb8fcde94cff7627cf57aab4da1fde17e9078b80"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:899dc64c190544a1fb4e4e4d63074a0813d393e48c43efa9a55a10fdb1e360e1"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69432",
+      "identifier": "sha256:047244f2f6b9eec07149a07db00edbbf46cde9b9beaf58284d4ff7c8d05571c0"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10680",
+      "identifier": "sha256:a8b2cae9acaf8d74864f9d936ba87fdf613fa4b8c72ae2ef60f6ecd512dd324d"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5309/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2347",
+      "identifier": "sha256:93a958232e26240cc74eed9757bb6abd6edcda5e4ec99e822ad329cdbf3f135d"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:afbb2461c591104cf6a7faa7cc0a14bac346eee15246c60b00ec73390e7f66e0"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73693",
+      "identifier": "sha256:43834ea73556a6a91b52cc91224ba967dbe737ea111bbf7bc01bf87db112bc0d"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10740",
+      "identifier": "sha256:11bf65f20de7e9b743cefc6e713350ac37af93908639dc06de2a8a3cd30db504"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2356",
+      "identifier": "sha256:4e66adea3835f5c68dab5cacc31bccba65aa01b2f8f54d03f6d1577130691a9e"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:f6dec27ccb361e24f7b51ad6c6e3d03573eb0b84633d479a6d7c1ab1a965b0f4"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491443",
+      "identifier": "sha256:32739fd9adfda8bad3277ff214e1af965127f42e5c6db5fbfe4a00be7cfc3c5b"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/diagnostics.json",
+      "@type": "File",
+      "name": "diagnostics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491443",
+      "identifier": "sha256:32739fd9adfda8bad3277ff214e1af965127f42e5c6db5fbfe4a00be7cfc3c5b"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10752",
+      "identifier": "sha256:8d4377c76d313ecb6ec5d5a3c25c3f17f4e7b9e336ba981024c3bf9c9c3fed03"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2357",
+      "identifier": "sha256:fd87b302112c9cbf886cb3897e5e4d9c7a866c9d31434235da015dc0b09142ac"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:c9e6b16cc6b5a4ab656cd147a83872f23f96334b4d673661f3dceee9e0a133f7"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69460",
+      "identifier": "sha256:d43f99b07edf4e042bbadf2b62ca2ac143ce377f7b9f2beb4c04255d0be6ef83"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "10673",
+      "identifier": "sha256:d4a0448f55cc74b537670826f20f3f64571352e497bfdce1ae67d7d111388581"
+    },
+    {
+      "@id": "evaluations/confirmatory/seed_5333/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2346",
+      "identifier": "sha256:ab785c2d4eac49843aa33f67ebabc9314f99a3332a1a4de00c6fc9cb34701604"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:f147bb08278e8750565ad433d52727e1ba012bbe5c9a9e43588e645587deac84"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73617",
+      "identifier": "sha256:a01a96a3b5fdab107187c9e8dbb03893c601480de257a2711acc10ff9065cfc7"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "871",
+      "identifier": "sha256:96f94b20f86427c29b2a1f9389b3afd213c74ac7222558a156bb7bdf3646f33e"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2292",
+      "identifier": "sha256:762250ad790a9d18c8bdb90d3a6269d8452404298177cb5b984e806f8a5c3ba7"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:b1e5fbb0432ea83983c564b33d56b54682130fc374f689b383e6e532cec40295"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491397",
+      "identifier": "sha256:f0e246467a3a0a1e0719d8cffdd4a49768ff5c2dabc9208cdf31a54f3919738f"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "874",
+      "identifier": "sha256:5c95f9ddce0dc0e97ab1dc3e8b908437f91a6789c0857b0898e2aaf1e54a691b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2296",
+      "identifier": "sha256:652be37bd8745e1494dcae78869862a5453f5c3064e280654217c11eb3ccd8ce"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:77f69c33cc7b27f5158b9a6910dddc93709aff3eceb0a521c25bb68469a29b2f"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69409",
+      "identifier": "sha256:23b4533d83654602c5c075226bfada8865414475390381e2bd26a4b0af5487d1"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "871",
+      "identifier": "sha256:57533d13e1dbf42cb7d0f71dd0656c38ec748128ceeafcd8fa2c600d26d2cdb8"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6101/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2283",
+      "identifier": "sha256:fd4415a658d7802dbfe37cc0f9893e9029d860620b32420027cc0f6d1984ee79"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:74ca7758a314dd38e46ff6f674415209abf295f63826d62148022f5537bf6c64"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73568",
+      "identifier": "sha256:fb4a2fa44fdfd6109825675c2e1bd2f200f260930e90b4ca80a9d1fa85428a4d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "873",
+      "identifier": "sha256:74e1bdc2c0ef2f9d936f3179724b9b725dd71ddec07a290a914548b6de63d64c"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2291",
+      "identifier": "sha256:70d9146fabbbaa5771514da777bbc7758464fb69782bd0dd95ad664748be1ad4"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:2534947929b87684c2409b8e422569d242b690e5cb7ec034a549cb0671e65f9f"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491246",
+      "identifier": "sha256:627173a7417c72b9fd6c4df7db43d31d262aa3a98612dbfd97f04776d74d329a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "873",
+      "identifier": "sha256:389053882645431ed6020d87146126785832d043998194e8c7fe63f212a0d77a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2295",
+      "identifier": "sha256:fbedad2a9c0649b0fb94d6fdb534c096f045d008fd8bd93ac733fcfd4f8b388d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:7912fb7bd3c572ed15715baff92c7c96813c1e9e5d803d0c8b14d252f1e5c457"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69339",
+      "identifier": "sha256:98c368f628913c5141853ec9c30c571e6803fcd85bc4db9604d1f4c064cef21d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "873",
+      "identifier": "sha256:6227bef113f2837a61cc070a0b47a4de4a8988dab95e6c2095a55d7900b7615c"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6131/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2283",
+      "identifier": "sha256:50d0b4d47c73c188ddd7505895e6fb4f5c2f5e465ed6e99c7ff753ca41cf8465"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:10aa5b194faa69d9144eed45be54a44fb28f75befcb42bf0c1df89446d71d353"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "73510",
+      "identifier": "sha256:dd98aa87d593e429ceab581d7bab4ea1a9c5ae126eebb13eaf75111656678994"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "872",
+      "identifier": "sha256:b435a35c87f2a0ac29f676c34251ae09a8a04c115ccf182242ebeda0ae459a84"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2293",
+      "identifier": "sha256:72d65c557e36b68bdb4c7681e90a93d8682c1df4bfacfabfa1ef25dd9520319b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:6f24fa11aa4b0b12034c75d66918395b05b9e681af53584177175cd2d52c6963"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "491263",
+      "identifier": "sha256:bfb00a1ce92c37600a9926d09b88f725bb0638ca2799079a3812121c7316124d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "874",
+      "identifier": "sha256:d5001df833e6757a884254da8867ba6de0841d1d824c792cf59aac6c5f8d8f19"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2295",
+      "identifier": "sha256:2a133cdb9f8fa099f542662789be0e829f428c0044385df978cd897c73cae53b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:de0a28ad414f580d8de34f097329a34f26accbbecb65da39df9023bb3ec61019"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "69385",
+      "identifier": "sha256:25f3d03e36a88614db17c70fc8b8eb57aebd18b277e5c78b11a90809e18bfb2b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "872",
+      "identifier": "sha256:0c4183c656177eced19745f56904fd42c68f5090fb98987c924a4fb4e7bb80d4"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_04/seed_6173/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2284",
+      "identifier": "sha256:66c7d86716442a2f515d47e9de21897dfd9f37a6111ad2bf214b9f416953e58f"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:af2687080bd4d9f5bf09bd510b506cc2880700f1ef648d7e49bbe3184b1b95e2"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "142784",
+      "identifier": "sha256:be4996729ea9aae50df31d252586a002fb9bbb511dfc7af9335faf95c5a47568"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1033",
+      "identifier": "sha256:d363ace2d19606be78d4bd7d1be1654d0b740c864b86a99f2153a41401cfdbdd"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2293",
+      "identifier": "sha256:db13c5d6b699c202f9e8c3fab0bf00bb6618f56883fd2321d2249b1cf9ef267c"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:619becc0d1648ca9918f7570b1d1a62f3d5f43108a5c4fe755117c212739ce24"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "994773",
+      "identifier": "sha256:e59b87d391db325f2b85c6848aa46478443a494370a093a2cf4b3e304a1c3299"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1034",
+      "identifier": "sha256:71d73f60d34971781b2f712c9e28f23d5e49e8a35db9ebfb3d4c07ec8df4ab0c"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2295",
+      "identifier": "sha256:32be1707ef3d29ca17f8c46847838a5178e7f736f3f5649c666766334416e0fa"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:5beee3326be1d1828b89114fa0e533b04f3f5ba5d974d0d399ca13e131afdff9"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "134376",
+      "identifier": "sha256:14a277fbc8022a3106f6376ee82c7686cf09f01714978b92e4dafe49641e8a98"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1033",
+      "identifier": "sha256:a14e70ed8f8cce1e9800d4f08234fd0c7af385fe572f72d96ad882e9acaf4d61"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6101/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2282",
+      "identifier": "sha256:4dc6aaa34a6fd2dd884da2db1868b4a2bd12dc6a9c126007da18e547cf270614"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:08c5728048ee0eaa9769e2d9ae63fd7f68415ecd8047363c6c422e8fc2b7c2c1"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "142723",
+      "identifier": "sha256:aa69e25d8746bace32ae59ece9d163151eacdca8fd2996ec6efc1c2689b82cb3"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1034",
+      "identifier": "sha256:57460e38d2915d80a25254e29fcfd13ef6ad64e9637ea783a2ab26b3f274d4b7"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2293",
+      "identifier": "sha256:e03c0926d538b19ca9dd7364b955d305c42763cbd76f800fb00a85358cd0de1a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:d6f421ae8534affa3182708181ef9767be2449ef148e22acb4777cdba8286160"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "994920",
+      "identifier": "sha256:db5e874e0190284c8fc191ae98747049dfe2961048680f9aae676e44ad3edb87"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1036",
+      "identifier": "sha256:f005e9890d880d6fd468b8243b0d7bb6c0bc4fd8682b2032b381da75e9ac3122"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2295",
+      "identifier": "sha256:eebaad41062c989d3bb79694344909150c44a6ff8ba1944768b37c3bc28f5bac"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:570d081cba7c6a84d42767c9fcbb48c4e65a9c3dedd7b1042a0f3ae714b4794d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "134493",
+      "identifier": "sha256:c23d198937039fa8df11c80ace4c652ce50286826ace1bcb61b4e6b55d17780b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1035",
+      "identifier": "sha256:3c801f260f04523f4b3086d4a0f0572aae4ecc0ba60ba95667538059530bb7d1"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6131/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2284",
+      "identifier": "sha256:d8397f9b70db196fd1a24178d5ad136fca3efddca6f7ae6df3bdfa49b5a7ce35"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:45789f89e42be9b7eaa692cc0a3b882c084581ab769b8d7e2eb725bbeeae9c65"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "142704",
+      "identifier": "sha256:fc1102d3756b2b7290c8cc697864e83396ad6f9c5f348fa2a04e3681e95261df"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1033",
+      "identifier": "sha256:a60906656ec0002d852746f51e3259d42b238e045d05f5db008f9de424d8d9fd"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2293",
+      "identifier": "sha256:6e55c7d9dbd254a5e9e254528145f3a54d088d4704e284e37e343b48bbd42a1a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:250d214d253996682dc2612721b28b3c18832c6ff5eea60a445885bf6e4afb12"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "994718",
+      "identifier": "sha256:b248f2aa78f6241359eb2e96dddef9f9cb2db885f82e1d3bb08f849ac3b5345d"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1034",
+      "identifier": "sha256:16f5b8be47f12aad76fcf021695bc2b6144d4ae3da3777548aaf8fafc832885f"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2296",
+      "identifier": "sha256:df5b9267354531ecb5a6365fd043c8f7066c670f888ea0ce913d087d6a82ca5a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:eb340d8fdbe8db7f596e8ecc81eb2e01291df90250280747071f937a0cdd1645"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "134462",
+      "identifier": "sha256:305adfcdfe0a6d8e160113cea9251715eb5f021e485b52b4ce37ae7381d108ca"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1035",
+      "identifier": "sha256:6bfe893af500a893969caea6a52f37d6ac094c42e84e1281d2e9482d44de47e6"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_08/seed_6173/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2283",
+      "identifier": "sha256:d2c5c03b188c7f8f9b8919f9de3d86605e4165b737b824fe0d6a7ea11d9afa57"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:901751c2081ebd9583bc0b64a307e131beb171698704a014cafe884207ef51fc"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "211794",
+      "identifier": "sha256:def81ec4a18e071a77c1643f1a3c524d6013a6dd81552ee85ca9c69455a0c558"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1245",
+      "identifier": "sha256:c8a5a75581550639e7711d9009c34a6ee35a8493a660d9c0f2cf8ff004e89578"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2293",
+      "identifier": "sha256:46b6886ee6baba8c62d6d24a34d8191544763d099de96bc7ffa361295e1278d3"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:ddefb02816d201b561393ef2d7b1725ac4bfc648d072cd7b7aa5e3dddc67fbe9"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1498022",
+      "identifier": "sha256:230a73c24692ae0a1653bda4829f5da9f94cb5ba0c3cbd87650ae1073ba8fada"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1251",
+      "identifier": "sha256:6dfab79ef194045753f64cde0baee9873da0c7df82e8ec14514a12c4b8d94c03"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2297",
+      "identifier": "sha256:537ff9b7ee389ad9853582a1e0eafa014da294b0329b7369bac04d020d0e796a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:3eb2c1fe501b64d61ff5ab98758b5531ea1138e8c988b88a8f30ddf1daa899f0"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "199403",
+      "identifier": "sha256:736f653c4fd17ec39c9fd164a621a2aed5d379d108ce8a8b3a03cc836715aa4a"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1245",
+      "identifier": "sha256:057e2eb652d3275b07af185c192a73d76b86eb442e54d9ede590dd30853fb40e"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6101/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2284",
+      "identifier": "sha256:dc0d991a9b3e1225a42871c69d9255870b72defdba2cc98898f96dc80897014e"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:ac3abee76fd9570b5ab6520686e77eb6794516c63de6a536d5213e0c87ac70d4"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "211878",
+      "identifier": "sha256:9fdec23acd75a1ae70566be75a893496556fcf177a503772a02ecc4d81b30c73"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1248",
+      "identifier": "sha256:39a33786ff6c5b59dee950f8bb693b8a77ea0dbc6d50b3b93d53287e052524ff"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2294",
+      "identifier": "sha256:2fbe45c52f8e08aafaecee77c0035631ac46c02854529c956cb4d51480d9ae11"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:21123ecfe125a9d0663b55b2217c8964a6bc1906b4f8f19705ec21dc51e95333"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1498760",
+      "identifier": "sha256:ad00dc2894331bf06fa1c16a17e77b3f0ab8bc51d5c2bafb669f5ca1a130bf41"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1248",
+      "identifier": "sha256:351c10d4b4494b65658f35aa2d86db50580493d63106cdb3eae865925094eb50"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2297",
+      "identifier": "sha256:73e4bd6de8cf17bd9daa18aa6dd9d8bb829e0fe078ab1c2cfd9d77955d24711c"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:2f1daee57d9574b248a46e04f6ad1c4eb8c95062c5816e66fa1ca12ddb8f5817"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "199372",
+      "identifier": "sha256:13ee40b79e47f7dd617b62ff10a4786ef258315f823680cdf10e0d91d80e654e"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1246",
+      "identifier": "sha256:e99689a1c0b99a69a813d66a7c3fc9e43bfc675061da2269f04751fbff91057b"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6131/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2285",
+      "identifier": "sha256:513b9e6fc19ef341dc311ead602a123d4f4b850f8e76ec58484cb5bc66ab10cd"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:0154184432e4ee30877653212ef4588ace2b9bf4f93f7a3e0caf21df54f7ad97"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "211886",
+      "identifier": "sha256:59754c1796780888af438431090492dee867fbb61676d2e0de433e368272c089"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1244",
+      "identifier": "sha256:d47d3c408481e70c2f7d5eab99e63a8ca6850db57a2a05059b1bb8611289c034"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/fixed_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2294",
+      "identifier": "sha256:86e4edcc25c43c2cdba6ce32a2d9e58f6894e7c758d62e8e6e1cca608ff965e6"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:bce79d3cfc672d4209c4db3d1f359d6dab6f2ddc801b473f4fa25992c5c111b7"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1498812",
+      "identifier": "sha256:e14293748e39ad22ff75735b8ed35982cfd44e57d007758e577f6e79224affb0"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1246",
+      "identifier": "sha256:4658cf03d48b242124869fbd8ce07138253ba1b1358284ade58884504c2b0e04"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/grouped_rate1/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2297",
+      "identifier": "sha256:82e4cfd152e87eda4235a0dce404da34a304ea71c7f13bb38e1afcce940df226"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/completion.json",
+      "@type": "File",
+      "name": "completion.json",
+      "encodingFormat": "application/json",
+      "contentSize": "408",
+      "identifier": "sha256:6bf1e84a6dd0308713d9fa47d7050ef7d057b88d58f2eba1f0448b0f079db2a0"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/controlled_run.json",
+      "@type": "File",
+      "name": "controlled_run.json",
+      "encodingFormat": "application/json",
+      "contentSize": "199328",
+      "identifier": "sha256:af62f60d773bb7eda029893a6cd067aed1815fc719d251ff760ab3ceb7f301a2"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/metrics.json",
+      "@type": "File",
+      "name": "metrics.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1252",
+      "identifier": "sha256:ec391ac00c1c1170c878baa5b7a4700e6768eee182e5771bc9149932a205ae6e"
+    },
+    {
+      "@id": "evaluations/long_sequence/blocks_12/seed_6173/zero_rk4/record.json",
+      "@type": "File",
+      "name": "record.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2285",
+      "identifier": "sha256:2687cbe2903a371aefc341216320a1085406aa12da14e4f6dce284cbad379aee"
+    },
+    {
+      "@id": "evidence/confirmation_PROTOCOL.md",
+      "@type": "File",
+      "name": "confirmation_PROTOCOL.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "2727",
+      "identifier": "sha256:57eb3dcba7969690405241472997b2c703172acc00f9ab43a8969e39952665b9"
+    },
+    {
+      "@id": "evidence/confirmation_manifest.json",
+      "@type": "File",
+      "name": "confirmation_manifest.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2702",
+      "identifier": "sha256:c607113659ad439be55f7e03e66f27147d625d6b3c962375527b02f06c646fe6"
+    },
+    {
+      "@id": "evidence/confirmation_summary.json",
+      "@type": "File",
+      "name": "confirmation_summary.json",
+      "encodingFormat": "application/json",
+      "contentSize": "40155",
+      "identifier": "sha256:14fd7925f6579690a9bc668a347ee2e5cc48819f8035172afa7fe54ce144e5bb"
+    },
+    {
+      "@id": "evidence/controller_mechanism_evidence.json",
+      "@type": "File",
+      "name": "controller_mechanism_evidence.json",
+      "encodingFormat": "application/json",
+      "contentSize": "261363",
+      "identifier": "sha256:70bf55f42c498e088bcf15c4e69ea48d09448d5baf585e9a5c91c2e7b5be9d1c"
+    },
+    {
+      "@id": "evidence/dim_evidence_summary.json",
+      "@type": "File",
+      "name": "dim_evidence_summary.json",
+      "encodingFormat": "application/json",
+      "contentSize": "31892",
+      "identifier": "sha256:2b4beccefb457e80de42f0246841ced53f5ce28982d0c8632e14111e0265819e"
+    },
+    {
+      "@id": "evidence/evidence_sources.json",
+      "@type": "File",
+      "name": "evidence_sources.json",
+      "encodingFormat": "application/json",
+      "contentSize": "7454",
+      "identifier": "sha256:7dcfbe8a0d87f3eda3445bffddcd91b73bea5e590f7fbe56941e68890fce49dd"
+    },
+    {
+      "@id": "evidence/generated/figure_confirmatory_paired.pdf",
+      "@type": "File",
+      "name": "figure_confirmatory_paired.pdf",
+      "encodingFormat": "application/pdf",
+      "contentSize": "23335",
+      "identifier": "sha256:7c193e008bf3f50ecb6d4a0787b2171ad28ba6fece3d3b1fa78f5d6949512046"
+    },
+    {
+      "@id": "evidence/generated/figure_confirmatory_paired.png",
+      "@type": "File",
+      "name": "figure_confirmatory_paired.png",
+      "encodingFormat": "image/png",
+      "contentSize": "275815",
+      "identifier": "sha256:76b3df5bd64218dca6bbfa63bd509a432ba3292160a50a077ca30f397e5f9ffd"
+    },
+    {
+      "@id": "evidence/generated/figure_controller_mechanism.pdf",
+      "@type": "File",
+      "name": "figure_controller_mechanism.pdf",
+      "encodingFormat": "application/pdf",
+      "contentSize": "50363",
+      "identifier": "sha256:e85d6ec9dfc9f559c3a1a657468ca2f129b66140a59a5545a3cb33e9cc93c6ac"
+    },
+    {
+      "@id": "evidence/generated/figure_controller_mechanism.png",
+      "@type": "File",
+      "name": "figure_controller_mechanism.png",
+      "encodingFormat": "image/png",
+      "contentSize": "305511",
+      "identifier": "sha256:ca3a8fa2c77662a896f24830dfc2c7fce5e721aaee86516aa6d3031d3c66f789"
+    },
+    {
+      "@id": "evidence/generated/figure_long_sequence_effects.pdf",
+      "@type": "File",
+      "name": "figure_long_sequence_effects.pdf",
+      "encodingFormat": "application/pdf",
+      "contentSize": "22109",
+      "identifier": "sha256:a15d4d2eb345e4485f95498b1dcd8b5cf9c0156709a9de914ebd1d6d183e70f1"
+    },
+    {
+      "@id": "evidence/generated/figure_long_sequence_effects.png",
+      "@type": "File",
+      "name": "figure_long_sequence_effects.png",
+      "encodingFormat": "image/png",
+      "contentSize": "319917",
+      "identifier": "sha256:2d36814a14c4c8f748c74b3ddad27c22833a5694a7ba8e3b09d00fb0bb0f2bd5"
+    },
+    {
+      "@id": "evidence/generated/table_confirmatory_grouped_vs_fixed.tex",
+      "@type": "File",
+      "name": "table_confirmatory_grouped_vs_fixed.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "983",
+      "identifier": "sha256:6614a8ea1caf214a9cfa950fc8dcb4a93bd052520f63fbf31dd3b1e530ba50bf"
+    },
+    {
+      "@id": "evidence/generated/table_controller_mechanism.tex",
+      "@type": "File",
+      "name": "table_controller_mechanism.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "1171",
+      "identifier": "sha256:9b48c0e3e7c5f082fc24dfa0725603345b0ee2b8648ab0fee50f8962aabd8178"
+    },
+    {
+      "@id": "evidence/generated/table_long_sequence.tex",
+      "@type": "File",
+      "name": "table_long_sequence.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "761",
+      "identifier": "sha256:e78fe4f33c76b9a4d4a1d8a1fa2e05a0956b8c2bf284b3fa0ed473b15b0fa4ec"
+    },
+    {
+      "@id": "evidence/generated_outputs.sha256",
+      "@type": "File",
+      "name": "generated_outputs.sha256",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": "1052",
+      "identifier": "sha256:d1b42ce9657c8ec0dd29a0b23b91f6ca5127afaf95871aff3a8fc6e840379937"
+    },
+    {
+      "@id": "evidence/generators/confirmatory_evaluator.py",
+      "@type": "File",
+      "name": "confirmatory_evaluator.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "22365",
+      "identifier": "sha256:10c3e1fd00f6433dc6dec2a0f91f836712e371049b78a92c812d6b5fc02b99d6"
+    },
+    {
+      "@id": "evidence/generators/confirmatory_training.py",
+      "@type": "File",
+      "name": "confirmatory_training.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "96523",
+      "identifier": "sha256:a1d5f73a91c09271fcd75ae0891ade27585550b424b2d071c651920ecbd70f2c"
+    },
+    {
+      "@id": "evidence/generators/evidence_synthesizer.py",
+      "@type": "File",
+      "name": "evidence_synthesizer.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "16886",
+      "identifier": "sha256:7f3fe42700a088e328d65380d916aa0f336ce7c0ebba264e853ab66122200b86"
+    },
+    {
+      "@id": "evidence/generators/long_evaluator.py",
+      "@type": "File",
+      "name": "long_evaluator.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "6061",
+      "identifier": "sha256:414b79621722f0eab24c98413da9a0286365984b2ab58de89ec43f6a654d2fc8"
+    },
+    {
+      "@id": "evidence/generators/long_training.py",
+      "@type": "File",
+      "name": "long_training.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "96523",
+      "identifier": "sha256:a1d5f73a91c09271fcd75ae0891ade27585550b424b2d071c651920ecbd70f2c"
+    },
+    {
+      "@id": "evidence/long_sequence_PROTOCOL.md",
+      "@type": "File",
+      "name": "long_sequence_PROTOCOL.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1411",
+      "identifier": "sha256:ad7acf2f5640b67200277a170e85be960e4e06364bfedadc85c4d5d4be9ba660"
+    },
+    {
+      "@id": "evidence/long_sequence_manifest.json",
+      "@type": "File",
+      "name": "long_sequence_manifest.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2428",
+      "identifier": "sha256:b160bd2623026f48efc8bdcee57f0e72b53935de5d27118e3e2620139c741038"
+    },
+    {
+      "@id": "evidence/long_sequence_summary.json",
+      "@type": "File",
+      "name": "long_sequence_summary.json",
+      "encodingFormat": "application/json",
+      "contentSize": "54100",
+      "identifier": "sha256:69692ffa157a4dd9b4a9a6689a5a9c76e50601a281e645676ff4c598a1656e9f"
+    },
+    {
+      "@id": "evidence/selection_lock.json",
+      "@type": "File",
+      "name": "selection_lock.json",
+      "encodingFormat": "application/json",
+      "contentSize": "586",
+      "identifier": "sha256:115faffe4f6f6c1eaefdb839ff10ff1ab4e77905d0526b39e6e76a5855bbdb16"
+    },
+    {
+      "@id": "evidence/source_registry/00_confirmation_summary.json",
+      "@type": "File",
+      "name": "00_confirmation_summary.json",
+      "encodingFormat": "application/json",
+      "contentSize": "40155",
+      "identifier": "sha256:14fd7925f6579690a9bc668a347ee2e5cc48819f8035172afa7fe54ce144e5bb"
+    },
+    {
+      "@id": "evidence/source_registry/01_confirmation_manifest.json",
+      "@type": "File",
+      "name": "01_confirmation_manifest.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2702",
+      "identifier": "sha256:c607113659ad439be55f7e03e66f27147d625d6b3c962375527b02f06c646fe6"
+    },
+    {
+      "@id": "evidence/source_registry/02_selection_lock.json",
+      "@type": "File",
+      "name": "02_selection_lock.json",
+      "encodingFormat": "application/json",
+      "contentSize": "586",
+      "identifier": "sha256:115faffe4f6f6c1eaefdb839ff10ff1ab4e77905d0526b39e6e76a5855bbdb16"
+    },
+    {
+      "@id": "evidence/source_registry/03_confirmation_PROTOCOL.md",
+      "@type": "File",
+      "name": "03_confirmation_PROTOCOL.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "2727",
+      "identifier": "sha256:57eb3dcba7969690405241472997b2c703172acc00f9ab43a8969e39952665b9"
+    },
+    {
+      "@id": "evidence/source_registry/04_long_sequence_summary.json",
+      "@type": "File",
+      "name": "04_long_sequence_summary.json",
+      "encodingFormat": "application/json",
+      "contentSize": "54100",
+      "identifier": "sha256:69692ffa157a4dd9b4a9a6689a5a9c76e50601a281e645676ff4c598a1656e9f"
+    },
+    {
+      "@id": "evidence/source_registry/05_long_sequence_manifest.json",
+      "@type": "File",
+      "name": "05_long_sequence_manifest.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2428",
+      "identifier": "sha256:b160bd2623026f48efc8bdcee57f0e72b53935de5d27118e3e2620139c741038"
+    },
+    {
+      "@id": "evidence/source_registry/06_long_sequence_PROTOCOL.md",
+      "@type": "File",
+      "name": "06_long_sequence_PROTOCOL.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1411",
+      "identifier": "sha256:ad7acf2f5640b67200277a170e85be960e4e06364bfedadc85c4d5d4be9ba660"
+    },
+    {
+      "@id": "evidence/source_registry/07_controller_mechanism_evidence.json",
+      "@type": "File",
+      "name": "07_controller_mechanism_evidence.json",
+      "encodingFormat": "application/json",
+      "contentSize": "261363",
+      "identifier": "sha256:70bf55f42c498e088bcf15c4e69ea48d09448d5baf585e9a5c91c2e7b5be9d1c"
+    },
+    {
+      "@id": "evidence/source_registry/08_source_table_controller_mechanism.tex",
+      "@type": "File",
+      "name": "08_source_table_controller_mechanism.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "1171",
+      "identifier": "sha256:9b48c0e3e7c5f082fc24dfa0725603345b0ee2b8648ab0fee50f8962aabd8178"
+    },
+    {
+      "@id": "evidence/source_registry/09_source_figure_controller_mechanism.pdf",
+      "@type": "File",
+      "name": "09_source_figure_controller_mechanism.pdf",
+      "encodingFormat": "application/pdf",
+      "contentSize": "50363",
+      "identifier": "sha256:e85d6ec9dfc9f559c3a1a657468ca2f129b66140a59a5545a3cb33e9cc93c6ac"
+    },
+    {
+      "@id": "evidence/source_registry/10_source_figure_controller_mechanism.png",
+      "@type": "File",
+      "name": "10_source_figure_controller_mechanism.png",
+      "encodingFormat": "image/png",
+      "contentSize": "305511",
+      "identifier": "sha256:ca3a8fa2c77662a896f24830dfc2c7fce5e721aaee86516aa6d3031d3c66f789"
+    },
+    {
+      "@id": "evidence/source_registry/11_source_confirmatory_paper_evidence.json",
+      "@type": "File",
+      "name": "11_source_confirmatory_paper_evidence.json",
+      "encodingFormat": "application/json",
+      "contentSize": "6360",
+      "identifier": "sha256:f9114f653bda47967c6e4a235cd166281f225f0d63e837325b9602276385e86f"
+    },
+    {
+      "@id": "evidence/source_registry/12_source_table_confirmatory_direct_test.tex",
+      "@type": "File",
+      "name": "12_source_table_confirmatory_direct_test.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "873",
+      "identifier": "sha256:e93c62343bab3869c189d94b2788611b8208798dfa64cb335167359973322fc9"
+    },
+    {
+      "@id": "evidence/source_registry/13_source_long_sequence_paper_evidence.json",
+      "@type": "File",
+      "name": "13_source_long_sequence_paper_evidence.json",
+      "encodingFormat": "application/json",
+      "contentSize": "17470",
+      "identifier": "sha256:842e0818dc91c7cf6139297339d2e02929d0fb526777fea41c5490da8d1aae8c"
+    },
+    {
+      "@id": "evidence/source_registry/14_source_table_long_sequence.tex",
+      "@type": "File",
+      "name": "14_source_table_long_sequence.tex",
+      "encodingFormat": "application/x-tex",
+      "contentSize": "1223",
+      "identifier": "sha256:848c7f6f866c1e51f0d0bcb70ae8f00241b680f4300b33e0e9311699eaaa3197"
+    },
+    {
+      "@id": "evidence/source_registry/15_source_figure_long_sequence.pdf",
+      "@type": "File",
+      "name": "15_source_figure_long_sequence.pdf",
+      "encodingFormat": "application/pdf",
+      "contentSize": "19321",
+      "identifier": "sha256:b3a639a7dd32a7c8f5f34e1cb67cb7f80808aca626a9a55e3282c6f7bc9b4900"
+    },
+    {
+      "@id": "evidence/source_registry/16_source_allen_cahn_paper_evidence_manifest.json",
+      "@type": "File",
+      "name": "16_source_allen_cahn_paper_evidence_manifest.json",
+      "encodingFormat": "application/json",
+      "contentSize": "3060",
+      "identifier": "sha256:e8192cc3f8b102e64b5bd4db01d03edb4798a66a1efd52175b13a15290696e4b"
+    },
+    {
+      "@id": "evidence/spatial_domain_sources.json",
+      "@type": "File",
+      "name": "spatial_domain_sources.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2091",
+      "identifier": "sha256:378c32ef76b35f67f798d67b7390021d83571af63654d76b256d3422aa48aa14"
+    },
+    {
+      "@id": "query_claim_evidence.py",
+      "@type": "File",
+      "name": "query_claim_evidence.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "8204",
+      "identifier": "sha256:8c2c760d8da221aadafac291787ff086c4f3d02af1a45af733d527faf9162fbe"
+    },
+    {
+      "@id": "validate_provenance.py",
+      "@type": "File",
+      "name": "validate_provenance.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "59098",
+      "identifier": "sha256:5934444cc166023a6b2a46ac145882df3b881051da8a156bb545c83cbe6734c1"
+    }
+  ]
+}

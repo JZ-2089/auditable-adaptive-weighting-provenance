@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated article."
+title: "Auditable provenance records for adaptive loss weighting in sequential physics-informed learning: an Allen--Cahn case study"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Jiaming
+year: 2026
+repository-code: "https://github.com/JZ-2089/auditable-adaptive-weighting-provenance"
+url: "https://github.com/JZ-2089/auditable-adaptive-weighting-provenance"

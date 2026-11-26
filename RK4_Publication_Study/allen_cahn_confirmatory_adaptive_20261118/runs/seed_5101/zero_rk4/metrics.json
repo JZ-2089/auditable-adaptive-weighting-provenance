@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "phase": "confirmation",
+  "created_utc": "2026-11-19T01:21:43.544889+00:00",
+  "prediction_mechanism": "direct final-network coordinate queries",
+  "relative_l2_convention": "norm of aggregate space-time error divided by norm of reference",
+  "training_retention_definition": "final-network error on the entire training interval",
+  "intervals": {
+    "training": [
+      0.0,
+      0.8
+    ],
+    "validation": [
+      0.8,
+      1.0
+    ],
+    "test": [
+      1.0,
+      1.2
+    ]
+  },
+  "evaluation_spatial_nodes": 1024,
+  "continuation_spatial_nodes": 256,
+  "coefficients": {
+    "alpha": 5.0,
+    "beta": 5.0,
+    "nu": 0.0001
+  },
+  "terminal_relative_l2": 0.033004739086102075,
+  "continuation_solver": {
+    "method": "DOP853",
+    "dtype": "float64",
+    "rtol": 1e-09,
+    "atol": 1e-11,
+    "max_step": 0.005,
+    "nfev": 1214,
+    "success": true,
+    "spatial_points": 256,
+    "operator": "periodic centred second-order finite-difference Laplacian"
+  },
+  "continuation_initial_state_source": "native final-network FD-grid state at t=0.8",
+  "reference_terminal_solver": {
+    "method": "DOP853",
+    "dtype": "float64",
+    "rtol": 1e-09,
+    "atol": 1e-11,
+    "max_step": 0.005,
+    "nfev": 1214,
+    "success": true,
+    "spatial_points": 256,
+    "operator": "periodic centred second-order finite-difference Laplacian"
+  },
+  "numerical_baseline_solver": {
+    "method": "DOP853",
+    "dtype": "float64",
+    "rtol": 1e-09,
+    "atol": 1e-11,
+    "max_step": 0.005,
+    "nfev": 3611,
+    "success": true,
+    "spatial_points": 256,
+    "operator": "periodic centred second-order finite-difference Laplacian"
+  },
+  "discrepancy_qualification": "Reference-started finite-difference discrepancies are not universal error lower bounds.",
+  "periodic_interpolation": "linear interpolation with period 2 onto the common 1024-node reference grid",
+  "block_records": [
+    {
+      "block": 1,
+      "time_interval": [
+        0.0,
+        0.2
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 8.12184950405026e-08,
+      "configured_weights": [
+        1.0,
+        0.0,
+        101.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 12.144519805908203,
+      "update_wall_seconds": 182.32348247765913,
+      "gradient_diagnostic_wall_seconds": 113.39930657102377,
+      "monitor_wall_seconds": 24.272652019979432,
+      "entry_grid_rms_after": 8.12184950405026e-08,
+      "final_losses": {
+        "residual": 0.0032595526427030563,
+        "rk4": 0.0,
+        "initial": 6.596443989046472e-15,
+        "boundary": 6.998528260737658e-05,
+        "previous": 0.0,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.003329537925976674,
+      "final_parameters_sha256": "aed5769bcc2378df1ef7ab5be6b4ca4dc8f8d93bdc624e5c8e5dab8448c29d20",
+      "wall_seconds_before_checkpoint": 348.81061480299104,
+      "checkpoint_wall_seconds": 0.06671496198396198,
+      "wall_seconds": 348.87959266701364
+    },
+    {
+      "block": 2,
+      "time_interval": [
+        0.2,
+        0.4
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 1.4817665942246094e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 23.58808135986328,
+      "update_wall_seconds": 243.3482299154275,
+      "gradient_diagnostic_wall_seconds": 87.85476344102062,
+      "monitor_wall_seconds": 25.906904489995213,
+      "entry_grid_rms_after": 0.001173544442281127,
+      "final_losses": {
+        "residual": 0.0003822858561761677,
+        "rk4": 0.0,
+        "initial": 1.2656975059144315e-06,
+        "boundary": 1.526315463706851e-05,
+        "previous": 3.880980329995509e-06,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.0005279997417346749,
+      "final_parameters_sha256": "f34ff211ebba2d2a88c7250b000840086e1a6be5d378e4f3c17511cdec73b1c8",
+      "wall_seconds_before_checkpoint": 381.3408697099949,
+      "checkpoint_wall_seconds": 0.0487892460078001,
+      "wall_seconds": 381.39274689598824
+    },
+    {
+      "block": 3,
+      "time_interval": [
+        0.4,
+        0.6
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 2.7051049983128905e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 13.612910270690918,
+      "update_wall_seconds": 250.87906600398128,
+      "gradient_diagnostic_wall_seconds": 110.17625155602582,
+      "monitor_wall_seconds": 25.64603256000555,
+      "entry_grid_rms_after": 0.0009152995771728456,
+      "final_losses": {
+        "residual": 0.0001708996423985809,
+        "rk4": 0.0,
+        "initial": 3.6265055314288475e-07,
+        "boundary": 4.107305812794948e-06,
+        "previous": 1.7474641936132684e-05,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.00022874664546179702,
+      "final_parameters_sha256": "12d169e7788ae9c8d4001ad9cc508408a35399ce484e2b080c865ed6a073f445",
+      "wall_seconds_before_checkpoint": 408.92736628701095,
+      "checkpoint_wall_seconds": 0.06305282999528572,
+      "wall_seconds": 408.9945832939993
+    },
+    {
+      "block": 4,
+      "time_interval": [
+        0.6,
+        0.8
+      ],
+      "updates": 5000,
+      "entry_grid_rms_before": 3.964103234466165e-05,
+      "configured_weights": [
+        1.0,
+        0.0,
+        100.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "clipped_gradient_updates": 0,
+      "adaptive_updates": 0,
+      "safeguard_events": 0,
+      "max_gradient_global_norm": 66.66889953613281,
+      "update_wall_seconds": 279.00109521474224,
+      "gradient_diagnostic_wall_seconds": 108.79295509695658,
+      "monitor_wall_seconds": 31.103073513979325,
+      "entry_grid_rms_after": 0.001014295732602477,
+      "final_losses": {
+        "residual": 0.0002688920358195901,
+        "rk4": 0.0,
+        "initial": 2.544274195770413e-07,
+        "boundary": 2.736893748078728e-06,
+        "previous": 6.383278378052637e-05,
+        "data": 0.0
+      },
+      "final_weighted_loss": 0.0003609044553058993,
+      "final_parameters_sha256": "dfff9c0f96721fff203de96cab22ef65e5b2e9c3334516e27164ffa230e91b7f",
+      "wall_seconds_before_checkpoint": 445.13493956200546,
+      "checkpoint_wall_seconds": 0.07448251897585578,
+      "wall_seconds": 445.2182918160106
+    }
+  ],
+  "direct": {
+    "training": {
+      "relative_l2": 0.020485193481322345
+    },
+    "validation": {
+      "relative_l2": 0.0777969870932585
+    },
+    "test": {
+      "relative_l2": 0.2594033100817302
+    }
+  },
+  "continuation": {
+    "validation": {
+      "relative_l2": 0.051676011848031306
+    },
+    "test": {
+      "relative_l2": 0.09178795751165807
+    }
+  },
+  "numerical_baseline": {
+    "training": {
+      "relative_l2": 0.000716031443252834
+    },
+    "validation": {
+      "relative_l2": 0.0031083018779366547
+    },
+    "test": {
+      "relative_l2": 0.006533698492813431
+    }
+  },
+  "reference_terminal_continuation": {
+    "validation": {
+      "relative_l2": 0.003169289037569986
+    },
+    "test": {
+      "relative_l2": 0.006563913871586467
+    }
+  },
+  "provenance": {
+    "reference_path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/reference/reference_test_only.npz",
+    "reference_sha256": "c8dc319e19143c2b79566d690ba74b9d6c02e8f0f18e25ca27f92aef71274ff2",
+    "prediction_path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/runs/seed_5101/zero_rk4/output/predictions.npz",
+    "prediction_sha256": "0d3e61e56728748d3780af7e513a61fb9afc488dbe8913a3a2ff0de38c938472",
+    "evaluator_sha256": "10c3e1fd00f6433dc6dec2a0f91f836712e371049b78a92c812d6b5fc02b99d6",
+    "reference_splits": {
+      "training": {
+        "path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/reference/reference_training.npz",
+        "sha256": "320964643bb7505c1c572e7e68db7a8c0c9c5f6e88c91285bbb8f28b222227dd"
+      },
+      "validation": {
+        "path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/reference/reference_validation_only.npz",
+        "sha256": "c44d7bf868affc7b3505654111b64d043417b30f34ca0c2d1362954655deb2ef"
+      },
+      "test": {
+        "path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/reference/reference_test_only.npz",
+        "sha256": "c8dc319e19143c2b79566d690ba74b9d6c02e8f0f18e25ca27f92aef71274ff2"
+      }
+    },
+    "selection_lock_path": "${REPOSITORY_ROOT}/RK4_Publication_Study/allen_cahn_confirmatory_adaptive_20261118/selection_lock.json",
+    "selection_lock_sha256": "115faffe4f6f6c1eaefdb839ff10ff1ab4e77905d0526b39e6e76a5855bbdb16",
+    "diagnostics_sha256": "c8bf4952de9101063d521969b38b99a0c05c847314ecd51bca01a9b01895cf9e",
+    "initial_parameters_sha256": "9dd8f3b9db8bf3bd62ad8908f71cecf06e2097e6a771a29155ad85e4261c49ea",
+    "pair_schedule_sha256": "2fdd4d16c2dc2e0c15c4986d76d9dd9e9e8a260ef6d08a2302306b0217f321a3",
+    "python": "3.13.1",
+    "numpy": "2.2.1",
+    "scipy": "1.15.1",
+    "fields_sha256": "8cfb6dfcc629ac7d2da2caf7497f01d8b5027c136c490d2cc856789c39d6febf"
+  },
+  "direct_training_relative_l2": 0.020485193481322345,
+  "numerical_baseline_training_relative_l2": 0.000716031443252834,
+  "direct_validation_relative_l2": 0.0777969870932585,
+  "numerical_baseline_validation_relative_l2": 0.0031083018779366547,
+  "continuation_validation_relative_l2": 0.051676011848031306,
+  "reference_terminal_continuation_validation_relative_l2": 0.003169289037569986,
+  "direct_test_relative_l2": 0.2594033100817302,
+  "numerical_baseline_test_relative_l2": 0.006533698492813431,
+  "continuation_test_relative_l2": 0.09178795751165807,
+  "reference_terminal_continuation_test_relative_l2": 0.006563913871586467,
+  "accepted_history_training_relative_l2": 0.017921608788294373,
+  "final_vs_accepted_history_relative_l2": 0.010707946423562155,
+  "final_network_interface_errors": [
+    {
+      "time": 0.2,
+      "relative_l2": 0.024834650887121477
+    },
+    {
+      "time": 0.4,
+      "relative_l2": 0.011428185326684355
+    },
+    {
+      "time": 0.6,
+      "relative_l2": 0.01672165846983305
+    },
+    {
+      "time": 0.8,
+      "relative_l2": 0.033004739086102075
+    }
+  ],
+  "finite": true
+}

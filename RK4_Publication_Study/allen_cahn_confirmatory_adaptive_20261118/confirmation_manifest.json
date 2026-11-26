@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T22:15:20.307219+00:00",
+  "status": "confirmatory_locked",
+  "seeds": [
+    5101,
+    5113,
+    5147,
+    5167,
+    5191,
+    5227,
+    5261,
+    5281,
+    5309,
+    5333
+  ],
+  "arms": {
+    "zero_rk4": {
+      "adaptive": false,
+      "rk4_weight": 0.0
+    },
+    "fixed_rate1": {
+      "adaptive": false,
+      "rk4_weight": 1.0
+    },
+    "grouped_rate1": {
+      "adaptive": true,
+      "rk4_weight": 1.0
+    }
+  },
+  "common": {
+    "epochs_per_block": 5000,
+    "blocks": 4,
+    "total_updates": 20000,
+    "spatial_points": 256,
+    "pairs_per_update": 8,
+    "rk4_substeps": 4,
+    "train_end": 0.8,
+    "validation_end": 1.0,
+    "test_end": 1.2,
+    "hidden": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "residual_weight": 1.0,
+    "fixed_or_initial_rk4_weight": 1.0,
+    "defect_normalization": "rate",
+    "adaptive_update_every": 50,
+    "adaptive_first_block_warmup": 500,
+    "adaptive_later_block_warmup": 100,
+    "gradient_clip_norm": 0.0,
+    "checkpoint_selection": "final_iterate"
+  },
+  "primary_outcome": "direct_test_relative_l2",
+  "training_blind_to_reference": true,
+  "test_evaluation_after_all_training": true,
+  "source_hashes": {
+    "PROTOCOL.md": "57eb3dcba7969690405241472997b2c703172acc00f9ab43a8969e39952665b9",
+    "selection_lock.json": "115faffe4f6f6c1eaefdb839ff10ff1ab4e77905d0526b39e6e76a5855bbdb16",
+    "run_confirmation.py": "7a744c924a4ca25fa6da73e16af021d8a80944a70c1500aab63c48b550863d68",
+    "evaluate.py": "10c3e1fd00f6433dc6dec2a0f91f836712e371049b78a92c812d6b5fc02b99d6",
+    "summarize_confirmation.py": "163f0d29427396d02166d9dd4e90b85639ed9c473d6d4d8a33524debbf5759f1",
+    "monitor_confirmation.py": "cccc18c631030bebb38736ceb8b835a0425b5d599a90d44ea148094e9fdf9f69",
+    "source_snapshot/GPT-code-invloss.py": "a1d5f73a91c09271fcd75ae0891ade27585550b424b2d071c651920ecbd70f2c",
+    "source_snapshot/controlled_runner.py": "aa11762eb48abbc31aff4fced4332b523d3ddcee1fe98a7e763f62cb7b7d0d93",
+    "source_snapshot/adaptive_weight_controllers.py": "b40704e197312d63b3e40e1963034b5dba74c689a2f566829ff9cbb7e613573f",
+    "source_snapshot/forward_invloss_config.py": "dcb373dcc7b66a18c20d1cdd1fa4e21150511f951759068efdd61271fb4e586c",
+    "reference/training_initial_only.mat": "26aefa6d1461110688854dcf3b107317ebfb64fe6dbac54532da6a50635d1868",
+    "reference/reference_training.npz": "320964643bb7505c1c572e7e68db7a8c0c9c5f6e88c91285bbb8f28b222227dd",
+    "reference/reference_validation_only.npz": "c44d7bf868affc7b3505654111b64d043417b30f34ca0c2d1362954655deb2ef",
+    "reference/reference_test_only.npz": "c8dc319e19143c2b79566d690ba74b9d6c02e8f0f18e25ca27f92aef71274ff2"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "qualification": "Domain coordinates were read directly from hash-verified prediction NPZ members; every run is checked against these campaign/mechanism domains by validate_provenance.py.",
+  "domains": [
+    {
+      "id": "spatial-domain:confirmatory:direct",
+      "campaign": "allen_cahn_confirmatory_adaptive_20261118",
+      "array_member": "x",
+      "origin_artifact_id": "artifact:prediction-array:confirmatory:5101:grouped_rate1",
+      "lower_bound": -1.0,
+      "last_coordinate": 0.998046875,
+      "upper_bound_exclusive": 1.0,
+      "points": 1024,
+      "spacing": 0.001953125,
+      "period": 2.0,
+      "endpoint_duplicate_excluded": true
+    },
+    {
+      "id": "spatial-domain:confirmatory:continuation",
+      "campaign": "allen_cahn_confirmatory_adaptive_20261118",
+      "array_member": "fd_x",
+      "origin_artifact_id": "artifact:prediction-array:confirmatory:5101:grouped_rate1",
+      "lower_bound": -1.0,
+      "last_coordinate": 0.9921875,
+      "upper_bound_exclusive": 1.0,
+      "points": 256,
+      "spacing": 0.0078125,
+      "period": 2.0,
+      "endpoint_duplicate_excluded": true
+    },
+    {
+      "id": "spatial-domain:long-sequence:direct",
+      "campaign": "allen_cahn_long_sequence_development_20261119",
+      "array_member": "x",
+      "origin_artifact_id": "artifact:prediction-array:long:blocks_04:6101:grouped_rate1",
+      "lower_bound": -1.0,
+      "last_coordinate": 0.998046875,
+      "upper_bound_exclusive": 1.0,
+      "points": 1024,
+      "spacing": 0.001953125,
+      "period": 2.0,
+      "endpoint_duplicate_excluded": true
+    },
+    {
+      "id": "spatial-domain:long-sequence:continuation",
+      "campaign": "allen_cahn_long_sequence_development_20261119",
+      "array_member": "fd_x",
+      "origin_artifact_id": "artifact:prediction-array:long:blocks_04:6101:grouped_rate1",
+      "lower_bound": -1.0,
+      "last_coordinate": 0.9921875,
+      "upper_bound_exclusive": 1.0,
+      "points": 256,
+      "spacing": 0.0078125,
+      "period": 2.0,
+      "endpoint_duplicate_excluded": true
+    }
+  ]
+}

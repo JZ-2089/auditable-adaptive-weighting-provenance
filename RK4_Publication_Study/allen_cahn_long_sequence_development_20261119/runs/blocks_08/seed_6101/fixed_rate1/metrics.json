@@ -1,0 +1,36 @@
+{
+  "scenario": "blocks_08",
+  "blocks": 8,
+  "train_end": 1.6,
+  "forecast_end": 2.4,
+  "direct_training_relative_l2": 0.09496117620260794,
+  "direct_terminal_relative_l2": 0.05784370254487126,
+  "direct_future_0.2_relative_l2": 0.052423640584342554,
+  "direct_future_0.4_relative_l2": 0.07643321186651193,
+  "direct_future_0.8_relative_l2": 0.15135345282008814,
+  "interface_times": [
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0,
+    1.2000000000000002,
+    1.4000000000000001,
+    1.6
+  ],
+  "interface_relative_l2": [
+    0.02934058581778921,
+    0.021580959030091447,
+    0.04205419283111304,
+    0.07049989574212388,
+    0.12313693686255844,
+    0.1386134631174936,
+    0.10167464915545239,
+    0.05784370254487126
+  ],
+  "interface_mean_relative_l2": 0.07309304813768666,
+  "interface_max_relative_l2": 0.1386134631174936,
+  "continuation_future_0.2_relative_l2": 0.053593303722283006,
+  "continuation_future_0.4_relative_l2": 0.05239946377248914,
+  "continuation_future_0.8_relative_l2": 0.05208004447452279
+}

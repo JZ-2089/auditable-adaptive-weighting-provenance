@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Allen--Cahn long-sequence development results (mean with sample SD across three paired seeds).}
+\label{tab:allen_cahn_long_sequence}
+\small
+\begin{tabular}{clccc}
+\toprule
+Blocks & Method & Training retention & Mean interface error & Direct future $0.8$ \\
+\midrule
+4 & zero-RK4 & 0.0147 (0.0016) & 0.0157 (0.0017) & 0.2816 (0.0110) \\
+4 & fixed RK4 & 0.0149 (0.0008) & 0.0155 (0.0010) & 0.2876 (0.0286) \\
+4 & grouped adaptive RK4 & 0.0134 (0.0008) & 0.0139 (0.0010) & 0.2884 (0.0295) \\
+\addlinespace
+8 & zero-RK4 & 0.0993 (0.0084) & 0.0751 (0.0069) & 0.1527 (0.0206) \\
+8 & fixed RK4 & 0.0884 (0.0104) & 0.0676 (0.0068) & 0.1403 (0.0096) \\
+8 & grouped adaptive RK4 & 0.0883 (0.0106) & 0.0668 (0.0075) & 0.1381 (0.0065) \\
+\addlinespace
+12 & zero-RK4 & 0.1061 (0.0032) & 0.0880 (0.0029) & 0.1188 (0.0232) \\
+12 & fixed RK4 & 0.1078 (0.0107) & 0.0910 (0.0094) & 0.1102 (0.0136) \\
+12 & grouped adaptive RK4 & 0.1072 (0.0121) & 0.0903 (0.0113) & 0.1041 (0.0223) \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.96\linewidth}\footnotesize
+This is a development study; the three-seed comparisons are descriptive and are not confirmatory inference.
+\end{minipage}
+\end{table}

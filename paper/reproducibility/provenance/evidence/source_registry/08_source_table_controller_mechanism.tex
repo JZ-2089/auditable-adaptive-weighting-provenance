@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Descriptive diagnostics for the grouped adaptive controller across the ten Allen--Cahn confirmatory seeds. Entries are pooled adaptive-update medians [IQR].}
+\label{tab:allen_cahn_controller_mechanism}
+\small
+\begin{tabular}{ccccc}
+\toprule
+Block & PDE--RK4 cosine & Weighted RK4/PDE ratio & RK4 physics share & Replay constraint share \\
+\midrule
+1 & 0.997 [0.987, 0.999] & 0.995 [0.951, 1.055] & 0.506 [0.504, 0.509] & inactive \\
+2 & 0.997 [0.993, 0.999] & 1.023 [0.983, 1.069] & 0.513 [0.507, 0.518] & 0.966 [0.912, 0.985] \\
+3 & 0.997 [0.991, 0.999] & 1.034 [0.989, 1.085] & 0.515 [0.510, 0.524] & 0.912 [0.835, 0.944] \\
+4 & 0.992 [0.981, 0.997] & 1.085 [1.009, 1.163] & 0.521 [0.512, 0.540] & 0.792 [0.685, 0.873] \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.96\linewidth}\footnotesize
+The physics share is $w_{\mathrm{RK4}}/(w_{\mathrm{PDE}}+w_{\mathrm{RK4}})$. The replay share is $w_{\mathrm{prev}}/(w_{\mathrm{bc}}+w_{\mathrm{prev}}+w_{\mathrm{data}})$. Updates within a run are serially dependent; these are descriptive controller diagnostics rather than inferential replicates.
+\end{minipage}
+\end{table}

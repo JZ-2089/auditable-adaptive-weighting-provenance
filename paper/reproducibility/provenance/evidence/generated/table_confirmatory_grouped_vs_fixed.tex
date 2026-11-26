@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Fresh-seed ten-pair Allen--Cahn comparison of grouped and fixed RK4 weighting. Differences are grouped minus fixed; negative values favour grouped weighting. The 95\% interval is the two-sided paired $t$ interval. This controller contrast is secondary under the frozen protocol.}
+\label{tab:ac-confirmatory}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lccccc}
+\toprule
+Metric & Fixed mean & Grouped mean & Paired difference & 95\% CI & Wins/10\\
+\midrule
+Training interval & 0.01711 & 0.01551 & -0.00160 & [-0.00231, -0.00090] & 10/10\\
+Validation interval & 0.05758 & 0.05812 & 0.00054 & [-0.00079, 0.00188] & 5/10\\
+Direct test interval & 0.21229 & 0.21555 & 0.00326 & [-0.00024, 0.00677] & 3/10\\
+Continuation test interval & 0.05320 & 0.05388 & 0.00068 & [-0.00159, 0.00294] & 6/10\\
+Terminal state & 0.02127 & 0.02126 & -1.32e-05 & [-0.00099, 0.00096] & 5/10\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
